@@ -1,0 +1,2 @@
+# ProjetoEngenharia-SoftwareAnaliseEncrustacaoAmostrasSalmouras
+Simulador de encrustação de amostras de salmouras
