@@ -1,0 +1,32 @@
+[
+{
+  "directory": "C:/Alida_Joao/Alida_Joao/build",
+  "command": "C:\\mingw\\bin\\g++.exe   -g -std=gnu++20 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles\\PrecipitationSimulator.dir\\ThermodynamicConditions.cpp.obj -c C:\\Alida_Joao\\Alida_Joao\\ThermodynamicConditions.cpp",
+  "file": "C:/Alida_Joao/Alida_Joao/ThermodynamicConditions.cpp",
+  "output": "CMakeFiles/PrecipitationSimulator.dir/ThermodynamicConditions.cpp.obj"
+},
+{
+  "directory": "C:/Alida_Joao/Alida_Joao/build",
+  "command": "C:\\mingw\\bin\\g++.exe   -g -std=gnu++20 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles\\PrecipitationSimulator.dir\\CreateIons.cpp.obj -c C:\\Alida_Joao\\Alida_Joao\\CreateIons.cpp",
+  "file": "C:/Alida_Joao/Alida_Joao/CreateIons.cpp",
+  "output": "CMakeFiles/PrecipitationSimulator.dir/CreateIons.cpp.obj"
+},
+{
+  "directory": "C:/Alida_Joao/Alida_Joao/build",
+  "command": "C:\\mingw\\bin\\g++.exe   -g -std=gnu++20 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles\\PrecipitationSimulator.dir\\Salt.cpp.obj -c C:\\Alida_Joao\\Alida_Joao\\Salt.cpp",
+  "file": "C:/Alida_Joao/Alida_Joao/Salt.cpp",
+  "output": "CMakeFiles/PrecipitationSimulator.dir/Salt.cpp.obj"
+},
+{
+  "directory": "C:/Alida_Joao/Alida_Joao/build",
+  "command": "C:\\mingw\\bin\\g++.exe   -g -std=gnu++20 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles\\PrecipitationSimulator.dir\\PrecipitationCalculator.cpp.obj -c C:\\Alida_Joao\\Alida_Joao\\PrecipitationCalculator.cpp",
+  "file": "C:/Alida_Joao/Alida_Joao/PrecipitationCalculator.cpp",
+  "output": "CMakeFiles/PrecipitationSimulator.dir/PrecipitationCalculator.cpp.obj"
+},
+{
+  "directory": "C:/Alida_Joao/Alida_Joao/build",
+  "command": "C:\\mingw\\bin\\g++.exe   -g -std=gnu++20 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles\\PrecipitationSimulator.dir\\Sandbox.cpp.obj -c C:\\Alida_Joao\\Alida_Joao\\Sandbox.cpp",
+  "file": "C:/Alida_Joao/Alida_Joao/Sandbox.cpp",
+  "output": "CMakeFiles/PrecipitationSimulator.dir/Sandbox.cpp.obj"
+}
+]

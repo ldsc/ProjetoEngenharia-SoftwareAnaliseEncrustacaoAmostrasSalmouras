@@ -1,0 +1,3 @@
+C:/Alida_Joao/Alida_Joao/build/CMakeFiles/PrecipitationSimulator.dir
+C:/Alida_Joao/Alida_Joao/build/CMakeFiles/edit_cache.dir
+C:/Alida_Joao/Alida_Joao/build/CMakeFiles/rebuild_cache.dir
