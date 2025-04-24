@@ -1,0 +1,68 @@
+* Projeto ProjetoEngenharia-SoftwareAnaliseEncrustacaoAmostrasSalmouras
+* Tarefas:
+** DONE Deixar a estrutura de diretórios igual ao padrão. [Bueno]
+*** O pré-projeto esta no diretório 1-PreProjeto-IdentificacaoDaProposta. 
+*** Os códigos dentro de 4-Execucao-Detalhamento-Construcao-Versao-1/src
+*** Os diagramsa UML dentro de 4-Execucao-Detalhamento-Construcao-Versao-1/uml
+** Coloquei dentro de 1-PreProjeto os arquivos do lyx.
+*** Referências
+**** adicionem referências específicas do problema em sí
+** 3-Execucao-Modelos
+*** Fazer os diagramas usando o modelador umbrello. O arquivo ProjetoEngenharia-SoftwareAnaliseEncrustacaoAmostrasSalmouras.umbrello.xmi deve ser aberto no umbrello e usado para gerar os diagramas da versão 1.
+*** Classes
+*** class CAmostraSalmouraCampo
+*** class CIon: 
+**** nome: Na
+**** carga: +1
+**** Ex:
+**** nome: Cl
+**** carga: -1
+**** nome: Na
+**** carga: +1
+*** class CTabelaPropriedadesIons
+**** Nome e carga são dados constantes da literatura.
+**** Pode montar uma tabela:
+***** nome; carga
+***** Na; +1
+***** Cl; -1
+***** ...outros..
+**** Permite adicionar/remover ions.
+**** Carregar dados de arquivos de disco.
+**** Salvar dados em arquivos de disco.
+
+*** class CSal
+**** Mistura de dois ions em quantidades fixas conhecidas.
+**** nome: NaCl
+**** vector<ions> : Na, Cl ?
+**** ksp produto de solubilidade do sal; variável da literatura ou calculada que informa se precipita ou não.
+
+*** class CSalmoura
+**** Mistura de água pura com sais
+**** liquido: água pura
+**** quantidadeLiquido: 1 litro
+**** vetor de sais
+***** vector<CSal>
+***** sal_1: NaCl
+***** sal_2: BaSo4
+**** vetor de concentrações
+***** concentraçãoIon_numeroDeMols: Na
+***** concentraçãoIon_numeroDeMols: Cl
+
+*** class CMisturaSalmouras
+**** vector<CSalmoura>
+**** vector<double> volumes; // volume da salmoura 1 e 2...
+*** class CSimuladorPrecipitacao
+**** Calculos associados a precipitação em sí (encrustação). 
+**** Interação com o usuário.
+** Coloquei dentro de 4-Execucao...-1 os códigos
+
+
+
+
+
+
+
+
+* Nota
+** Diretório 0-Proposta - não vamos fazer
+** Diretório 2-Projeto -  não vamos fazer
