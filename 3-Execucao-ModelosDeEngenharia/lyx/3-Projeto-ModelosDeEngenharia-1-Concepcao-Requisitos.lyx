@@ -231,8 +231,35 @@ Concepção
 \end_layout
 
 \begin_layout Standard
-Apresenta-se neste capítulo do projeto de engenharia a concepção,
- a especificação do sistema a ser modelado e desenvolvido.
+O projeto foi desenvolvido com base nos princípios de Engenharia de Software e Modelagem Matemática
+\end_layout
+
+\begin_layout Standard
+Computacional.
+ A metodologia adotada incluiu as etapas clássicas de concepção,
+ elaboração,
+ modelagem
+\end_layout
+
+\begin_layout Standard
+orientada a objetos e implementação modular.
+ Utilizou-se C++ como linguagem de programação,
+ aplicando-se
+\end_layout
+
+\begin_layout Standard
+princípios de POO (Programação Orientada a Objetos) para garantir expansibilidade,
+ organização e manutenção
+\end_layout
+
+\begin_layout Standard
+do sistema.
+ Diagramas UML foram empregados para representar os aspectos estruturais e dinâmicos do
+\end_layout
+
+\begin_layout Standard
+software.
+ .
 \end_layout
 
 \begin_layout Standard
@@ -440,6 +467,20 @@ Nome
 
 \begin_layout Plain Layout
 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+Sistema de Análise de Incrustação em Amostras de Salmoura
 \end_layout
 
 \end_inset
@@ -461,7 +502,10 @@ Componentes principais
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+Interface de entrada de dados,
+ módulos de cálculo de produto iônico,
+ banco de dados local em tempo de execução,
+ módulo de análise termodinâmica e gerador de relatórios.
 \end_layout
 
 \end_inset
@@ -483,7 +527,7 @@ Missão
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+Prever a possibilidade de formação de incrustação mineral em ambientes de produção de petróleo a partir da análise de dados de salmouras
 \end_layout
 
 \end_inset
@@ -532,17 +576,26 @@ especificação
 \end_layout
 
 \begin_layout Standard
-Apresenta-se a seguir a especificação do software.
+O software permite ao usuário inserir dados relativos à concentração de íons presentes na salmoura,
 \end_layout
 
 \begin_layout Standard
-....coloque aqui a especificação...
+informações de temperatura e pressão do meio,
+ e realizar a análise de possibilidade de precipitação com base
 \end_layout
 
 \begin_layout Standard
-...eventualmente coloque imagem ilustrativa geral,
- mostrando o que se pretente (primeira ideia) do software;
- normalmente esta figura já será mais detalhada que aquela apresentada no escopo...
+na comparação entre o produto iônico e o produto de solubilidade (Kps) de determinados sais.
+ O sistema
+\end_layout
+
+\begin_layout Standard
+calcula automaticamente o produto iônico e emite um diagnóstico sobre a ocorrência ou não de incrustação,
+\end_layout
+
+\begin_layout Standard
+sendo possível aplicar o modelo a sais como calcita (CaCO3) e barita (BaSO4).
+ 
 \end_layout
 
 \begin_layout Section
@@ -596,17 +649,7 @@ name "subsec:Requisitos-funcionais"
 \end_layout
 
 \begin_layout Standard
-Apresenta-se a seguir os requisitos funcionais
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-coloque aqueles que fazem sentido para seu sistema
-\end_layout
-
-\end_inset
-
-.
+Apresenta-se a seguir os requisitos funcionais.
 \end_layout
 
 \begin_layout Standard
@@ -631,8 +674,7 @@ RF-01
 \begin_inset Text
 
 \begin_layout Plain Layout
-O sistema deve conter uma base de dados xxx.
- O usuário deve ser capaz de xxx.
+O sistema deve permitir ao usuário cadastrar íons com nome,concentração e carga
 \end_layout
 
 \end_inset
@@ -671,7 +713,7 @@ RF-02
 \begin_inset Text
 
 \begin_layout Plain Layout
-O usuário deverá ter liberdade para xxxx.
+O sistema deve permitir ao usuário criar sais a partir de dois íons e um valor de Kps
 \end_layout
 
 \end_inset
@@ -710,7 +752,7 @@ RF-03
 \begin_inset Text
 
 \begin_layout Plain Layout
-Deve permitir o carregamento de arquivos criados pelo software.
+O sistema deve aceitar a entrada de condições termodinâmicas (temperatura e pressão)
 \end_layout
 
 \end_inset
@@ -752,7 +794,7 @@ RF-04
 \begin_inset Text
 
 \begin_layout Plain Layout
-Deve permitir a escolha da equação xxx.
+O sistema deve calcular o produto iônico com base nas informações inseridas
 \end_layout
 
 \end_inset
@@ -794,7 +836,7 @@ RF-05
 \begin_inset Text
 
 \begin_layout Plain Layout
-O usuário deve ter tal liberdade para escolher xxx.
+O sistema deve informar se ocorre ou não precipitação para cada sal inserido
 \end_layout
 
 \end_inset
@@ -823,8 +865,6 @@ O usuário deve ter tal liberdade para escolher xxx.
 
 \begin_layout Plain Layout
 
-\series bold
-RF-06
 \end_layout
 
 \end_inset
@@ -833,8 +873,7 @@ RF-06
 \begin_inset Text
 
 \begin_layout Plain Layout
-O usuário poderá plotar seus resultados em um gráfico.
- O gráfico poderá ser salvo como imagem ou ter seus dados exportados como texto.
+
 \end_layout
 
 \end_inset
@@ -899,7 +938,10 @@ RNF-01
 \begin_inset Text
 
 \begin_layout Plain Layout
-Os cálculos devem ser feitos utilizando-se xxxx.
+O software deve ser multiplataforma (Windows,
+ Linux,
+ MacOS).
+ 
 \end_layout
 
 \end_inset
@@ -941,163 +983,13 @@ RNF-02
 \begin_inset Text
 
 \begin_layout Plain Layout
-O programa deverá ser multi-plataforma,
- podendo ser executado em 
-\emph on
-Windows
-\emph default
-,
- 
-\emph on
-GNU/Linux
-\emph default
- ou 
-\emph on
-Mac
-\emph default
-.
+O sistema deve ser desenvolvido em linguagem C++ com estrutura orientada a objeto
 \end_layout
 
 \end_inset
 </cell>
 </row>
 </lyxtabular>
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-#O que são os casos de uso
-\begin_inset Index idx
-range none
-pageformat default
-status collapsed
-
-\begin_layout Plain Layout
-Casos de uso
-\end_layout
-
-\end_inset
-
- do sistema – cenários
-\begin_inset CommandInset label
-LatexCommand label
-name "subsec:Casos-de-uso-do-programa"
-
-\end_inset
-
-
-\begin_inset Index idx
-range none
-pageformat default
-status collapsed
-
-\begin_layout Plain Layout
-Cenário
-\end_layout
-
-\end_inset
-
-?
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Apague esta seção!
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-Segundo 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "prog-UML-blaha"
-literal "true"
-
-\end_inset
-
-,
- "um 
-\shape italic
-cenário
-\shape default
- pode ser um registro histórico de execução de um sistema real ou um experimento de execução teórica de um sistema proposto"
-\emph on
-.
-\end_layout
-
-\begin_layout Plain Layout
-Um 
-\shape italic
-caso de uso
-\shape default
- descreve um ou mais cenários de uso do software,
- exemplos de uso,
- como o sistema interage com usuários externos (atores).
- Ademais,
- ele deve representar uma seqüência típica de uso do software (a execução de determinadas tarefas-padrão).
- Também deve representar as exceções,
- casos em que o usuário comete algum erro,
- em que o sistema não consegue realizar as tarefas solicitadas.
- 
-\end_layout
-
-\begin_layout Plain Layout
-Segundo 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "prog-EngSof-Pressman"
-literal "true"
-
-\end_inset
-
-,
- o caso de uso deve "produzir uma descrição clara e não ambígua de como o usuário final e o sistema interagem um com o outro".
- 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "prog-EngSof-Pressman"
-literal "true"
-
-\end_inset
-
- diz ainda que "uma vez definidos o ator e seu caso de uso,
- uma hierarquia de comandos é identificada"
-\emph on
-.
-\end_layout
-
-\begin_layout Plain Layout
-Devem ser montados diversos diagramas de caso de uso.
- Por exemplo:
- para cada cenário,
- crie diagramas de seqüência listando os objetos e os diversos eventos que partem de um objeto para outro.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-As Figuras devem ficar GRANDES;
- bem legíveis!!
- se necessário dar zoom!!
-\end_layout
 
 \end_inset
 
@@ -1204,7 +1096,7 @@ Nome do caso de uso:
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+Analisar Precipitação de Sal em Salmoura
 \end_layout
 
 \end_inset
@@ -1224,7 +1116,9 @@ Resumo/descrição:
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+O usuário insere dados dos íons presentes na salmoura,
+ as condições de temperatura e pressão,
+ e o sistema calcula se ocorrerá ou não a precipitação de sais com base na comparação entre o produto iônico (Q) e o Kps.
 \end_layout
 
 \end_inset
@@ -1244,7 +1138,32 @@ Etapas:
 \begin_inset Text
 
 \begin_layout Plain Layout
+1.
+ Criar íons com nome,
+ carga e concentração.
+\end_layout
 
+\begin_layout Plain Layout
+2.
+ Criar sais com os íons e valor de Kps.
+ 
+\end_layout
+
+\begin_layout Plain Layout
+3.
+ Inserir condições termodinâmicas (T e P).
+ 
+\end_layout
+
+\begin_layout Plain Layout
+4.
+ Executar a análise de precipitação.
+\end_layout
+
+\begin_layout Plain Layout
+5.
+ Obter diagnóstico (precipita / não precipita).
+ |
 \end_layout
 
 \end_inset
@@ -1264,7 +1183,10 @@ Cenários alternativos:
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+O usuário pode inserir um sal que não atinge o Kps,
+ e o sistema deverá corretamente indicar que não há precipitação.
+ O sistema também deve lidar com inserções incompletas ou inconsistentes,
+ emitindo mensagens de erro
 \end_layout
 
 \end_inset
@@ -1304,26 +1226,32 @@ status open
 \end_layout
 
 \begin_layout Standard
-....coloque aqui caso de uso geral,
- descrição + figura(s)...
+O diagrama de caso de uso geral (Figura 1.1) representa as interações do usuário com o sistema.
+ O usuário
 \end_layout
 
 \begin_layout Standard
-exemplo...
+pode:
 \end_layout
 
 \begin_layout Standard
-O diagrama de caso de uso geral da Figura 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "cap:Diagrama-caso-uso-geral"
-nolink "false"
+- Criar íons;
+\end_layout
 
-\end_inset
+\begin_layout Standard
+- Criar sais;
+\end_layout
 
- mostra o usuário acessando os sistemas de ajuda do software,
- calculando a área de uma função ou analisando resultados.
- 
+\begin_layout Standard
+- Criar salmouras;
+\end_layout
+
+\begin_layout Standard
+- Informar as condições termodinâmicas;
+\end_layout
+
+\begin_layout Standard
+- Analisar a precipitação
 \end_layout
 
 \begin_layout Standard
@@ -1337,10 +1265,8 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename imagens/DiagramaDeCasoUso-Geral.png
-	lyxscale 50
+	filename C:/Users/Allida/OneDrive/ProjetoEngenharia-SoftwareAnaliseEncrustacaoAmostrasSalmouras/imagens/Diagrama de Caso de Uso.jpg
 	width 100text%
-	keepAspectRatio
 	special height=0.3\textheight
 
 \end_inset
@@ -1372,81 +1298,13 @@ name "cap:Diagrama-caso-uso-geral"
 
 \end_layout
 
-\begin_layout Subsection
-Diagrama de caso de uso específico
-\begin_inset CommandInset label
-LatexCommand label
-name "subsec: Diagrama de caso de uso específico"
-
-\end_inset
-
-
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-do software
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-....coloque aqui casos de uso específicos,
- descrição + figura(s)...
-\end_layout
-
-\begin_layout Standard
-exemplo...O caso de uso Calcular área função descrito na Figura 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "cap:Diagrama-caso-uso-geral"
-nolink "false"
-
-\end_inset
-
- e na Tabela 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "cap:Exemplo-de-um-caso-de-uso (tabela)"
-nolink "false"
-
-\end_inset
-
- é detalhado na Figura 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "cap:Diagrama-de-caso-de-uso-especifico:Titulo"
-nolink "false"
-
-\end_inset
-
-.
- O usuário criará um objeto função matemática,
- um objeto para sua integração;
- em seguida,
- definirá o intervalo de integração,
- calculará a área da função criada e,
-  por fim,
- analisará os resultados (eventualmente gerará gráficos com os resultados obtidos utilizando um sistema externo,
- como o software 
-\emph on
-gnuplot
-\emph default
-).
- Este diagrama de caso de uso ilustra as etapas a serem executadas pelo usuário ou sistema,
- a iteração do usuário com o sistema.
-\end_layout
-
 \begin_layout Standard
 \begin_inset Float figure
 placement document
 alignment document
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -1481,27 +1339,6 @@ name "cap:Diagrama-de-caso-de-uso-especifico:Titulo"
 \end_inset
 
 
-\end_layout
-
-\begin_layout Description
-Nota:
- 
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset Newline newline
-\end_inset
-
-Não perca de vista a visão do todo;
- do projeto de engenharia como um todo.
- Cada capítulo,
- cada seção,
- cada parágrafo deve se encaixar.
- Este é um diferencial fundamental do engenheiro em relação ao técnico,
- a capacidade de desenvolver projetos,
- de ver o todo e suas diferentes partes,
- de modelar processos/sistemas/produtos de engenharia.
 \end_layout
 
 \end_body
