@@ -379,15 +379,19 @@ name "sec:Metodologia"
 \end_layout
 
 \begin_layout Standard
-A Figura 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig: Metodologia utilizada no desenvolvimento do sistema"
-nolink "false"
+O desenvolvimento do sistema seguiu a metodologia de projeto orientado a objeto,
+ conforme apresentado na Figura 1.1 do documento base.
+ Iniciou-se com a concepção e levantamento de requisitos,
+ seguido por análise de domínio,
+ elaboração de diagramas UML (caso de uso,
+ classes,
+ sequência,
+ comunicação,
+ atividades e estado),
+ e culminando com a implementação em C++.
+\end_layout
 
-\end_inset
-
- apresenta a metodologia a ser utilizada no desenvolvimento do sistema.
+\begin_layout Standard
 \begin_inset Float figure
 placement document
 alignment document
@@ -502,10 +506,11 @@ Componentes principais
 \begin_inset Text
 
 \begin_layout Plain Layout
-Interface de entrada de dados,
- módulos de cálculo de produto iônico,
- banco de dados local em tempo de execução,
- módulo de análise termodinâmica e gerador de relatórios.
+Interface de entrada para criação de íons,
+ sais,
+ salmouras e condições termodinâmicas;
+ módulo de análise da precipitação;
+ e relatório de resultados.
 \end_layout
 
 \end_inset
@@ -854,43 +859,6 @@ O sistema deve informar se ocorre ou não precipitação para cada sal inserido
 \end_inset
 
 
-\begin_inset Tabular
-<lyxtabular version="3" rows="1" columns="2">
-<features tabularvalignment="middle" tabularwidth="14cm">
-<column alignment="center" valignment="top">
-<column alignment="block" valignment="top" width="11.5cm">
-<row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="block" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-</lyxtabular>
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset VSpace bigskip
-\end_inset
-
-
 \end_layout
 
 \begin_layout Subsection
@@ -984,6 +952,45 @@ RNF-02
 
 \begin_layout Plain Layout
 O sistema deve ser desenvolvido em linguagem C++ com estrutura orientada a objeto
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="1" columns="2">
+<features tabularvalignment="middle" tabularwidth="14cm">
+<column alignment="center" valignment="top">
+<column alignment="block" valignment="top" width="11cm">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+RNF-03
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="block" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+O sistema deve ser implementado em linguagem C++ com interface gráfica amigável.
 \end_layout
 
 \end_inset
@@ -1304,12 +1311,13 @@ placement document
 alignment document
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename imagens/DiagramaDeCasoDeUso-Especifico-1.png
+	filename imagens/Diagrama caso de Uso.png
+	lyxscale 20
 	width 100text%
 
 \end_inset
@@ -1321,7 +1329,7 @@ status collapsed
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Diagrama de caso de uso específico – Título
+Diagrama de caso de uso específico – Caso de Uso Simulação de Salmoura
 \begin_inset CommandInset label
 LatexCommand label
 name "cap:Diagrama-de-caso-de-uso-especifico:Titulo"

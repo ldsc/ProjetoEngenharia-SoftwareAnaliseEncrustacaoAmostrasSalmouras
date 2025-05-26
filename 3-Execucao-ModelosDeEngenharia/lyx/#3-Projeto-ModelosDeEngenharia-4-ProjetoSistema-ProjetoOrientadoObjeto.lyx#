@@ -148,7 +148,7 @@ Neste capítulo do projeto de engenharia veremos questões associadas ao projeto
  incluindo protocolos,
  recursos,
  plataformas suportadas,
- implicações nos diagramas feitos anteriormente,
+ inplicações nos diagramas feitos anteriormente,
  diagramas de componentes e implantação.
  Na segunda parte revisamos os diagramas levando em conta as decisões do projeto do sistema.
 \end_layout
@@ -248,8 +248,8 @@ A comunicação interna entre objetos ocorre por chamadas diretas a métodos pú
 
 \begin_layout Itemize
 A interface API é implementada implicitamente nas classes que encapsulam a lógica de precipitação e manipulação de dados (ex:
- CalcularPrecipitacao,
- Sal,
+ PrecipitationCalculator,
+ Salt,
  ion)
 \end_layout
 
@@ -402,7 +402,7 @@ O sistema emprega encapsulamento,
 
 \begin_layout Itemize
 Os nomes das classes seguem padrão com prefixo C (ex:
- CSal,
+ CSalt,
  CIon,
  CCondicoesTermodinamicas)
 \end_layout
@@ -479,12 +479,12 @@ Os diagramas foram atualizados com inclusão de bibliotecas e classes utilitári
 \end_layout
 
 \begin_layout Itemize
-Foram criadas classes adicionais como CalcularPrecipitacao e CriarIon para modularização.
+Foram criadas classes adicionais como PrecipitationCalculator e CreateIons para modularização.
 \end_layout
 
 \begin_layout Itemize
-Dependências entre Sal,
- Ion e CriarIons foram estabelecidas com composição.
+Dependências entre Salt,
+ ion e CreateIons foram estabelecidas com composição.
 \end_layout
 
 \begin_layout Subsubsection
@@ -545,9 +545,9 @@ name "subsec:Efeito-do-projeto-nos-atributos"
 Foram incluídos atributos auxiliares como coef1,
  coef2,
  Ksp,
- concentração,
- carga,
- e nome com validadores nas classes.
+ concentration,
+ charge,
+ e name com validadores nas classes.
 \end_layout
 
 \begin_layout Subsubsection
@@ -579,8 +579,8 @@ Efeitos do projeto nos métodos
 \end_layout
 
 \begin_layout Itemize
-Métodos para análise de precipitação foram adicionados (CalcularProdutoIonico,
- VaiPrecipitar).
+Métodos para análise de precipitação foram adicionados (calcularProdutoIonico,
+ vaiPrecipitar).
 \end_layout
 
 \begin_layout Itemize
@@ -775,24 +775,7 @@ O ModuloInterface agrupa os arquivos do main() e os módulos de teste,
 \end_layout
 
 \begin_layout Itemize
-Todos esses componentes são compilados no executável final SimuladorPrecipitacao.exe.Nota:
- 
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset Newline newline
-\end_inset
-
-Não perca de vista a visão do todo;
- do projeto de engenharia como um todo.
- Cada capítulo,
- cada seção,
- cada parágrafo deve se encaixar.
- Este é um diferencial fundamental do engenheiro em relação ao técnico,
- a capacidade de desenvolver projetos,
- de ver o todo e suas diferentes partes,
- de modelar processos/sistemas/produtos de engenharia.
+Todos esses componentes são compilados no executável final SimuladorPrecipitacao.exe.
 \end_layout
 
 \begin_layout Standard
@@ -926,6 +909,12 @@ Essa arquitetura simples e portátil facilita a execução do sistema em ambient
 \end_layout
 
 \begin_layout Standard
+Pode-se utilizar uma anotação de localização para identificar onde determinado componente está residente,
+ por exemplo {localização:
+ sala 3}.
+\end_layout
+
+\begin_layout Standard
 \begin_inset Float figure
 placement H
 alignment document
@@ -967,6 +956,27 @@ name "cap:Diagrama-de-implantação."
 \end_inset
 
 
+\end_layout
+
+\begin_layout Description
+Nota:
+ 
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Não perca de vista a visão do todo;
+ do projeto de engenharia como um todo.
+ Cada capítulo,
+ cada seção,
+ cada parágrafo deve se encaixar.
+ Este é um diferencial fundamental do engenheiro em relação ao técnico,
+ a capacidade de desenvolver projetos,
+ de ver o todo e suas diferentes partes,
+ de modelar processos/sistemas/produtos de engenharia.
 \end_layout
 
 \end_body
