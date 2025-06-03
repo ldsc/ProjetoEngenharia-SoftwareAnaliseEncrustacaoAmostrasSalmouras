@@ -1,16 +1,21 @@
 #include "CSimuladorPrecipitacao.h"
 #include <iostream>
 #include <cmath>
+#include "CThermodynamicConditions.h"
 
 void CSimuladorPrecipitacao::executar() {
     // Cria duas salmouras de teste
     CSalmoura s1 = criarSalmouraTeste1();
     CSalmoura s2 = criarSalmouraTeste2();
+   
 
     // Mistura as salmouras
     CMisturaSalmouras mistura;
+    CthermodynamicConditions Objeto(1000,180);
+
     mistura.adicionarSalmoura(s1);
     mistura.adicionarSalmoura(s2);
+ 
 
     // Calcula concentrações finais
     auto concentracoes = mistura.calcularConcentracoesFinais();
@@ -21,19 +26,21 @@ void CSimuladorPrecipitacao::executar() {
     }
 
     // Testa precipitação para cada sal
-    std::cout << "\nAnálise de precipitação:\n";
+    std::cout << "\nAnalise de precipitação:\n";
     for (const auto& sal : mistura.getTodosSais()) {
         double Q = sal.calculateIonicProduct(concentracoes);
         std::cout << "Sal: " << sal.getName()
                   << " | Q = " << Q << " | Ksp = " << sal.getKsp();
         if (sal.willPrecipitate(concentracoes)) {
-            std::cout << "  → Precipita!\n";
+            std::cout << " -Precipita!\n";
         } else {
-            std::cout << "  → Estável.\n";
+            std::cout << " -Nao precipita!.\n";
         }
     }
+    std::cout << " Pres: " << Objeto.getPressure() << std::endl; 
+    std::cout << " Temp: " << Objeto.getTemperature() << std::endl; 
 }
-
+//Adicionar Sal + Concentração
 CSalmoura CSimuladorPrecipitacao::criarSalmouraTeste1() const {
     CTabelaPropriedadesIons tabela;
     tabela.carregarDeArquivo("dados_ions.txt");
@@ -44,9 +51,9 @@ CSalmoura CSimuladorPrecipitacao::criarSalmouraTeste1() const {
 
     CIon na = tabela.obterIon("Na");
     CIon cl = tabela.obterIon("Cl");
-    CSalt halita("Halita", 36.0, {na, cl}, {1, 1});
+    CSalt Halita("Halita", 36.0, {na, cl}, {1, 1});
 
-    salmoura.adicionarSal(halita);
+    salmoura.adicionarSal(Halita);
     return salmoura;
 }
 
@@ -65,3 +72,4 @@ CSalmoura CSimuladorPrecipitacao::criarSalmouraTeste2() const {
     salmoura.adicionarSal(barita);
     return salmoura;
 }
+

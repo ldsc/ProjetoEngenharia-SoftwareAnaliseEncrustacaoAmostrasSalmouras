@@ -56,10 +56,10 @@ RM = C:\mingw\bin\cmake.exe -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Alida_Joao\Alida_Joao
+CMAKE_SOURCE_DIR = C:\Users\Allida\OneDrive\Desktop\Bueno\ProjetoEngenharia-SoftwareAnaliseEncrustacaoAmostrasSalmouras\4-Execucao-Detalhamento-Construcao-Versao-1\src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Alida_Joao\Alida_Joao\build
+CMAKE_BINARY_DIR = C:\Users\Allida\OneDrive\Desktop\Bueno\ProjetoEngenharia-SoftwareAnaliseEncrustacaoAmostrasSalmouras\4-Execucao-Detalhamento-Construcao-Versao-1\src\build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -86,9 +86,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Alida_Joao\Alida_Joao\build\CMakeFiles C:\Alida_Joao\Alida_Joao\build\\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Allida\OneDrive\Desktop\Bueno\ProjetoEngenharia-SoftwareAnaliseEncrustacaoAmostrasSalmouras\4-Execucao-Detalhamento-Construcao-Versao-1\src\build\CMakeFiles C:\Users\Allida\OneDrive\Desktop\Bueno\ProjetoEngenharia-SoftwareAnaliseEncrustacaoAmostrasSalmouras\4-Execucao-Detalhamento-Construcao-Versao-1\src\build\\CMakeFiles\progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Alida_Joao\Alida_Joao\build\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Allida\OneDrive\Desktop\Bueno\ProjetoEngenharia-SoftwareAnaliseEncrustacaoAmostrasSalmouras\4-Execucao-Detalhamento-Construcao-Versao-1\src\build\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -128,125 +128,197 @@ PrecipitationSimulator/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\PrecipitationSimulator.dir\build.make CMakeFiles/PrecipitationSimulator.dir/build
 .PHONY : PrecipitationSimulator/fast
 
-CreateIons.obj: CreateIons.cpp.obj
-.PHONY : CreateIons.obj
+CIons.obj: CIons.cpp.obj
+.PHONY : CIons.obj
 
 # target to build an object file
-CreateIons.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\PrecipitationSimulator.dir\build.make CMakeFiles/PrecipitationSimulator.dir/CreateIons.cpp.obj
-.PHONY : CreateIons.cpp.obj
+CIons.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PrecipitationSimulator.dir\build.make CMakeFiles/PrecipitationSimulator.dir/CIons.cpp.obj
+.PHONY : CIons.cpp.obj
 
-CreateIons.i: CreateIons.cpp.i
-.PHONY : CreateIons.i
+CIons.i: CIons.cpp.i
+.PHONY : CIons.i
 
 # target to preprocess a source file
-CreateIons.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\PrecipitationSimulator.dir\build.make CMakeFiles/PrecipitationSimulator.dir/CreateIons.cpp.i
-.PHONY : CreateIons.cpp.i
+CIons.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PrecipitationSimulator.dir\build.make CMakeFiles/PrecipitationSimulator.dir/CIons.cpp.i
+.PHONY : CIons.cpp.i
 
-CreateIons.s: CreateIons.cpp.s
-.PHONY : CreateIons.s
+CIons.s: CIons.cpp.s
+.PHONY : CIons.s
 
 # target to generate assembly for a file
-CreateIons.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\PrecipitationSimulator.dir\build.make CMakeFiles/PrecipitationSimulator.dir/CreateIons.cpp.s
-.PHONY : CreateIons.cpp.s
+CIons.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PrecipitationSimulator.dir\build.make CMakeFiles/PrecipitationSimulator.dir/CIons.cpp.s
+.PHONY : CIons.cpp.s
 
-PrecipitationCalculator.obj: PrecipitationCalculator.cpp.obj
-.PHONY : PrecipitationCalculator.obj
+CMisturaSalmouras.obj: CMisturaSalmouras.cpp.obj
+.PHONY : CMisturaSalmouras.obj
 
 # target to build an object file
-PrecipitationCalculator.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\PrecipitationSimulator.dir\build.make CMakeFiles/PrecipitationSimulator.dir/PrecipitationCalculator.cpp.obj
-.PHONY : PrecipitationCalculator.cpp.obj
+CMisturaSalmouras.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PrecipitationSimulator.dir\build.make CMakeFiles/PrecipitationSimulator.dir/CMisturaSalmouras.cpp.obj
+.PHONY : CMisturaSalmouras.cpp.obj
 
-PrecipitationCalculator.i: PrecipitationCalculator.cpp.i
-.PHONY : PrecipitationCalculator.i
+CMisturaSalmouras.i: CMisturaSalmouras.cpp.i
+.PHONY : CMisturaSalmouras.i
 
 # target to preprocess a source file
-PrecipitationCalculator.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\PrecipitationSimulator.dir\build.make CMakeFiles/PrecipitationSimulator.dir/PrecipitationCalculator.cpp.i
-.PHONY : PrecipitationCalculator.cpp.i
+CMisturaSalmouras.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PrecipitationSimulator.dir\build.make CMakeFiles/PrecipitationSimulator.dir/CMisturaSalmouras.cpp.i
+.PHONY : CMisturaSalmouras.cpp.i
 
-PrecipitationCalculator.s: PrecipitationCalculator.cpp.s
-.PHONY : PrecipitationCalculator.s
+CMisturaSalmouras.s: CMisturaSalmouras.cpp.s
+.PHONY : CMisturaSalmouras.s
 
 # target to generate assembly for a file
-PrecipitationCalculator.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\PrecipitationSimulator.dir\build.make CMakeFiles/PrecipitationSimulator.dir/PrecipitationCalculator.cpp.s
-.PHONY : PrecipitationCalculator.cpp.s
+CMisturaSalmouras.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PrecipitationSimulator.dir\build.make CMakeFiles/PrecipitationSimulator.dir/CMisturaSalmouras.cpp.s
+.PHONY : CMisturaSalmouras.cpp.s
 
-Salt.obj: Salt.cpp.obj
-.PHONY : Salt.obj
+CSalmoura.obj: CSalmoura.cpp.obj
+.PHONY : CSalmoura.obj
 
 # target to build an object file
-Salt.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\PrecipitationSimulator.dir\build.make CMakeFiles/PrecipitationSimulator.dir/Salt.cpp.obj
-.PHONY : Salt.cpp.obj
+CSalmoura.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PrecipitationSimulator.dir\build.make CMakeFiles/PrecipitationSimulator.dir/CSalmoura.cpp.obj
+.PHONY : CSalmoura.cpp.obj
 
-Salt.i: Salt.cpp.i
-.PHONY : Salt.i
+CSalmoura.i: CSalmoura.cpp.i
+.PHONY : CSalmoura.i
 
 # target to preprocess a source file
-Salt.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\PrecipitationSimulator.dir\build.make CMakeFiles/PrecipitationSimulator.dir/Salt.cpp.i
-.PHONY : Salt.cpp.i
+CSalmoura.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PrecipitationSimulator.dir\build.make CMakeFiles/PrecipitationSimulator.dir/CSalmoura.cpp.i
+.PHONY : CSalmoura.cpp.i
 
-Salt.s: Salt.cpp.s
-.PHONY : Salt.s
+CSalmoura.s: CSalmoura.cpp.s
+.PHONY : CSalmoura.s
 
 # target to generate assembly for a file
-Salt.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\PrecipitationSimulator.dir\build.make CMakeFiles/PrecipitationSimulator.dir/Salt.cpp.s
-.PHONY : Salt.cpp.s
+CSalmoura.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PrecipitationSimulator.dir\build.make CMakeFiles/PrecipitationSimulator.dir/CSalmoura.cpp.s
+.PHONY : CSalmoura.cpp.s
 
-Sandbox.obj: Sandbox.cpp.obj
-.PHONY : Sandbox.obj
+CSalt.obj: CSalt.cpp.obj
+.PHONY : CSalt.obj
 
 # target to build an object file
-Sandbox.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\PrecipitationSimulator.dir\build.make CMakeFiles/PrecipitationSimulator.dir/Sandbox.cpp.obj
-.PHONY : Sandbox.cpp.obj
+CSalt.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PrecipitationSimulator.dir\build.make CMakeFiles/PrecipitationSimulator.dir/CSalt.cpp.obj
+.PHONY : CSalt.cpp.obj
 
-Sandbox.i: Sandbox.cpp.i
-.PHONY : Sandbox.i
+CSalt.i: CSalt.cpp.i
+.PHONY : CSalt.i
 
 # target to preprocess a source file
-Sandbox.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\PrecipitationSimulator.dir\build.make CMakeFiles/PrecipitationSimulator.dir/Sandbox.cpp.i
-.PHONY : Sandbox.cpp.i
+CSalt.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PrecipitationSimulator.dir\build.make CMakeFiles/PrecipitationSimulator.dir/CSalt.cpp.i
+.PHONY : CSalt.cpp.i
 
-Sandbox.s: Sandbox.cpp.s
-.PHONY : Sandbox.s
+CSalt.s: CSalt.cpp.s
+.PHONY : CSalt.s
 
 # target to generate assembly for a file
-Sandbox.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\PrecipitationSimulator.dir\build.make CMakeFiles/PrecipitationSimulator.dir/Sandbox.cpp.s
-.PHONY : Sandbox.cpp.s
+CSalt.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PrecipitationSimulator.dir\build.make CMakeFiles/PrecipitationSimulator.dir/CSalt.cpp.s
+.PHONY : CSalt.cpp.s
 
-ThermodynamicConditions.obj: ThermodynamicConditions.cpp.obj
-.PHONY : ThermodynamicConditions.obj
+CSimuladorPrecipitacao.obj: CSimuladorPrecipitacao.cpp.obj
+.PHONY : CSimuladorPrecipitacao.obj
 
 # target to build an object file
-ThermodynamicConditions.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\PrecipitationSimulator.dir\build.make CMakeFiles/PrecipitationSimulator.dir/ThermodynamicConditions.cpp.obj
-.PHONY : ThermodynamicConditions.cpp.obj
+CSimuladorPrecipitacao.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PrecipitationSimulator.dir\build.make CMakeFiles/PrecipitationSimulator.dir/CSimuladorPrecipitacao.cpp.obj
+.PHONY : CSimuladorPrecipitacao.cpp.obj
 
-ThermodynamicConditions.i: ThermodynamicConditions.cpp.i
-.PHONY : ThermodynamicConditions.i
+CSimuladorPrecipitacao.i: CSimuladorPrecipitacao.cpp.i
+.PHONY : CSimuladorPrecipitacao.i
 
 # target to preprocess a source file
-ThermodynamicConditions.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\PrecipitationSimulator.dir\build.make CMakeFiles/PrecipitationSimulator.dir/ThermodynamicConditions.cpp.i
-.PHONY : ThermodynamicConditions.cpp.i
+CSimuladorPrecipitacao.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PrecipitationSimulator.dir\build.make CMakeFiles/PrecipitationSimulator.dir/CSimuladorPrecipitacao.cpp.i
+.PHONY : CSimuladorPrecipitacao.cpp.i
 
-ThermodynamicConditions.s: ThermodynamicConditions.cpp.s
-.PHONY : ThermodynamicConditions.s
+CSimuladorPrecipitacao.s: CSimuladorPrecipitacao.cpp.s
+.PHONY : CSimuladorPrecipitacao.s
 
 # target to generate assembly for a file
-ThermodynamicConditions.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\PrecipitationSimulator.dir\build.make CMakeFiles/PrecipitationSimulator.dir/ThermodynamicConditions.cpp.s
-.PHONY : ThermodynamicConditions.cpp.s
+CSimuladorPrecipitacao.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PrecipitationSimulator.dir\build.make CMakeFiles/PrecipitationSimulator.dir/CSimuladorPrecipitacao.cpp.s
+.PHONY : CSimuladorPrecipitacao.cpp.s
+
+CTabelaPropriedadesIons.obj: CTabelaPropriedadesIons.cpp.obj
+.PHONY : CTabelaPropriedadesIons.obj
+
+# target to build an object file
+CTabelaPropriedadesIons.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PrecipitationSimulator.dir\build.make CMakeFiles/PrecipitationSimulator.dir/CTabelaPropriedadesIons.cpp.obj
+.PHONY : CTabelaPropriedadesIons.cpp.obj
+
+CTabelaPropriedadesIons.i: CTabelaPropriedadesIons.cpp.i
+.PHONY : CTabelaPropriedadesIons.i
+
+# target to preprocess a source file
+CTabelaPropriedadesIons.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PrecipitationSimulator.dir\build.make CMakeFiles/PrecipitationSimulator.dir/CTabelaPropriedadesIons.cpp.i
+.PHONY : CTabelaPropriedadesIons.cpp.i
+
+CTabelaPropriedadesIons.s: CTabelaPropriedadesIons.cpp.s
+.PHONY : CTabelaPropriedadesIons.s
+
+# target to generate assembly for a file
+CTabelaPropriedadesIons.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PrecipitationSimulator.dir\build.make CMakeFiles/PrecipitationSimulator.dir/CTabelaPropriedadesIons.cpp.s
+.PHONY : CTabelaPropriedadesIons.cpp.s
+
+CThermodynamicConditions.obj: CThermodynamicConditions.cpp.obj
+.PHONY : CThermodynamicConditions.obj
+
+# target to build an object file
+CThermodynamicConditions.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PrecipitationSimulator.dir\build.make CMakeFiles/PrecipitationSimulator.dir/CThermodynamicConditions.cpp.obj
+.PHONY : CThermodynamicConditions.cpp.obj
+
+CThermodynamicConditions.i: CThermodynamicConditions.cpp.i
+.PHONY : CThermodynamicConditions.i
+
+# target to preprocess a source file
+CThermodynamicConditions.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PrecipitationSimulator.dir\build.make CMakeFiles/PrecipitationSimulator.dir/CThermodynamicConditions.cpp.i
+.PHONY : CThermodynamicConditions.cpp.i
+
+CThermodynamicConditions.s: CThermodynamicConditions.cpp.s
+.PHONY : CThermodynamicConditions.s
+
+# target to generate assembly for a file
+CThermodynamicConditions.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PrecipitationSimulator.dir\build.make CMakeFiles/PrecipitationSimulator.dir/CThermodynamicConditions.cpp.s
+.PHONY : CThermodynamicConditions.cpp.s
+
+main.obj: main.cpp.obj
+.PHONY : main.obj
+
+# target to build an object file
+main.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PrecipitationSimulator.dir\build.make CMakeFiles/PrecipitationSimulator.dir/main.cpp.obj
+.PHONY : main.cpp.obj
+
+main.i: main.cpp.i
+.PHONY : main.i
+
+# target to preprocess a source file
+main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PrecipitationSimulator.dir\build.make CMakeFiles/PrecipitationSimulator.dir/main.cpp.i
+.PHONY : main.cpp.i
+
+main.s: main.cpp.s
+.PHONY : main.s
+
+# target to generate assembly for a file
+main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PrecipitationSimulator.dir\build.make CMakeFiles/PrecipitationSimulator.dir/main.cpp.s
+.PHONY : main.cpp.s
 
 # Help Target
 help:
@@ -257,21 +329,30 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... PrecipitationSimulator
-	@echo ... CreateIons.obj
-	@echo ... CreateIons.i
-	@echo ... CreateIons.s
-	@echo ... PrecipitationCalculator.obj
-	@echo ... PrecipitationCalculator.i
-	@echo ... PrecipitationCalculator.s
-	@echo ... Salt.obj
-	@echo ... Salt.i
-	@echo ... Salt.s
-	@echo ... Sandbox.obj
-	@echo ... Sandbox.i
-	@echo ... Sandbox.s
-	@echo ... ThermodynamicConditions.obj
-	@echo ... ThermodynamicConditions.i
-	@echo ... ThermodynamicConditions.s
+	@echo ... CIons.obj
+	@echo ... CIons.i
+	@echo ... CIons.s
+	@echo ... CMisturaSalmouras.obj
+	@echo ... CMisturaSalmouras.i
+	@echo ... CMisturaSalmouras.s
+	@echo ... CSalmoura.obj
+	@echo ... CSalmoura.i
+	@echo ... CSalmoura.s
+	@echo ... CSalt.obj
+	@echo ... CSalt.i
+	@echo ... CSalt.s
+	@echo ... CSimuladorPrecipitacao.obj
+	@echo ... CSimuladorPrecipitacao.i
+	@echo ... CSimuladorPrecipitacao.s
+	@echo ... CTabelaPropriedadesIons.obj
+	@echo ... CTabelaPropriedadesIons.i
+	@echo ... CTabelaPropriedadesIons.s
+	@echo ... CThermodynamicConditions.obj
+	@echo ... CThermodynamicConditions.i
+	@echo ... CThermodynamicConditions.s
+	@echo ... main.obj
+	@echo ... main.i
+	@echo ... main.s
 .PHONY : help
 
 

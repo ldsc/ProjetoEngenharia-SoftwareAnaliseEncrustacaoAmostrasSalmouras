@@ -266,9 +266,16 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
+<<<<<<< HEAD
+	filename C:/Users/Allida/OneDrive/ProjetoEngenharia-SoftwareAnaliseEncrustacaoAmostrasSalmouras/imagens/Diagrama de Classes.png
+	lyxscale 20
+=======
 	filename imagens/Diagrama de Classes.png
 	lyxscale 30
+>>>>>>> bff12a47c19560f9ea88de2cb6f64651b3395d22
 	width 100text%
+	height 90pheight%
+	keepAspectRatio
 
 \end_inset
 
@@ -443,11 +450,6 @@ nolink "false"
 .
 \end_layout
 
-\begin_layout Itemize
-[Aqui a ênfase é o entendimento da sequência com que as mensagens são trocadas,
- a ordem temporal.]
-\end_layout
-
 \begin_layout Standard
 \begin_inset Float figure
 placement H
@@ -459,9 +461,16 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
+<<<<<<< HEAD
+	filename C:/Users/Allida/OneDrive/Desktop/ProjetoEngenharia-SoftwareAnaliseEncrustacaoAmostrasSalmouras/3-Execucao-ModelosDeEngenharia/lyx/imagens/Diagrama de Sequencia.png
+	lyxscale 30
+=======
 	filename imagens/Diagrama de Sequencia.png
 	lyxscale 20
+>>>>>>> bff12a47c19560f9ea88de2cb6f64651b3395d22
 	width 100text%
+	height 90pheight%
+	keepAspectRatio
 
 \end_inset
 
@@ -517,7 +526,25 @@ name "subsec: Diagrama de sequência específico"
 \end_layout
 
 \begin_layout Standard
+<<<<<<< HEAD
+Veja o 
+\shape italic
+\emph on
+diagrama de seqüência na
+\shape default
+\emph default
+ Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "cap:Diagrama-de-sequencia"
+nolink "false"
+
+\end_inset
+
+.
+=======
 Na Figura 3.2.2 observamos o diagrama de sequência específico.
+>>>>>>> bff12a47c19560f9ea88de2cb6f64651b3395d22
 \end_layout
 
 \begin_layout Standard
@@ -530,15 +557,38 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
+<<<<<<< HEAD
+	filename C:/Users/Allida/OneDrive/Desktop/ProjetoEngenharia-SoftwareAnaliseEncrustacaoAmostrasSalmouras/3-Execucao-ModelosDeEngenharia/lyx/imagens/Diagrama de Sequencia Especifico.png
+	lyxscale 30
+	width 100page%
+	height 90pheight%
+=======
 	filename imagens/Diagrama de Sequencia Especifico.png
 	lyxscale 20
 	BoundingBox 0bp 0bp 7825bp 2915bp
 	clip
 	rotateOrigin center
+>>>>>>> bff12a47c19560f9ea88de2cb6f64651b3395d22
 
 \end_inset
 
 
+<<<<<<< HEAD
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Diagrama de seqüência especifico
+\begin_inset CommandInset label
+LatexCommand label
+name "cap:Diagrama-de-sequencia sequencia"
+
+\end_inset
+
+
+=======
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
@@ -550,6 +600,7 @@ name "fig:Diagrama-de-Sequência"
 \end_inset
 
  
+>>>>>>> bff12a47c19560f9ea88de2cb6f64651b3395d22
 \end_layout
 
 \end_inset
@@ -621,7 +672,7 @@ name "par:Diagrama-de-colaboração:"
 \end_layout
 
 \begin_layout Standard
-O diagrama de estado (Figura 3.3) representa os estados principais de execução do sistema:
+O diagrama de estado (Figura 3.4) representa os estados principais de execução do sistema:
  criar dados
 \end_layout
 
@@ -645,9 +696,15 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
+<<<<<<< HEAD
+	filename C:/Users/Allida/OneDrive/Desktop/ProjetoEngenharia-SoftwareAnaliseEncrustacaoAmostrasSalmouras/3-Execucao-ModelosDeEngenharia/lyx/imagens/Diagrama de Comunicao.png
+	lyxscale 30
+=======
 	filename imagens/Diagrama de Comunicao.png
 	lyxscale 20
+>>>>>>> bff12a47c19560f9ea88de2cb6f64651b3395d22
 	width 100text%
+	height 90pheight%
 
 \end_inset
 
@@ -798,8 +855,14 @@ status open
 \align center
 \begin_inset Graphics
 	filename imagens/Diagrama de Atividade.png
+<<<<<<< HEAD
+	lyxscale 30
+=======
 	lyxscale 25
+>>>>>>> bff12a47c19560f9ea88de2cb6f64651b3395d22
 	width 100text%
+	height 90pheight%
+	keepAspectRatio
 
 \end_inset
 

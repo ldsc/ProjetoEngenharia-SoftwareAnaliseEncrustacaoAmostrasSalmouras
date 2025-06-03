@@ -25,6 +25,8 @@ private:
      * @brief Cria uma segunda salmoura simples para teste.
      */
     CSalmoura criarSalmouraTeste2() const;
+
+    CSalmoura criarSalmouraTeste3() const;
 };
 
 #endif
