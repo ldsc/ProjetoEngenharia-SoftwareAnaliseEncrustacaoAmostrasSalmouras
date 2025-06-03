@@ -1272,10 +1272,10 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename C:/Users/Allida/OneDrive/ProjetoEngenharia-SoftwareAnaliseEncrustacaoAmostrasSalmouras/imagens/Diagrama de Caso de Uso.jpg
+	filename imagens/Diagrama caso de Uso.png
+	lyxscale 20
 	width 100text%
 	height 90pheight%
-	keepAspectRatio
 	special height=0.3\textheight
 
 \end_inset
@@ -1353,11 +1353,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-<<<<<<< HEAD
-	filename imagens/Diagrama caso de Uso Especifico (Anion).png
-=======
-	filename imagens/Diagrama caso de Uso.png
->>>>>>> bff12a47c19560f9ea88de2cb6f64651b3395d22
+	filename imagens/Diagrama caso de Uso Especifico (Cations).png
 	lyxscale 20
 	width 100text%
 	height 90pheight%
@@ -1432,11 +1428,10 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename imagens/Diagrama caso de Uso Especifico (Cations).png
-	lyxscale 30
+	filename imagens/Diagrama caso de Uso Especifico (Anion).png
+	lyxscale 20
 	width 100page%
 	height 90pheight%
-	keepAspectRatio
 	BoundingBox 0bp 0bp 2030bp 1745bp
 
 \end_inset
