@@ -460,8 +460,10 @@ status open
 \align center
 \begin_inset Graphics
 	filename imagens/Diagrama de Sequencia.png
-	lyxscale 20
+	lyxscale 15
 	width 100text%
+	height 90pheight%
+	keepAspectRatio
 
 \end_inset
 
@@ -801,8 +803,8 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename imagens/Diagrama de Atividade.png
-	lyxscale 25
+	filename C:/Users/joaov/OneDrive/Desktop/Bueno/ProjetoEngenharia-SoftwareAnaliseEncrustacaoAmostrasSalmouras/imagens/Diagrama de Atividade.png
+	lyxscale 20
 	width 100text%
 
 \end_inset
