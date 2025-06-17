@@ -49,7 +49,7 @@ CIon CTabelaPropriedadesIons::obterIon(const std::string& nome) const {
     if (it != m_ions.end()) {
         return it->second;
     }
-    std::cerr << "Íon não encontrado: " << nome << "\n";
+    std::cerr << "Ion nao encontrado: " << nome << "\n";
     return CIon();
 }
 

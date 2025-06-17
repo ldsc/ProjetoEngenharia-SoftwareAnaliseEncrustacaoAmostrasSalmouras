@@ -39,7 +39,7 @@ CIon CreateIons::getIon(const std::string &name)
     if (ions.find(name) != ions.end()) {
         return ions[name];
     } else {
-        std::cerr << "Erro: Íon '" << name << "' não encontrado!\n";
+        std::cerr << "Erro: Ion '" << name << "' nao encontrado!\n";
         return CIon(); // Retorna um íon vazio
     }
 }

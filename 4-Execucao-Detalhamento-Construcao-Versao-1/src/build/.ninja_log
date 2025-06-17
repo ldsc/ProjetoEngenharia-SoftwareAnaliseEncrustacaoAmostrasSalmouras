@@ -1,7 +1,0 @@
-# ninja log v6
-40	164	7640451245142220	CMakeFiles/PrecipitationSimulator.dir/ThermodynamicConditions.cpp.obj	96b6aa0df449d6df
-61	540	7640451245358721	CMakeFiles/PrecipitationSimulator.dir/PrecipitationCalculator.cpp.obj	d89dbb6dd0766875
-71	602	7640451245470312	CMakeFiles/PrecipitationSimulator.dir/Sandbox.cpp.obj	241f3a88fe7bcd06
-54	648	7640451245284647	CMakeFiles/PrecipitationSimulator.dir/Salt.cpp.obj	5e3c22f47aeb7787
-47	671	7640451245212583	CMakeFiles/PrecipitationSimulator.dir/CreateIons.cpp.obj	739b0f8d910e7070
-671	761	7640451251458313	C:/Alida_Joao/Alida_Joao/PrecipitationSimulator.exe	1a2a9f8c85f98de9

@@ -17,7 +17,7 @@ double CSalt::calculateIonicProduct(const std::unordered_map<std::string, double
         if (it != concentracoes.end()) {
             Q *= std::pow(it->second, coeficientes[i]);
         } else {
-            std::cerr << "Aviso: concentração para íon " << nomeIon << " não encontrada. Q = 0\n";
+            std::cerr << "Aviso: concentração para ion " << nomeIon << " nao encontrada. Q = 0\n";
             return 0.0;
         }
     }

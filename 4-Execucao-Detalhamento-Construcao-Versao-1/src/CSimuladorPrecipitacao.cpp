@@ -1,75 +1,114 @@
 #include "CSimuladorPrecipitacao.h"
+#include "CTabelaPropriedadesIons.h"
 #include <iostream>
-#include <cmath>
-#include "CThermodynamicConditions.h"
+#include <limits>
 
 void CSimuladorPrecipitacao::executar() {
-    // Cria duas salmouras de teste
-    CSalmoura s1 = criarSalmouraTeste1();
-    CSalmoura s2 = criarSalmouraTeste2();
-   
+    CTabelaPropriedadesIons tabela;
+    tabela.carregarDeArquivo("dados_ions.txt");
 
-    // Mistura as salmouras
-    CMisturaSalmouras mistura;
-    CthermodynamicConditions Objeto(1000,180);
+    int opcao = 0;
+    do {
+        std::cout << "\n==== Simulador de Precipitacao Quimica ====" << std::endl;
+        std::cout << "1. Definir condicoes termodinamicas" << std::endl;
+        std::cout << "2. Executar simulacao" << std::endl;
+        std::cout << "3. (Futuro) Gerar grafico de concentracoes" << std::endl;
+        std::cout << "4. Sair" << std::endl;
+        std::cout << "Escolha: ";
+        std::cin >> opcao;
 
-    mistura.adicionarSalmoura(s1);
-    mistura.adicionarSalmoura(s2);
- 
+        switch (opcao) {
+            case 1: {
+                double p, t;
+                std::cout << "Informe a pressao (atm): ";
+                std::cin >> p;
+                std::cout << "Informe a temperatura (Celsius): ";
+                std::cin >> t;
+                condicoes.setPressure(p);
+                condicoes.setTemperature(t);
+                break;
+            }
+            case 2: {
+                int numSalmouras;
+                CMisturaSalmouras mistura;
+                std::cout << "Quantas salmouras deseja criar? ";
+                std::cin >> numSalmouras;
+                for (int i = 0; i < numSalmouras; ++i) {
+                    CSalmoura s;
+                    double volume;
+                    std::cout << "\nSalmoura " << (i + 1) << ": volume (L): ";
+                    std::cin >> volume;
+                    s.setVolume(volume);
 
-    // Calcula concentrações finais
+                    int numIons;
+                    std::cout << "Quantos ions deseja adicionar? ";
+                    std::cin >> numIons;
+                    for (int j = 0; j < numIons; ++j) {
+                        std::string nomeIon;
+                        double mols;
+                        std::cout << "  Nome do ion " << (j + 1) << ": ";
+                        std::cin >> nomeIon;
+                        std::cout << "  Mols: ";
+                        std::cin >> mols;
+                        s.adicionarIon(nomeIon, mols);
+                    }
+                    mistura.adicionarSalmoura(s);
+                }
+
+                int numSais;
+                std::vector<CSalt> sais;
+                std::cout << "\nQuantos sais deseja criar? ";
+                std::cin >> numSais;
+                for (int i = 0; i < numSais; ++i) {
+                    std::string nome;
+                    double ksp;
+                    int numIons;
+                    std::cout << "\nNome do sal: ";
+                    std::cin >> nome;
+                    std::cout << "Ksp: ";
+                    std::cin >> ksp;
+                    std::cout << "Numero de ions: ";
+                    std::cin >> numIons;
+                    std::vector<CIon> ions;
+                    std::vector<int> coefs;
+                    for (int j = 0; j < numIons; ++j) {
+                        std::string nomeIon;
+                        int coef;
+                        std::cout << "  Nome do ion " << (j + 1) << ": ";
+                        std::cin >> nomeIon;
+                        CIon ion = tabela.obterIon(nomeIon);
+                        std::cout << "  Coeficiente: ";
+                        std::cin >> coef;
+                        ions.push_back(ion);
+                        coefs.push_back(coef);
+                    }
+                    sais.emplace_back(nome, ksp, ions, coefs);
+                }
+
+                simular(mistura, sais);
+                break;
+            }
+            case 3:
+                std::cout << "[INFO] Funcionalidade de grafico ainda nao implementada." << std::endl;
+                break;
+            case 4:
+                std::cout << "Encerrando..." << std::endl;
+                break;
+            default:
+                std::cout << "Opcao invalida." << std::endl;
+        }
+    } while (opcao != 4);
+}
+
+void CSimuladorPrecipitacao::simular(const CMisturaSalmouras& mistura, const std::vector<CSalt>& sais) {
     auto concentracoes = mistura.calcularConcentracoesFinais();
-
-    std::cout << "Concentracoes finais (mol/L):\n";
-    for (const auto& [nome, conc] : concentracoes) {
-        std::cout << " - " << nome << ": " << conc << "\n";
-    }
-
-    // Testa precipitação para cada sal
-    std::cout << "\nAnalise de precipitação:\n";
-    for (const auto& sal : mistura.getTodosSais()) {
+    for (const auto& sal : sais) {
         double Q = sal.calculateIonicProduct(concentracoes);
-        std::cout << "Sal: " << sal.getName()
-                  << " | Q = " << Q << " | Ksp = " << sal.getKsp();
+        std::cout << "Sal: " << sal.getName() << " → Q = " << Q;
         if (sal.willPrecipitate(concentracoes)) {
-            std::cout << " -Precipita!\n";
+            std::cout << " → [PRECIPITA]" << std::endl;
         } else {
-            std::cout << " -Nao precipita!.\n";
+            std::cout << " → [estavel]" << std::endl;
         }
     }
-    std::cout << " Pres: " << Objeto.getPressure() << std::endl; 
-    std::cout << " Temp: " << Objeto.getTemperature() << std::endl; 
 }
-//Adicionar Sal + Concentração
-CSalmoura CSimuladorPrecipitacao::criarSalmouraTeste1() const {
-    CTabelaPropriedadesIons tabela;
-    tabela.carregarDeArquivo("dados_ions.txt");
-
-    CSalmoura salmoura(1.0);
-    salmoura.adicionarIon("Na", 0.1);
-    salmoura.adicionarIon("Cl", 0.1);
-
-    CIon na = tabela.obterIon("Na");
-    CIon cl = tabela.obterIon("Cl");
-    CSalt Halita("Halita", 36.0, {na, cl}, {1, 1});
-
-    salmoura.adicionarSal(Halita);
-    return salmoura;
-}
-
-CSalmoura CSimuladorPrecipitacao::criarSalmouraTeste2() const {
-    CTabelaPropriedadesIons tabela;
-    tabela.carregarDeArquivo("dados_ions.txt");
-
-    CSalmoura salmoura(1.0);
-    salmoura.adicionarIon("Ba", 0.005);
-    salmoura.adicionarIon("SO4", 0.005);
-
-    CIon ba = tabela.obterIon("Ba");
-    CIon so4 = tabela.obterIon("SO4");
-    CSalt barita("Barita", 1.08e-10, {ba, so4}, {1, 1});
-
-    salmoura.adicionarSal(barita);
-    return salmoura;
-}
-
