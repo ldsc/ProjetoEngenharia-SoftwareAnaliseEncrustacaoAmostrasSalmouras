@@ -1,6 +1,6 @@
 #include "CIons.h"
 
-CIon::CIon(std::string nome, int carga) : m_nome(nome), m_carga(carga) 
+CIon::CIon(std::string nome, int carga) : m_nome(nome), m_carga(carga)
 {
 }
 
@@ -26,12 +26,12 @@ void CIon::setCarga(int carga)
 
 CreateIons::CreateIons()
 {
-    
+    // precisa setar/inicilizar os atributos!
 }
 
 void CreateIons::addIon(const std::string &name, int charge)
 {
-    ions[name] = CIon(name, charge);
+  ions[name] = CIon(name, charge);
 }
 
 CIon CreateIons::getIon(const std::string &name)
@@ -41,6 +41,7 @@ CIon CreateIons::getIon(const std::string &name)
     } else {
         std::cerr << "Erro: Ion '" << name << "' nao encontrado!\n";
         return CIon(); // Retorna um íon vazio
+        // deveria pedir o int charge, criar e retornar esta retornando CIon() sem informar isso.
     }
 }
 

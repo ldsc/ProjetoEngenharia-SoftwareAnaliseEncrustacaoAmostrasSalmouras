@@ -30,12 +30,12 @@ void CSimuladorPrecipitacao::executar() {
             }
             case 2: {
                 int numSalmouras;
-                CMisturaSalmouras mistura;
+                CMisturaSalmouras mistura; // colocar como membro da classe.
                 std::cout << "Quantas salmouras deseja criar? ";
                 std::cin >> numSalmouras;
                 for (int i = 0; i < numSalmouras; ++i) {
                     CSalmoura s;
-                    double volume;
+                    double volume;// a entrada de dados da classe salmoura deveria ser feita na classe salmoura, algo como salmoura.EntradaDados();
                     std::cout << "\nSalmoura " << (i + 1) << ": volume (L): ";
                     std::cin >> volume;
                     s.setVolume(volume);
@@ -46,7 +46,7 @@ void CSimuladorPrecipitacao::executar() {
                     for (int j = 0; j < numIons; ++j) {
                         std::string nomeIon;
                         double mols;
-                        std::cout << "  Nome do ion " << (j + 1) << ": ";
+                        std::cout << "  Nome do ion " << (j + 1) << ": ";//informar unidades
                         std::cin >> nomeIon;
                         std::cout << "  Mols: ";
                         std::cin >> mols;
@@ -56,7 +56,7 @@ void CSimuladorPrecipitacao::executar() {
                 }
 
                 int numSais;
-                std::vector<CSalt> sais;
+                std::vector<CSalt> sais; // colocar na classe; atributo da classe
                 std::cout << "\nQuantos sais deseja criar? ";
                 std::cin >> numSais;
                 for (int i = 0; i < numSais; ++i) {

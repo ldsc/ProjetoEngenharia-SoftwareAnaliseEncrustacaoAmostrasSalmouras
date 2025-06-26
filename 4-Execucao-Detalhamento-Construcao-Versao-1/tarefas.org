@@ -52,3 +52,19 @@
 **** De um modo geral tá tudo super confuso. Os textos são incompletos. Os diagramas são inconsistentes.
 **** PS: tem comentários e correções nos arquivos do LyX.
 ***
+* Códigos
+** TODO Algumas correções no código anotadas no código;
+** TODO As classes devem ter métodos para suas entradas de dados,
+como   exemplo bool EntradaDados(std::istream& cin, std::ostream& cout);
+Tem exemplos nas provas e projetos disponibilizados.
+- ex: CMisturaSalmouras ms; ms.EntradaDados(cin,cout);
+- ex: CSalmoura s; s.EntradaDados(cin,cout);
+** TODO CSimuladorPrecipitacao deve ter atributos usados dentro de executar
+- ex:
+CMisturaSalmouras mistura;
+std::vector<CSalt> sais;
+vocês criaram como variável temporária dentro de executar; ao colocar
+na classe permite reuso;
+**  CreateIons  { [nome ruim! é sua base de dados de ions;
+ [deve incluir Salvar/Ler dados em disco]
+**

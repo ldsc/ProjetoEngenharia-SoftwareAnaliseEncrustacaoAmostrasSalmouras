@@ -6,24 +6,24 @@
 #include <iostream>
 
 /**
- * @brief 
+ * @brief
  */
 class PrecipitationCalculator {
 
     public:
 
-        
-        PrecipitationCalculator(); 
+
+        PrecipitationCalculator();
 
         /**
-         * @brief 
-         * 
-         * @param salts 
+         * @brief
+         *
+         * @param salts
          */
         static void analyzePrecipitation(const std::vector<Salt>& salts);
 
-        ~PrecipitationCalculator(); 
+        ~PrecipitationCalculator();
 
 };
 
-#endif 
+#endif

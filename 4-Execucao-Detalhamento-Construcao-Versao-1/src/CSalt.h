@@ -8,7 +8,7 @@
 
 /**
  * @brief Classe responsável por modelar um sal e calcular sua solubilidade.
- * 
+ *
  * Um sal é formado por uma combinação de íons com coeficientes estequiométricos conhecidos.
  * Sua precipitação depende do produto iônico comparado ao Ksp (constante de solubilidade).
  */
@@ -23,7 +23,7 @@ public:
 
     /**
      * @brief Construtor parametrizado.
-     * 
+     *
      * @param nome Nome do sal (ex: "NaCl").
      * @param ksp Produto de solubilidade do sal.
      * @param ions Vetor de íons participantes.
@@ -33,7 +33,7 @@ public:
 
     /**
      * @brief Calcula o produto iônico Q do sal com base nas concentrações fornecidas.
-     * 
+     *
      * @param concentracoes Mapa nome-do-íon → concentração (mol/L)
      * @return Valor de Q (produto iônico)
      */
@@ -41,7 +41,7 @@ public:
 
     /**
      * @brief Verifica se o sal irá precipitar com base no produto iônico.
-     * 
+     *
      * @param concentracoes Mapa nome-do-íon → concentração (mol/L)
      * @return true se Q > Ksp, ou seja, precipitação ocorre
      */

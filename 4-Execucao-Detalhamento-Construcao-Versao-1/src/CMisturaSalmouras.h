@@ -7,7 +7,7 @@
 
 /**
  * @brief Representa uma mistura de várias amostras de salmouras com diferentes volumes.
- * 
+ *
  * Combina as contribuições de cada salmoura e permite cálculo das concentrações finais de íons.
  */
 class CMisturaSalmouras {
@@ -21,7 +21,7 @@ public:
 
     /**
      * @brief Adiciona uma salmoura à mistura.
-     * 
+     *
      * @param salmoura Objeto `CSalmoura`.
      */
     void adicionarSalmoura(const CSalmoura& salmoura);

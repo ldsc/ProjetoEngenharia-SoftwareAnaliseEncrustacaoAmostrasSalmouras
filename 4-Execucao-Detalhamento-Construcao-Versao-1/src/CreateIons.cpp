@@ -2,7 +2,7 @@
 
 CreateIons::CreateIons()
 {
-    
+
 }
 
 void CreateIons::addIon(const std::string &name, double concentration, int charge)
@@ -16,7 +16,7 @@ ion CreateIons::getIon(const std::string &name)
         return ions[name];
     } else {
         std::cerr << "Erro: Íon '" << name << "' não encontrado!\n";
-        return ion(); 
+        return ion();
     }
 }
 

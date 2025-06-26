@@ -34,7 +34,7 @@ void CTabelaPropriedadesIons::salvarParaArquivo(const std::string& caminho) cons
     }
 
     for (const auto& [nome, ion] : m_ions) {
-        arquivo << ion.getNome() << ";" << ion.getCarga() << "\n";
+        arquivo << ion.getNome() << ";" << ion.getCarga() << "\n";//esta linha tem erros...
     }
 
     arquivo.close();
@@ -50,7 +50,7 @@ CIon CTabelaPropriedadesIons::obterIon(const std::string& nome) const {
         return it->second;
     }
     std::cerr << "Ion nao encontrado: " << nome << "\n";
-    return CIon();
+    return CIon(); // precisa informar que retornou ion zerado; ou pedir dados e completar o que falta
 }
 
 std::vector<CIon> CTabelaPropriedadesIons::listarIons() const {
