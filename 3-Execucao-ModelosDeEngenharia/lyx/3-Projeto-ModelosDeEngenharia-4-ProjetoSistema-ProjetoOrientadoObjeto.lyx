@@ -101,7 +101,7 @@
 \papersides 1
 \paperpagestyle fancy
 \tablestyle default
-\tracking_changes false
+\tracking_changes true
 \output_changes false
 \change_bars false
 \postpone_fragile_content false
@@ -110,6 +110,7 @@
 \html_be_strict false
 \docbook_table_output 0
 \docbook_mathml_prefix 1
+\author 643308733 "bueno" andreduartebueno@gmail.com
 \end_header
 
 \begin_body
@@ -254,8 +255,20 @@ A interface API é implementada implicitamente nas classes que encapsulam a lóg
 \end_layout
 
 \begin_layout Itemize
-.Os arquivos gerados são .txt ou .csv,
+
+\change_deleted 643308733 1750938203
+.
+\change_unchanged
+Os arquivos gerados são .txt ou .csv,
  formatos abertos e compatíveis com editores comuns e softwares de análise.
+\change_inserted 643308733 1750938214
+
+\end_layout
+
+\begin_layout Itemize
+
+\change_inserted 643308733 1750938228
+Os arquivos devem usar codificação de caracteres UTF-8.
 \end_layout
 
 \end_deeper
@@ -288,12 +301,50 @@ Os recursos são gerenciados pelo próprio sistema,
 
 \begin_layout Itemize
 Não há necessidade de banco de dados;
+
+\change_deleted 643308733 1750938355
  todos os dados são temporários e manipulados em tempo de execução.
+\change_inserted 643308733 1750938358
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted 643308733 1750938378
+vocês usam arquivos salvos em disco,
+ então não pode falar que todos os dados são temporários
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+
 \end_layout
 
 \begin_layout Itemize
-O sistema não utiliza armazenamento de massa dedicado,
- apenas arquivos locais temporários para exportação de dados.
+O sistema não 
+\change_deleted 643308733 1750938399
+utiliza 
+\change_inserted 643308733 1750938399
+requer 
+\change_unchanged
+armazenamento de massa dedicado,
+ apenas 
+\change_inserted 643308733 1750938405
+pequenos 
+\change_unchanged
+arquivos locais
+\change_deleted 643308733 1750938413
+ temporários para exportação de dados.
+
+\change_inserted 643308733 1750938420
+ armazenados em disco.
+\change_unchanged
+
 \end_layout
 
 \end_deeper
@@ -329,8 +380,28 @@ O sistema prevê condições inválidas (ex:
 \end_layout
 
 \begin_layout Itemize
+
+\change_deleted 643308733 1750938456
 A otimização de código é feita com uso de bibliotecas padrão,
  evitando redundâncias.
+\change_inserted 643308733 1750938459
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted 643308733 1750938472
+escreva que não fizeram otimização de código nesta versão
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_deleted 643308733 1750938456
+
 \end_layout
 
 \begin_layout Itemize
@@ -374,15 +445,87 @@ Os subsistemas identificados são:
  Cálculo,
  Interface,
  Termodinâmica e Química.
+\change_inserted 643308733 1750938569
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted 643308733 1750938576
+corrigir,
+ devem corresponder aos pacotes
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+
 \end_layout
 
 \begin_layout Itemize
 O sistema suporta as plataformas Windows,
  Linux e Mac via compilação com CMake.
+\change_inserted 643308733 1750938583
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted 643308733 1750938590
+façam testes no linux e mac
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+
 \end_layout
 
 \begin_layout Itemize
 As bibliotecas externas utilizadas são padrão do C++ (STL).
+\change_inserted 643308733 1750938635
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted 643308733 1750938619
+não usa bibliotecas externas;
+ stl é padrão,
+ é da linguagem
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted 643308733 1750938658
+deem uma pesquisada em bibliotecas de química,
+ provavelmente tem coisa pronta que pode ser aproveitada
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+
 \end_layout
 
 \end_deeper
@@ -756,26 +899,107 @@ nolink "false"
 \end_layout
 
 \begin_layout Itemize
-O componente ModuloEntradaDados é responsável pela criação e armazenamento de íons e sais a partir da entrada do usuário,
+O componente ModuloEntradaDados
+\change_inserted 643308733 1750939052
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted 643308733 1750939089
+não existe módulo de entrada!
+ cada classe é responsável por sua entrada de dados;
+ não estão usando arquivtetura MVC.
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+ é responsável pela criação e armazenamento de íons e sais a partir da entrada do usuário,
  utilizando as classes CCriarIons e CSal.
 \end_layout
 
 \begin_layout Itemize
 O ModuloTermodinamico utiliza a classe CCondicoesTermodinamicas para registrar temperatura e pressão da salmoura.
+\change_inserted 643308733 1750939105
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted 643308733 1750939123
+Não existe classe para temperatura e pressão;
+ são propriedades da salmoura
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+
 \end_layout
 
 \begin_layout Itemize
 O ModuloAnalise depende de Sal,
  ion e CalcularPrecipitacao para processar os dados e verificar precipitação.
+\change_inserted 643308733 1750939132
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted 643308733 1750939170
+O CSimuladorEncrustacaoAmostrasSalmoura deve incluir as análises e gráficos
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+
 \end_layout
 
 \begin_layout Itemize
 O ModuloInterface agrupa os arquivos do main() e os módulos de teste,
  controlando a visualização no terminal (e futuramente em Qt).
+\change_inserted 643308733 1750939203
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted 643308733 1750939211
+Não estão usando MVC...
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+
 \end_layout
 
 \begin_layout Itemize
-Todos esses componentes são compilados no executável final SimuladorPrecipitacao.exe.Nota:
+Todos esses componentes são compilados no executável final SimuladorPrecipitacao.exe.
+\change_inserted 643308733 1750939220
+
+\end_layout
+
+\begin_layout Itemize
+Nota:
  
 \begin_inset space ~
 \end_inset

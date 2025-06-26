@@ -1,0 +1,54 @@
+* Projeto ProjetoEngenharia-SoftwareAnaliseEncrustacaoAmostrasSalmouras
+** Documentos:
+*** 0-PropostaDeDesafio-TituloDoDesafioTecnologico
+**** Não foi feito.
+*** 1-PreProjeto-IdentificacaoDaProposta/lyx
+- Este documento é uma proposta de trabalho e tem uma seção 1.6 que
+  não faz o menor sentido. Deve ser eliminada.
+*** 2-Projeto-IdentificacaoDaProposta
+**** Não foi feito.
+*** 3-Execucao-ModelosDeEngenharia/
+**** lyx/3-Projeto-ModelosDeEngenharia-1-Concepcao-Requisitos.lyx
+***** A especificação esta excessivamente curta.
+***** Nas reuniões pontuei várias vezes que:
+****** O acesso a arquivos de disco, leitura e gravação, é obrigatório.
+****** A geração de gráficos e análises é obrigatória.
+****** A realização de cálculos relativamente complexos é obrigatória.
+****** Então isso tem de estar na especificação e nos requisitos funcionais.
+**** 3-Projeto-ModelosDeEngenharia-2-Elaboracao:
+***** O caso de uso geral tem "cenários de uso, os balões", o caso de uso específico deve detalhar um dos balões do caso de uso geral. O ideal é criar estes casos de uso específicos para as situações mais usadas em engenharia.
+***** A análise de domínio deve ser mais bem escrita. Esta excessivamente genérica. Coloque situações reais, exemplos reais.
+***** A formulação teórica tem de ter as equações corretamente colocadas, usando "equações" e não texto comum.
+****** Os termos e unidades devem ser descritos.
+****** A dificuldade nos cálculos deve ser mediana e devemos ter vários cálculos. Só apresentaram um cálculo muito básico.
+****** Havendo dúvidas olha exemplos de colegas disponibilizados no github.
+****** A elaboração deve ter textos explicativos que mostram os conceitos que estão sendo usados, as equações usadas, de forma que havendo alguma dúvida na hora de codificar devemos ter aqui a resposta da teoria usada. Como este texto não existe fica difícil entender o que esta sendo feito.
+***** Os pacotes-assuntos estão errados. Olhem o que tem nos livros. Geralmente assuntos de livros correspondem a pacotes no software.
+***** O diagrama de pacotes-assuntos esta errado.
+****** github não é um pacote do sistema! é um repositório de arquivos do projeto.
+***** Diagrama de classes
+****** CIon é uma classe consistente. Mas os nomes estão fora do padrão:
+******* nomeDeAtributo
+******* NomeDeMetodo
+******* Não é para usar get/set.
+****** CSalmoura é uma classe consistente.
+****** CCondicoesTermodiamicas não é consistente. pressão e temperatura são propriedades da salmoura, devem estar na classe CSalmoura.
+****** Cada aluno deve implementar pelo menos 5 classes. Não é para inventar classes, a classe deve representar conceitos do domínio do problema. Precisa aumentar a complexidade do sistema para que novas classes apareçam.
+****** A descrição das classes não bate com o diagrama de classes, por exemplo na descrição tem CConcentracaoIons (não é uma classe!) e no diagrama de classes não.
+***** Diagrama de sequência
+****** O geral esta incompleto
+****** Os específicos devem cobrir/detalhas os casos de uso específicos (os diferentes cenários de uso do sistema).
+***** Diagrama de comunicação
+****** O texto fala em diagrama de estado? estão misturando conceitos!!
+****** O diagrama deve estar correto e devem colocar textos explicando o que esta sendo descrito com este diagrama.
+****** Não é para repetir as mesmas coisas!
+***** Diagrama de máquina de estado
+****** Tem de informar qual é a classe e explicar os estados. Devem corresponder a realidade. Situações reais.
+***** Diagrama de atividades
+****** Não tem.
+****** Diagramas de atividades são o detalhamento de métodos/funções, ou seja, das contas, ifs...
+****** Para ter sentido/necessidade precisamos de contas de engenharia relativamente complexas.
+***** Diagrama de implantação eu falei para colocarem o computador e dados dos experimentos(água, sais, salmoura, vidraria, balanças, etc), o que é necessário para fazer as análises.
+**** De um modo geral tá tudo super confuso. Os textos são incompletos. Os diagramas são inconsistentes.
+**** PS: tem comentários e correções nos arquivos do LyX.
+***

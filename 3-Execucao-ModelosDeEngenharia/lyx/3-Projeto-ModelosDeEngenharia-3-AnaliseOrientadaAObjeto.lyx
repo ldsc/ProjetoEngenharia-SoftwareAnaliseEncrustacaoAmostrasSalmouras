@@ -88,7 +88,7 @@
 \papersides 1
 \paperpagestyle fancy
 \tablestyle default
-\tracking_changes false
+\tracking_changes true
 \output_changes false
 \change_bars false
 \postpone_fragile_content false
@@ -97,6 +97,7 @@
 \html_be_strict false
 \docbook_table_output 0
 \docbook_mathml_prefix 1
+\author 643308733 "bueno" andreduartebueno@gmail.com
 \end_header
 
 \begin_body
@@ -166,12 +167,20 @@ name "sec:AOO"
 \begin_layout Standard
 A terceira etapa do desenvolvimento de um projeto de engenharia,
  no nosso caso um software
+\change_inserted 643308733 1750936829
+ 
+\change_deleted 643308733 1750936829
+
 \end_layout
 
 \begin_layout Standard
 aplicado a engenharia de petróleo,
  é a AOO – Análise Orientada a Objeto.
  A AOO utiliza algumas
+\change_inserted 643308733 1750936830
+ 
+\change_deleted 643308733 1750936830
+
 \end_layout
 
 \begin_layout Standard
@@ -180,6 +189,10 @@ regras para identificar os objetos de interesse,
  as classes,
  os atributos,
  os
+\change_inserted 643308733 1750936831
+ 
+\change_deleted 643308733 1750936831
+
 \end_layout
 
 \begin_layout Standard
@@ -194,6 +207,10 @@ métodos,
 O modelo de análise deve ser conciso,
  simplificado e deve mostrar o que deve ser feito,
  não se
+\change_inserted 643308733 1750936833
+ 
+\change_deleted 643308733 1750936833
+
 \end_layout
 
 \begin_layout Standard
@@ -202,6 +219,10 @@ preocupando como isso será realizado.
 
 \begin_layout Standard
 O resultado da análise é um conjunto de diagramas que identificam os objetos e seus relacionamentos
+\change_inserted 643308733 1750936836
+.
+\change_unchanged
+
 \end_layout
 
 \begin_layout Section
@@ -219,6 +240,10 @@ name "sec:Diagramas-de-classes"
 O diagrama de classes (Figura 3.1) mostra as classes do sistema,
  seus atributos e métodos,
  bem como
+\change_inserted 643308733 1750936927
+ 
+\change_deleted 643308733 1750936927
+
 \end_layout
 
 \begin_layout Standard
@@ -230,6 +255,24 @@ suas relações.
 CCondicoesTermodinamicas:
  atributos de pressão e temperatura,
  com getters/setters.
+\change_inserted 643308733 1750937516
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted 643308733 1750937519
+não é classe!
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+
 \end_layout
 
 \begin_layout Standard
@@ -252,7 +295,11 @@ CSal:
 \begin_layout Standard
 CCalcularPrecipitacao:
  módulo que executa a comparação entre Q e Kps.
+
+\change_deleted 643308733 1750937285
  
+\change_unchanged
+
 \end_layout
 
 \begin_layout Standard
@@ -392,6 +439,10 @@ name "subsec:diagrama de sequência"
 \emph on
 O diagrama de sequência (Figura 3.2) mostra a ordem das chamadas entre os objetos do sistema.
  O
+\change_inserted 643308733 1750937589
+ 
+\change_deleted 643308733 1750937589
+
 \end_layout
 
 \begin_layout Standard
@@ -402,6 +453,10 @@ fluxo inicia na main,
  passando pelas criações de íons,
  sais,
  entrada de condições termodinâmicas e
+\change_inserted 643308733 1750937590
+ 
+\change_deleted 643308733 1750937590
+
 \end_layout
 
 \begin_layout Standard
@@ -519,7 +574,25 @@ name "subsec: Diagrama de sequência específico"
 \end_layout
 
 \begin_layout Standard
-Na Figura 3.2.2 observamos o diagrama de sequência específico.
+Na Figura 3.2.2
+\change_inserted 643308733 1750937726
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted 643308733 1750937735
+referenciar corretamente as figuras
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+ observamos o diagrama de sequência específico.
 \end_layout
 
 \begin_layout Standard
@@ -625,6 +698,10 @@ name "par:Diagrama-de-colaboração:"
 \begin_layout Standard
 O diagrama de estado (Figura 3.3) representa os estados principais de execução do sistema:
  criar dados
+\change_inserted 643308733 1750937790
+ 
+\change_deleted 643308733 1750937798
+
 \end_layout
 
 \begin_layout Standard
@@ -719,11 +796,19 @@ name "subsec:diagrama de estados"
 
 \begin_layout Standard
 Um diagrama de máquina de estado representa os diversos estados que o objeto assume e os eventos
+\change_inserted 643308733 1750937965
+ 
+\change_deleted 643308733 1750937965
+
 \end_layout
 
 \begin_layout Standard
 que ocorrem ao longo de sua vida ou mesmo ao longo de um processo (histórico do objeto).
  É usado
+\change_inserted 643308733 1750937966
+ 
+\change_deleted 643308733 1750937966
+
 \end_layout
 
 \begin_layout Standard
