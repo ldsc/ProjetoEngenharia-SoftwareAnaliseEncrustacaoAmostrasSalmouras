@@ -111,6 +111,7 @@
 \html_be_strict false
 \docbook_table_output 0
 \docbook_mathml_prefix 1
+\author -1487032084 "Allida"
 \author 643308733 "bueno" andreduartebueno@gmail.com
 \end_header
 
@@ -163,10 +164,8 @@ name "sec:Elaboração"
 Depois da definição dos objetivos,
  da especificação do software e da montagem dos primeiros diagramas de caso de uso,
  a equipe de desenvolvimento do projeto de engenharia passa por um processo
-\change_inserted 643308733 1750935997
+\change_deleted -1487032084 1751142226
  
-\change_deleted 643308733 1750935998
-
 \end_layout
 
 \begin_layout Standard
@@ -314,11 +313,6 @@ Pacote CConcentracaoIons:
 Pacote CSal:
  Modela os sais e seus dados (Kps,
  íons e coeficientes).
-\end_layout
-
-\begin_layout Standard
-Pacote CCondicoesTermodinamicas:
- Armazena temperatura e pressão.
 \end_layout
 
 \begin_layout Standard

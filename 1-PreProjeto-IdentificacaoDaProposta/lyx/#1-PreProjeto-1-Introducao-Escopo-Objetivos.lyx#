@@ -1,0 +1,891 @@
+#LyX 2.4 created this file. For more info see https://www.lyx.org/
+\lyxformat 620
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass extbook
+\begin_preamble
+\usepackage {graphicx}
+\usepackage {longtable}
+\usepackage {indentfirst}
+\renewenvironment{center}{\par\centering}{\par}
+
+% Comentar linhas abaixo se não estiver usando pacote abntex
+% ou se o pacote ainda não foi instalado.
+% neste caso sugere-se usar citações no padrão apalike (lembra o da anbt).
+%\usepackage[alf ,abnt-etal-cite=2 , abnt-year-extra-label=yes , abnt-etal-list=0]{abntcite}
+%\usepackage {helvet}
+%\renewcommand {\familydefault}{\sfdefault}
+
+% Para uso de listagens de código
+\usepackage{color}
+\definecolor{azulclaro}{rgb}{0.6,1,1}%   rgb color model
+% Informa que vai usar o pacote listings, 
+% disponibilizado em /usr/share/texmf/doc/latex/styles/listings.dvi
+\usepackage{listings}
+\end_preamble
+\use_default_options false
+\maintain_unincluded_children no
+\language brazilian
+\language_package auto
+\inputencoding auto-legacy
+\fontencoding auto
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_roman_osf false
+\font_sans_osf false
+\font_typewriter_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement h
+\paperfontsize 12
+\spacing onehalf
+\use_hyperref false
+\papersize a4
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 0
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style apalike
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\use_formatted_ref 0
+\use_minted 0
+\use_lineno 0
+\index Índice
+\shortcut idx
+\color #008000
+\end_index
+\paperwidth 210mm
+\paperheight 297mm
+\leftmargin 30mm
+\topmargin 25mm
+\rightmargin 20mm
+\bottommargin 20mm
+\secnumdepth 2
+\tocdepth 2
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 2
+\paperpagestyle fancy
+\tablestyle default
+\tracking_changes false
+\output_changes false
+\change_bars false
+\postpone_fragile_content false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\docbook_table_output 0
+\docbook_mathml_prefix 1
+\end_header
+
+\begin_body
+
+\begin_layout Chapter
+Introdução
+\begin_inset CommandInset label
+LatexCommand label
+name "cha:Introdução"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lhead{
+\backslash
+thechapter
+\backslash
+space - Introdução}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Segundo o CREA/CONFEA um dos quesitos fundamentais que diferenciam a atuação de um tecnólogo da atuação de um engenheiro é a capacidade de desenvolver um projeto de engenharia;
+ Neste trabalho,
+ apresenta-se a pré-proposta de um projeto em engenharia de software aplicado a solução de um problema específico da engenharia de petróleo.
+ 
+\end_layout
+
+\begin_layout Standard
+Apresenta-se aqui a proposta de desenvolvimento do software Analise Incrustação Amostra de Salmoura.
+ Um software aplicado a engenharia de petróleo e que visa auxiliar as empresas prestadoras de serviços a conseguirem determinar o grau de incrustação de uma salmoura.
+ Determinar a criticidade para que possa ser obtido um produto afim que durante a produção não haja incrustação nos tubos de produção.
+ A formação de incrustações em sistemas de produção de petróleo é um dos desafios operacionais mais recorrentes da indústria,
+ afetando diretamente a eficiência dos processos e gerando custos com manutenção e intervenções.
+ Essas incrustações,
+ geralmente formadas por sais de baixa solubilidade como a calcita (CaCO₃) e a barita (BaSO₄),
+ se depositam em tubulações e equipamentos ao longo do tempo,
+ obstruindo o fluxo e exigindo ações corretivas frequentes (Silva,
+ 2019).
+ Diante desse cenário,
+ este projeto propõe o desenvolvimento de um software,em linguagem C++ voltado para a análise do potencial de incrustação em amostras de salmoura,
+ com aplicação direta em ambientes da engenharia de petróleo.
+ A proposta busca oferecer uma ferramenta de apoio que permita prever,
+ com base em parâmetros físico-químicos como concentração de íons,
+ temperatura e pressão,
+ a possibilidade de precipitação de sais em solução aquosa.
+ 
+\end_layout
+
+\begin_layout Section
+Identificação da Proposta
+\end_layout
+
+\begin_layout Subsubsection
+Tipo de investimento /divulgação:
+ 
+\end_layout
+
+\begin_layout Itemize
+PROJETO DE PESQUISA E DESENVOLVIMENTO / DESENVOLVIMENTO DE SOFTWARE
+\end_layout
+
+\begin_layout Subsubsection
+Coordenador:
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Gestão das partes relacionadas às disciplinas e apoio em dúvidas de programação.
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+André Duarte Bueno 
+\end_layout
+
+\begin_layout Subsubsection
+Gerência técnica:
+ 
+\end_layout
+
+\begin_layout Itemize
+Nome Empresa/Instituição:
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Universidade Estadual do Norte Fluminense Darcy Ribeiro
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Nome Gerente
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+pode ser um professor(a)
+\end_layout
+
+\end_inset
+
+:
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+André Duarte Bueno
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+E-mail:
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+bueno@lenep.uenf.br
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+coloque o email da empresa;
+ institucional
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Telefone:
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+(22) 999542635 
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+celular
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Subsubsection
+Equipe:
+\end_layout
+
+\begin_layout Itemize
+Nome:
+ Allida Faial
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+o gerente da equipe é o aluno que faz a comunicação da equipe com a gerência técnica e coordenação.
+ Todos se comunicam,
+ mas o projeto deve ter um canal principal de comunicação.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+E-mail:
+ allidarsfaial@gmail.com 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+membros da equipe (até 3 pessoas)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Telefone:
+ (21) 99215-5877 
+\end_layout
+
+\begin_layout Itemize
+Nome:
+ João Vitor Pardo
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+o gerente da equipe é o aluno que faz a comunicação da equipe com a gerência técnica e coordenação.
+ Todos se comunicam,
+ mas o projeto deve ter um canal principal de comunicação.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+E-mail:
+ joaopardo@gmail.com 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+membros da equipe (até 3 pessoas)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Telefone:
+ (35) 98879-6676 
+\end_layout
+
+\begin_layout Subsubsection
+Vínculo institucional do processo:
+ 
+\end_layout
+
+\begin_layout Itemize
+UNIVERSIDADE ESTADUAL DO NORTE FLUMINENSE DARCY RIBEIRO/UENF
+\end_layout
+
+\begin_layout Itemize
+CENTRO DE CIÊNCIA E TECNOLOGIA - CCT
+\end_layout
+
+\begin_layout Itemize
+DEPARTAMENTO DE ENGENHARIA DE PETRÓLEO - LENEP
+\end_layout
+
+\begin_layout Itemize
+SETOR DE MODELAGEM MATEMÁTICA E COMPUTACIONAL
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+ADICIONE O Nome dos demais setores envolvidos
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Duração:
+ 
+\end_layout
+
+\begin_layout Itemize
+5-7 mês(es) 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Considere 3 semestres(5/6/7) ou 4 semestres.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Data de submissão:
+ 
+\end_layout
+
+\begin_layout Itemize
+28/03/2025
+\end_layout
+
+\begin_layout Subsubsection
+Número da proposta:
+ 
+\end_layout
+
+\begin_layout Itemize
+LDSC-P50
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+( “Professor seria esse o numero mesmo?) Ainda vou montar tabela com nome dos projetos e identificador numérico.
+\end_layout
+
+\begin_layout Plain Layout
+Numero informado pelo professor,
+ leva em conta o número de projetos desenvolvidos no LDSC,
+ ano e semestre
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Tipo de instrumento contratual:
+ 
+\end_layout
+
+\begin_layout Itemize
+Trabalho de disciplina
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+ex:
+ Termo de Cooperação / Convênio
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Título do projeto:
+\end_layout
+
+\begin_layout Itemize
+Analise Incrustação Amostra de Salmoura.
+\end_layout
+
+\begin_layout Subsubsection
+Palavras-chave:
+ 
+\end_layout
+
+\begin_layout Itemize
+Incrustação,
+ Salmoura,
+ Produção,
+ Sais,
+ Câtions,
+ Ânios
+\end_layout
+
+\begin_layout Section
+Resumo
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Resumo"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Será desenvolvido um software para prever a precipitação de sais,
+ um problema comum em várias indústrias,
+ principalmente na de petróleo.
+ Quando certos sais,
+ como a calcita (CaCO₃) e a barita (BaSO₄),
+ se acumulam nos equipamentos,
+ podem causar entupimentos e diminuir a eficiência das operações.
+ O software vai ajudar a prever quando isso pode acontecer,
+ analisando fatores como concentração de íons,
+ temperatura e pressão.
+ Basicamente,
+ ele compara se a quantidade de íons dissolvidos na solução ultrapassa um certo limite (Ksp).
+ Se isso acontecer,
+ significa que os sais vão começar a se formar e podem causar problemas.
+ Sera desenvolvido tudo em C++,
+ organizando as informações em classes que representam as soluções químicas,
+ os sais e os cálculos necessários.
+ O usuário insere dados como concentração de íons,
+ temperatura e pressão,
+ e o programa retorna se haverá precipitação ou não.
+ A ideia é que esse software auxilie como uma ferramenta para evitar problemas operacionais e ajudar a tomar decisões mais assertivas,
+ economizando tempo e dinheiro em processos onde a formação de incrustações pode ser um grande desafio.
+ 
+\end_layout
+
+\begin_layout Section
+Escopo do Problema 
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Escopo-do-Problema"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+A precipitação de sais é um problema recorrente em diversos processos industriais,
+ especialmente na indústria do petróleo,
+ onde compostos como calcita (CaCO₃) e barita (BaSO₄) podem se formar e se depositar em equipamentos,
+ obstruindo dutos e reduzindo significativamente a eficiência operacional.
+ Esses depósitos,
+ conhecidos como incrustações,
+ exigem intervenções frequentes,
+ elevando custos de manutenção e impactando negativamente a produção.
+ Neste contexto,
+ o projeto propõe o desenvolvimento de um software capaz de prever,
+ com base em parâmetros físico-químicos como concentração de íons,
+ temperatura e pressão,
+ a possibilidade de precipitação de sais em soluções aquosas.
+ O sistema atuará como ferramenta de apoio à tomada de decisão,
+ antecipando cenários críticos e permitindo a adoção de medidas preventivas.
+ O escopo do projeto está centrado na construção de um modelo computacional que,
+ por meio da comparação entre a concentração iônica e o produto de solubilidade (Kps),
+ indique a possibilidade de formação de precipitados.
+ A aplicação foca em ambientes industriais com condições complexas,
+ como os encontrados em poços de petróleo 
+\emph on
+offshore
+\emph default
+,
+ sendo especialmente útil para engenheiros de reservatório,
+ produção e operação.O software será desenvolvido em C++,
+ com estrutura modular orientada a objetos,
+ facilitando sua expansão futura.
+ Embora existam ferramentas comerciais que abordam esse tipo de previsão,
+ muitas delas são caras ou excessivamente complexas para aplicações educacionais ou operacionais básicas.
+ O diferencial desta proposta está em sua simplicidade,
+ acessibilidade e personalização para contextos acadêmicos e laboratoriais,
+ oferecendo um recurso didático e funcional.
+ 
+\end_layout
+
+\begin_layout Section
+Objetivos
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Objetivos"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Os objetivos deste projeto de engenharia são:
+\end_layout
+
+\begin_layout Itemize
+Objetivo geral:
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Desenvolver um software em linguagem C++ para prever a precipitação de sais inorgânicos em soluções aquosas,
+ com foco na aplicação em processos da engenharia de petróleo.
+ O sistema utilizará princípios de modelagem matemática computacional para analisar condições físico-químicas como concentração de íons,
+ temperatura e pressão,
+ e indicar a ocorrência potencial de precipitação com base na comparação entre o produto iônico e o produto de solubilidade (Kps).
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Objetivos específicos:
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Modelar física e matematicamente o problema da precipitação de sais utilizando conceitos de equilíbrio químico e solubilidade.
+\end_layout
+
+\begin_layout Itemize
+Desenvolver a modelagem estática do software com diagramas de caso de uso,
+ de pacotes e de classes.
+\end_layout
+
+\begin_layout Itemize
+Elaborar a modelagem dinâmica do software,
+ definindo algoritmos e fluxos de processamento para avaliação das condições de precipitação.
+\end_layout
+
+\begin_layout Itemize
+Implementar os cálculos para verificar a condição de supersaturação com base nas entradas do usuário (concentração de íons,
+ temperatura e pressão).
+\end_layout
+
+\begin_layout Itemize
+Criar um sistema de alerta simples que indique a possibilidade de formação de precipitados específicos (ex:
+ CaCO₃,
+ BaSO₄).
+\end_layout
+
+\begin_layout Itemize
+Realizar simulações para testar a funcionalidade do software com diferentes conjuntos de dados representativos de situações reais.
+\end_layout
+
+\begin_layout Itemize
+Desenvolver um manual simplificado de uso do software,
+ com explicações sobre a inserção de dados,
+ interpretação dos resultados e limitações do sistema.
+\end_layout
+
+\end_deeper
+\begin_layout Section
+Metodologia
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Metodologia"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+A Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Metodologia utilizada no desenvolvimento do sistema 1: Desafio, pré-projeto e projeto"
+nolink "false"
+
+\end_inset
+
+ apresenta a metodologia a ser utilizada no desenvolvimento do sistema.
+ Parte inicial,
+ definição do desafio tecnológico,
+ pré-projeto e projeto.
+\begin_inset Float figure
+placement document
+alignment document
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename C:/home/bueno/Documentos/workdir/ProjetoEngenharia-SoftwareAnaliseEncrustacaoAmostrasSalmouras/imagens/ProjetoEngenharia-Etapas-Geral-portrait-1.png
+	lyxscale 50
+	width 100text%
+	special height=0.8\textheight
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Metodologia utilizada no desenvolvimento do sistema 1:
+ Desafio,
+ pré-projeto e projeto
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Metodologia utilizada no desenvolvimento do sistema 1: Desafio, pré-projeto e projeto"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+A Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Metodologia utilizada no desenvolvimento do sistema 2: Análise, Implementação e Entrega"
+nolink "false"
+
+\end_inset
+
+ apresenta a metodologia a ser utilizada no desenvolvimento do sistema.
+ Parte de análise,
+ implementação (planejamento detalhes,
+ implementação,
+ testes,
+ documentação) e entrega.
+\begin_inset Float figure
+placement document
+alignment document
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename C:/home/bueno/Documentos/workdir/ProjetoEngenharia-SoftwareAnaliseEncrustacaoAmostrasSalmouras/imagens/ProjetoEngenharia-Etapas-Geral-portrait-2.png
+	lyxscale 50
+	width 100text%
+	special height=0.8\textheight
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Metodologia utilizada no desenvolvimento do sistema 2:
+ Análise,
+ Implementação e Entrega 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Metodologia utilizada no desenvolvimento do sistema 2: Análise, Implementação e Entrega"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Informações Adicionais Específicas
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Informações-Adicionais-Específicas"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Apesar de apresentar uma estrutura funcional e baseada em fundamentos teóricos consolidados,
+ o software desenvolvido ainda possui algumas limitações.
+ Atualmente,
+ ele trabalha com uma lista pré-definida de sais e não considera interações mais complexas entre múltiplos componentes presentes em sistemas reais,
+ como efeitos simultâneos de diferentes íons ou variações de temperatura e pressão ao longo do tempo.
+ Além disso,
+ o cálculo se baseia em valores de entrada fornecidos diretamente pelo usuário,
+ sem integração com bases de dados externas.
+ Quanto à validação dos resultados,
+ a abordagem adotada será a comparação com dados reais.
+ A intenção é testar os valores calculados pelo sistema com amostras reais de salmouras fornecidas por empresas ou laboratórios parceiros,
+ verificando a coerência entre os níveis de incrustação previstos pelo software e os dados observados em laboratório.
+ Essa comparação permitirá avaliar a confiabilidade do modelo e ajustar possíveis desvios entre o comportamento teórico e a prática experimental.
+\end_layout
+
+\begin_layout Section
+Referências
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+adicionem referências específicas do problema em sí
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+UML:
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "prog-UML-blaha,prog-UML-Rumbaugh"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+Projetos:
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "projetos-introducao,projetos-pmi,projetos-projetoeletrico1,projetos-Woiler"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+Gestão de Projetos:
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "projetos-Abrantes,projetos-gestao,projetos-Heldman,projetos-Menezes,projetos-Pahl,projetos-Valeriano,projetos-Rosa"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Produtos:
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "projetos-Abrantes"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+C++:
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "adb-prog-livroCpp"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

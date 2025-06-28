@@ -169,7 +169,6 @@
 \html_be_strict false
 \docbook_table_output 0
 \docbook_mathml_prefix 1
-\author 643308733 "bueno" andreduartebueno@gmail.com
 \end_header
 
 \begin_body
@@ -232,55 +231,36 @@ Concepção
 \end_layout
 
 \begin_layout Standard
-O projeto foi desenvolvido com base nos princípios de Engenharia de Software e Modelagem Matemática
-\change_inserted 643308733 1750935466
- 
-\change_deleted 643308733 1750935466
-
-\end_layout
-
-\begin_layout Standard
-Computacional.
+O projeto foi desenvolvido com base nos princípios de Engenharia de Software e Modelagem Matemática Computacional.
  A metodologia adotada incluiu as etapas clássicas de concepção,
  elaboração,
- modelagem
-\change_inserted 643308733 1750935468
- 
-\change_deleted 643308733 1750935468
-
-\end_layout
-
-\begin_layout Standard
-orientada a objetos e implementação modular.
+ modelagem orientada a objetos e implementação modular.
  Utilizou-se C++ como linguagem de programação,
- aplicando-se
-\change_inserted 643308733 1750935469
- 
-\change_deleted 643308733 1750935470
-
-\end_layout
-
-\begin_layout Standard
-princípios de POO (Programação Orientada a Objetos) para garantir expansibilidade,
- organização e manutenção
-\change_inserted 643308733 1750935471
- 
-\change_deleted 643308733 1750935471
-
-\end_layout
-
-\begin_layout Standard
-do sistema.
+ aplicando-se princípios de POO (Programação Orientada a Objetos) para garantir expansibilidade,
+ organização e manutenção do sistema.
  Diagramas UML foram empregados para representar os aspectos estruturais e dinâmicos do
 \end_layout
 
 \begin_layout Standard
 software.
+\end_layout
 
-\change_deleted 643308733 1750935473
- .
-\change_unchanged
+\begin_layout Standard
+O projeto foi pensado na área de incrustação pois hoje a incrustação nos tubos de perfuração vem sendo um grande problema pois os sais em sistemas de produção de petróleo é um problema recorrente na indústria de óleo e gás.
+ Essas precipitações podem ocorrer quando duas salmouras com diferentes composições iônicas entram em contato sob certas condições de pressão,
+ temperatura e pH,
+ formando sais insolúveis como sulfato de bário,
+ carbonato de cálcio e outros.
+ Esses sais podem obstruir tubulações,
+ danificar equipamentos e comprometer a produção.
+\end_layout
 
+\begin_layout Standard
+Motivados por esse desafio,
+ desenvolvemos um simulador de precipitação de sais que permite prever a formação de sólidos a partir da mistura de salmouras,
+ com base em dados químicos e condições termodinâmicas.
+ O projeto é especialmente relevante em contextos de laboratório,
+ onde o preparo manual das soluções pode ser substituído ou complementado por simulações digitais.
 \end_layout
 
 \begin_layout Standard
@@ -317,7 +297,6 @@ Na concepção ocorre a primeira reunião da equipe de desenvolvimento com os cl
 
 \begin_layout Plain Layout
 O resultado da etapa de especificação é um conjunto formal de documentos e requisitos organizados pelo analista do sistema com apoio dos usuários.
- 
 \end_layout
 
 \begin_layout Plain Layout
@@ -337,7 +316,6 @@ especificações
  Podem ser especificadas características de desempenho.
  O cliente define o que deve obrigatoriamente ser satisfeito e o que é opcional – isto é,
  tudo o que o sistema/software deve ser.
- 
 \end_layout
 
 \begin_layout Description
@@ -346,7 +324,6 @@ Dica:
  como,
  por exemplo,
  a metáfora da "lixeira".
- 
 \end_layout
 
 \begin_layout Description
@@ -602,48 +579,46 @@ especificação
 \end_layout
 
 \begin_layout Standard
-O software permite ao usuário inserir dados relativos à concentração de íons presentes na salmoura,
+O principal objetivo deste projeto é construir um software capaz de:
+\end_layout
 
-\change_inserted 643308733 1750935505
- 
-\change_deleted 643308733 1750935505
+\begin_layout Itemize
+Cadastrar e gerenciar íons com suas propriedades (nome,
+ carga),
+\end_layout
 
+\begin_layout Itemize
+Definir sais como combinações específicas de íons,
+ com seus respectivos produtos de solubilidade (Ksp),
+\end_layout
+
+\begin_layout Itemize
+Criar salmouras contendo diferentes íons e sais dissolvidos em volumes definidos,
+\end_layout
+
+\begin_layout Itemize
+Simular a mistura de salmouras e calcular as concentrações finais de íons na solução resultante,
+\end_layout
+
+\begin_layout Itemize
+Verificar se ocorrerá precipitação,
+ utilizando cálculos de produto iônico comparados ao Ksp dos sais,
+\end_layout
+
+\begin_layout Itemize
+Exibir os resultados da simulação,plote de gráficos comparando diferentes cenários e indicando quais sais precipitam ou permanecem estáveis.
 \end_layout
 
 \begin_layout Standard
-informações de temperatura e pressão do meio,
- e realizar a análise de possibilidade de precipitação com base
-\change_inserted 643308733 1750935506
- 
-\change_deleted 643308733 1750935506
-
+O sistema também permite alterar temperatura e pressão da simulação,
+ o que afeta a solubilidade dos sais e a dinâmica da precipitação.
 \end_layout
 
 \begin_layout Standard
-na comparação entre o produto iônico e o produto de solubilidade (Kps) de determinados sais.
- O sistema
-\change_inserted 643308733 1750935507
- 
-\change_deleted 643308733 1750935507
-
-\end_layout
-
-\begin_layout Standard
-calcula automaticamente o produto iônico e emite um diagnóstico sobre a ocorrência ou não de incrustação,
-
-\change_inserted 643308733 1750935509
- 
-\change_deleted 643308733 1750935509
-
-\end_layout
-
-\begin_layout Standard
-sendo possível aplicar o modelo a sais como calcita (CaCO3) e barita (BaSO4).
- 
-\end_layout
-
-\begin_layout Section
-Requisitos
+A justificativa para o desenvolvimento deste software se baseia na demanda por uma ferramenta prática,
+ didática e confiável para simulações químicas em ambientes educacionais e industriais.
+ Atualmente,
+ a previsão de precipitação salina é feita com ferramentas pagas ou por meio de experimentos laboratoriais demoradosRequisitos
 \begin_inset Index idx
 range none
 pageformat default
@@ -662,7 +637,7 @@ name "sec:Requisitos"
 
 \end_inset
 
- 
+
 \end_layout
 
 \begin_layout Standard
@@ -719,11 +694,7 @@ RF-01
 
 \begin_layout Plain Layout
 O sistema deve permitir ao usuário cadastrar íons com nome,
-
-\change_inserted 643308733 1750935552
- 
-\change_unchanged
-concentração e carga
+ concentração e carga
 \end_layout
 
 \end_inset
@@ -953,7 +924,6 @@ RNF-01
 O software deve ser multiplataforma (Windows,
  Linux,
  MacOS).
- 
 \end_layout
 
 \end_inset
@@ -1048,7 +1018,7 @@ O sistema deve ser implementado em linguagem C++ com interface gráfica amigáve
 \end_layout
 
 \begin_layout Section
-Casos de Uso
+Casos de Uso do Software
 \begin_inset CommandInset label
 LatexCommand label
 name "sec:Casos-de-uso"
@@ -1197,13 +1167,11 @@ Etapas:
 \begin_layout Plain Layout
 2.
  Criar sais com os íons e valor de Kps.
- 
 \end_layout
 
 \begin_layout Plain Layout
 3.
  Inserir condições termodinâmicas (T e P).
- 
 \end_layout
 
 \begin_layout Plain Layout
@@ -1256,7 +1224,7 @@ O usuário pode inserir um sal que não atinge o Kps,
 \end_layout
 
 \begin_layout Subsection
-Diagrama de caso de uso geral
+Diagrama de caso de uso geral do Software
 \begin_inset CommandInset label
 LatexCommand label
 name "subsec: Diagrama de caso de uso geral"
@@ -1265,10 +1233,10 @@ name "subsec: Diagrama de caso de uso geral"
 
 
 \begin_inset Note Note
-status open
+status collapsed
 
 \begin_layout Plain Layout
- do software
+do software
 \end_layout
 
 \end_inset
@@ -1277,32 +1245,42 @@ status open
 \end_layout
 
 \begin_layout Standard
-O diagrama de caso de uso geral (Figura 1.1) representa as interações do usuário com o sistema.
- O usuário
+O diagrama de caso de uso geral descreve as funcionalidades acessíveis ao usuário:
+\end_layout
+
+\begin_layout Itemize
+Definir íons e suas propriedades (nome e carga);
+\end_layout
+
+\begin_layout Itemize
+Definir sais com íons participantes,
+ coeficientes e Ksp;
+\end_layout
+
+\begin_layout Itemize
+Criar amostras de salmouras e especificar concentrações molares;
+\end_layout
+
+\begin_layout Itemize
+Informar condições termodinâmicas (temperatura e pressão);
+\end_layout
+
+\begin_layout Itemize
+Executar a simulação;
+\end_layout
+
+\begin_layout Itemize
+Visualizar os sais que precipitam.
 \end_layout
 
 \begin_layout Standard
-pode:
+Além disso,
+ foram desenvolvidos casos de uso específicos para o preparo individual das salmouras aniônicas e catiônicas,
+ refletindo a prática laboratorial de preparo em separado antes da mistura final.
 \end_layout
 
 \begin_layout Standard
-- Criar íons;
-\end_layout
-
-\begin_layout Standard
-- Criar sais;
-\end_layout
-
-\begin_layout Standard
-- Criar salmouras;
-\end_layout
-
-\begin_layout Standard
-- Informar as condições termodinâmicas;
-\end_layout
-
-\begin_layout Standard
-- Analisar a precipitação
+Esses diagramas são compatíveis com os métodos implementados em CSimuladorPrecipitacao e refletem diretamente os fluxos interativos do terminal.
 \end_layout
 
 \begin_layout Standard
@@ -1317,7 +1295,9 @@ status open
 \align center
 \begin_inset Graphics
 	filename imagens/Diagrama de Caso de Uso.jpg
+	lyxscale 120
 	width 100text%
+	height 90pheight%
 	special height=0.3\textheight
 
 \end_inset
@@ -1349,7 +1329,45 @@ name "cap:Diagrama-caso-uso-geral"
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Subsection
+Diagrama de caso de uso especifico Aniônico
+\end_layout
+
+\begin_layout Description
+O diagrama de caso de uso específico representa as ações realizadas pelo usuário durante a preparação de uma salmoura aniônica no contexto laboratorial ou experimental.
+ As interações descritas são:
+\end_layout
+
+\begin_layout Itemize
+Separar Sais Aniônicos:
+ O usuário seleciona os sais aniônicos adequados para a preparação da solução.
+\end_layout
+
+\begin_layout Itemize
+Pesar Sais Aniônicos:
+ Após a separação,
+ o usuário realiza a pesagem precisa dos sais para garantir a proporção estequiométrica correta.
+\end_layout
+
+\begin_layout Itemize
+Preparar Salmoura Aniônica:
+ Com os sais pesados,
+ o usuário prepara a solução de salmoura contendo os ânions desejados,
+ dissolvendo-os em água deionizada ou outro meio apropriado.
+\end_layout
+
+\begin_layout Itemize
+Verificar pH:
+ Por fim,
+ o usuário mede o pH da salmoura preparada para assegurar que a solução esteja dentro da faixa adequada às análises.
+\end_layout
+
+\begin_layout Description
+Este diagrama descreve o fluxo de atividades manuais que antecedem a simulação computacional,
+ garantindo que os dados de entrada (concentração e tipo de íons) estejam corretamente preparados e representem com fidelidade as condições reais do experimento
+\end_layout
+
+\begin_layout Description
 \begin_inset Float figure
 placement document
 alignment document
@@ -1360,9 +1378,10 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename imagens/Diagrama caso de Uso.png
+	filename imagens/Diagrama caso de Uso Especifico (Anion).png
 	lyxscale 20
 	width 100text%
+	height 90pheight%
 
 \end_inset
 
@@ -1373,7 +1392,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Diagrama de caso de uso específico – Caso de Uso Simulação de Salmoura
+Diagrama de caso de uso específico – Caso de Uso Simulação de Salmoura Aniônica
 \begin_inset CommandInset label
 LatexCommand label
 name "cap:Diagrama-de-caso-de-uso-especifico:Titulo"
@@ -1381,6 +1400,84 @@ name "cap:Diagrama-de-caso-de-uso-especifico:Titulo"
 \end_inset
 
 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Diagrama de caso de uso especifico Catiônico
+\end_layout
+
+\begin_layout Standard
+O diagrama de caso de uso específico catiônico descreve as etapas realizadas pelo usuário durante a preparação da salmoura catiônica,
+ no contexto laboratorial.
+ Este processo faz parte da fase experimental do sistema de simulação e visa garantir que os dados inseridos no software representem adequadamente uma solução real.
+\end_layout
+
+\begin_layout Standard
+As ações realizadas pelo usuário incluem:
+\end_layout
+
+\begin_layout Itemize
+Separar Sais Catiônicos:
+ O usuário identifica e seleciona os sais catiônicos que serão utilizados na formulação da salmoura.
+\end_layout
+
+\begin_layout Itemize
+Pesar Sais Catiônicos:
+ Os sais previamente separados são pesados com precisão para garantir as quantidades corretas na solução.
+\end_layout
+
+\begin_layout Itemize
+Preparar Salmoura Catiônica:
+ Os sais são dissolvidos em solvente apropriado (geralmente água deionizada),
+ formando a salmoura com os cátions desejados.
+\end_layout
+
+\begin_layout Itemize
+Verificar pH:
+ Após a preparação,
+ o pH da solução é medido para assegurar que ela está dentro da faixa adequada para os testes de simulação de precipitação.
+\end_layout
+
+\begin_layout Standard
+Este diagrama ilustra claramente a sequência de interações que o usuário realiza com o sistema físico (antes da simulação computacional),
+ servindo como base para a entrada de dados que serão analisados no simulador.
+ Assim,
+ reforça a integração entre a parte experimental e o funcionamento do software.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement document
+alignment document
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename imagens/Diagrama caso de Uso Especifico (Cations).png
+	lyxscale 30
+	width 100text%
+	height 90pheight%
+	rotateOrigin center
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Diagrama de caso de uso específico – Caso de Uso Simulação de Salmoura Catiônica
 \end_layout
 
 \end_inset

@@ -97,6 +97,7 @@
 \html_be_strict false
 \docbook_table_output 0
 \docbook_mathml_prefix 1
+\author -1487032084 "Allida"
 \author 643308733 "bueno" andreduartebueno@gmail.com
 \end_header
 
@@ -249,29 +250,7 @@ O diagrama de classes (Figura 3.1) mostra as classes do sistema,
 \begin_layout Standard
 suas relações.
  As principais classes incluem:
-\end_layout
-
-\begin_layout Standard
-CCondicoesTermodinamicas:
- atributos de pressão e temperatura,
- com getters/setters.
-\change_inserted 643308733 1750937516
-
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-
-\change_inserted 643308733 1750937519
-não é classe!
-\change_unchanged
-
-\end_layout
-
-\end_inset
-
-
-\change_unchanged
+\change_inserted -1487032084 1751142835
 
 \end_layout
 
@@ -298,7 +277,7 @@ CCalcularPrecipitacao:
 
 \change_deleted 643308733 1750937285
  
-\change_unchanged
+\change_inserted -1487032084 1751144535
 
 \end_layout
 
@@ -358,32 +337,47 @@ name "subsec:Dicionário-de-classes"
 \end_layout
 
 \begin_layout Itemize
-CCondicoesTermodinamicas:
- Armazena os dados de temperatura e pressão utilizados no cálculo.
-\end_layout
-
-\begin_layout Itemize
 CIon:
- Contém informações básicas dos íons (nome,
- carga,
- concentração).
+ Contém informações básicas dos íons,
+ como nome e carga elétrica.
+ Essa classe é utilizada na construção dos sais (CSal) e no controle das concentrações nas salmouras.
 \end_layout
 
 \begin_layout Itemize
-CConcentracaoIons:
- Armazena todos os íons inseridos e permite recuperá-los por nome.
- 
+CTabelaPropriedadesIons:
+ Armazena todos os íons disponíveis no sistema em um unordered_map.
+ Permite adicionar novos íons,
+ salvar e carregar arquivos de dados,
+ além de recuperar íons por nome.
 \end_layout
 
 \begin_layout Itemize
-CSal:
- Modela um sal e permite calcular seu produto iônico.
+CSalmoura:
+ Representa uma solução aquosa contendo sais e íons dissolvidos.
+ Permite adicionar sais e íons,
+ calcular o mapa de mols de cada espécie e controlar o volume da salmoura.
 \end_layout
 
 \begin_layout Itemize
-CCalcularPrecipitacao:
- Aplica os algoritmos de análise para determinar se o sal precipita.
- 
+CMisturaSalmouras:
+ Responsável por armazenar um conjunto de salmouras e combinar seus dados.
+ Fornece métodos para obter os sais de todas as salmouras e calcular as concentrações finais dos íons.
+\end_layout
+
+\begin_layout Itemize
+CSalt:
+ Modela um sal com base em seu nome,
+ produto de solubilidade (Ksp),
+ lista de íons participantes e seus coeficientes estequiométricos.
+ Implementa os cálculos do produto iônico e da condição de precipitação.
+\end_layout
+
+\begin_layout Itemize
+CSimuladorPrecipitacao:
+ Gerencia toda a simulação,
+ criando salmouras,
+ misturando-as,
+ executando os cálculos e verificando se ocorre ou não a precipitação de sais com base nas condições e concentrações finais.
 \end_layout
 
 \begin_layout Section
@@ -437,33 +431,42 @@ name "subsec:diagrama de sequência"
 
 \shape italic
 \emph on
-O diagrama de sequência (Figura 3.2) mostra a ordem das chamadas entre os objetos do sistema.
- O
-\change_inserted 643308733 1750937589
- 
+Foram elaborados dois diagramas de sequência específicos:
+\end_layout
+
+\begin_layout Itemize
+
+\shape italic
+\emph on
+Criação de Íons e Sais:
+ descreve o processo de inserção de dados pelo usuário e posterior construção de objetos CIon e CSal
+\change_deleted -1487032084 1751144632
+t
+\change_unchanged
+ usando a fábrica CriarIons.
+\end_layout
+
+\begin_layout Itemize
+
+\shape italic
+\emph on
+Execução da Simulação:
+ mostra a ordem de chamada de métodos para definição das condições termodinâmicas,
+ adição de íons à salmoura,
+ cálculo das concentrações e análise de precipitação utilizando CalcularPrecipitação::AnalisarPrecipitacao()
+\change_inserted -1487032084 1751144387
+.
+\change_unchanged
+
+\end_layout
+
+\begin_layout Standard
+
+\shape italic
+\emph on
+Esses diagramas refletem a dinâmica real de execução do software e ajudam a visualizar dependências entre os módulos.
 \change_deleted 643308733 1750937589
 
-\end_layout
-
-\begin_layout Standard
-
-\shape italic
-\emph on
-fluxo inicia na main,
- passando pelas criações de íons,
- sais,
- entrada de condições termodinâmicas e
-\change_inserted 643308733 1750937590
- 
-\change_deleted 643308733 1750937590
-
-\end_layout
-
-\begin_layout Standard
-
-\shape italic
-\emph on
-chamada do método AnalisePrecipitacao() da classe CCalcularPrecipitacao.
 \end_layout
 
 \begin_layout Subsection
@@ -487,7 +490,7 @@ Veja o
 diagrama de seqüência na
 \shape default
 \emph default
- Figura 
+ Figura 3.2 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "cap:Diagrama-de-sequencia"
@@ -496,11 +499,49 @@ nolink "false"
 \end_inset
 
 .
+
+\change_deleted -1487032084 1751144491
+ 
+\change_inserted -1487032084 1751144648
+
 \end_layout
 
-\begin_layout Itemize
-[Aqui a ênfase é o entendimento da sequência com que as mensagens são trocadas,
- a ordem temporal.]
+\begin_layout Standard
+O diagrama de sequência apresentado descreve de forma detalhada a execução do método executar() da classe CSimuladorPrecipitacao,
+ que orquestra a simulação da precipitação de sais em solução.
+ O processo se inicia na função principal main,
+ que chama o método executar() do simulador.
+ Em seguida,
+ são criadas duas instâncias da classe CSalmoura por meio das funções criarSalmouraTeste1() e criarSalmouraTeste2(),
+ representando soluções com diferentes íons.
+ Essas salmouras são adicionadas a um objeto CMisturaSalmouras,
+ responsável por armazenar e tratar múltiplas soluções simultaneamente.
+\change_inserted -1487032084 1751144651
+
+\end_layout
+
+\begin_layout Standard
+Após a mistura ser definida,
+ um íon é criado utilizando a classe CIon,
+ com nome e carga específicos,
+ e é adicionado à salmoura com a respectiva concentração.
+ Posteriormente,
+ o método calcularConcentracoesFinais() da classe CMisturaSalmouras é invocado para obter as concentrações finais dos íons na mistura.
+ Com esses dados,
+ é instanciado um sal (CSal) utilizando seu nome,
+ valor de constante de solubilidade (Ksp),
+ íons envolvidos e seus coeficientes estequiométricos.
+\change_inserted -1487032084 1751144653
+
+\end_layout
+
+\begin_layout Standard
+Esse diagrama mostra de forma clara e cronológica a interação entre os principais objetos do sistema durante uma simulação.
+ Ele reforça a boa organização do código,
+ evidenciando a separação de responsabilidades entre as classes,
+ e auxilia na documentação e compreensão da lógica de simulação implementada.
+\change_inserted -1487032084 1751146685
+
 \end_layout
 
 \begin_layout Standard
@@ -574,25 +615,34 @@ name "subsec: Diagrama de sequência específico"
 \end_layout
 
 \begin_layout Standard
-Na Figura 3.2.2
-\change_inserted 643308733 1750937726
-
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-
-\change_inserted 643308733 1750937735
-referenciar corretamente as figuras
-\change_unchanged
+Na Figura 3.3.
+ observamos o diagrama de sequência específico.
+ O diagrama ilustra a execução pontual do método executar() da classe CSimuladorPrecipitacao,
+ destacando o fluxo lógico de verificação da possibilidade de precipitação de sais.
+ A sequência tem início com a chamada ao método calcularConcentracoesFinais() no objeto CMisturaSalmouras,
+ que retorna um mapa contendo as concentrações molares dos íons resultantes da mistura.
+\change_inserted -1487032084 1751146691
 
 \end_layout
 
-\end_inset
+\begin_layout Standard
+Em seguida,
+ essas concentrações são utilizadas para calcular o produto iônico do sal,
+ por meio do método CalcularProdutoIon(),
+ pertencente à classe CSal.
+ Durante esse cálculo,
+ há uma chamada ao método getNome() da classe CIon,
+ que fornece os nomes dos íons envolvidos na reação.
+\change_inserted -1487032084 1751144720
 
+\end_layout
 
-\change_unchanged
- observamos o diagrama de sequência específico.
+\begin_layout Standard
+Por fim,
+ o método VaiPrecipitar() é invocado para comparar o produto iônico obtido com o valor da constante de solubilidade (Ksp).
+ Se o produto for superior ao Ksp,
+ o sistema determina que haverá precipitação,
+ encerrando a simulação com a exibição do resultado ao usuário.
 \end_layout
 
 \begin_layout Standard
@@ -696,21 +746,41 @@ name "par:Diagrama-de-colaboração:"
 \end_layout
 
 \begin_layout Standard
-O diagrama de estado (Figura 3.3) representa os estados principais de execução do sistema:
- criar dados
-\change_inserted 643308733 1750937790
+O diagrama de estado (Figura 3.4)
+\change_inserted -1487032084 1751144822
+.
  
-\change_deleted 643308733 1750937798
+\change_deleted -1487032084 1751144822
+ 
+\change_unchanged
+O diagrama de comunicação ilustra a troca de mensagens entre os principais objetos do sistema durante a execução da simulação de precipitação.
+ O fluxo inicia-se a partir do objeto CSimuladorPrecipitacao,
+ que coordena a execução chamando métodos da classe CMisturaSalmouras para adicionar salmouras (adicionarSalmoura()) e calcular as concentrações finais dos íons (calcularConcentracoesFinais()).
+\change_inserted -1487032084 1751144920
 
 \end_layout
 
 \begin_layout Standard
-→ analisar dados → decidir se precipita ou não.
+Essas salmouras são compostas por objetos da classe CSalmoura,
+ que armazenam os sais e íons dissolvidos.
+ A inserção de íons nas salmouras é feita por meio do método adicionarIon(),
+ que busca o íon desejado na CTabelaPropriedadesIons através da função obterIon().
+\change_inserted -1487032084 1751144918
+
 \end_layout
 
 \begin_layout Standard
-Figura 3.3 - Diagrama de Estado:
- representação dos estados do processo de análise
+A classe CIon,
+ retirados da tabela,
+ possuem métodos como getNome() que são utilizados na construção de sais (CSal).
+ Estes,
+ por sua vez,
+ realizam o cálculo do produto iônico usando calculateIonicProduct(),
+ com base nas concentrações finais fornecidas pela mistura.
+ Ao final,
+ o sistema determina se ocorre ou não precipitação.
+\change_inserted -1487032084 1751144909
+
 \end_layout
 
 \begin_layout Standard
@@ -888,9 +958,10 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename C:/Users/joaov/OneDrive/Desktop/Bueno/ProjetoEngenharia-SoftwareAnaliseEncrustacaoAmostrasSalmouras/imagens/Diagrama de Atividade.png
+	filename imagens/Diagrama de Atividade.png
 	lyxscale 20
 	width 100text%
+	height 90theight%
 
 \end_inset
 
