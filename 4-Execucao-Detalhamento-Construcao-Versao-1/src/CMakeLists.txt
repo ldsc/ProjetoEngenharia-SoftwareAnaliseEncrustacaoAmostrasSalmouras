@@ -9,7 +9,6 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 # Adiciona todos os arquivos de cabeçalho e código-fonte ao projeto
 set(SOURCES
-    CThermodynamicConditions.cpp
     CIons.cpp
     CSalt.cpp
     main.cpp
@@ -17,16 +16,17 @@ set(SOURCES
     CTabelaPropriedadesIons.cpp
     CMisturaSalmouras.cpp
     CSimuladorPrecipitacao.cpp
+    CPlotPrecipitacao.cpp
 )
 
 set(HEADERS
-    CThermodynamicConditions.h
     CIons.h
     CSalt.h
     CSalmoura.h
     CTabelaPropriedadesIons.h
     CMisturaSalmouras.h
     CSimuladorPrecipitacao.h
+    CPlotPrecipitacao.h
 )
 
 # Criação do executável
@@ -41,5 +41,5 @@ set_target_properties(${PROJECT_NAME} PROPERTIES
 if (MSVC)
     target_compile_options(${PROJECT_NAME} PRIVATE /W4 /WX) # Ativa avisos no Visual Studio
 else()
-    target_compile_options(${PROJECT_NAME} PRIVATE -Wall -Wextra -Wpedantic -Werror) # Ativa avisos em GCC/Clang
+    target_compile_options(${PROJECT_NAME} PRIVATE -Wall -Wextra -Wpedantic) # Ativa avisos em GCC/Clang
 endif()

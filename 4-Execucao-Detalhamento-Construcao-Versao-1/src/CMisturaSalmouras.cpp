@@ -6,43 +6,28 @@ void CMisturaSalmouras::adicionarSalmoura(const CSalmoura& salmoura) {
     salmouras.push_back(salmoura);
 }
 
-double CMisturaSalmouras::getVolumeTotal() const {
-    double total = 0.0;
-    for (const auto& s : salmouras) {
-        total += s.getVolume();
-    }
-    return total;
-}
-
-std::vector<CSalt> CMisturaSalmouras::getTodosSais() const {
-    std::vector<CSalt> todos;
-    for (const auto& s : salmouras) {
-        auto sais = s.getSais();
-        todos.insert(todos.end(), sais.begin(), sais.end());
-    }
-    return todos;
-}
-
 std::unordered_map<std::string, double> CMisturaSalmouras::calcularConcentracoesFinais() const {
-    std::unordered_map<std::string, double> molsTotais;
-    double volumeTotal = getVolumeTotal();
+    std::unordered_map<std::string, double> acumulado;
+    double totalVolume = 0.0;
 
     for (const auto& s : salmouras) {
-        auto mols = s.getMapaIonsMols();
-        for (const auto& [nome, quantidade] : mols) {
-            molsTotais[nome] += quantidade;
+        const auto mapa = s.getMapaIonsMols();
+        double v = s.getVolume();
+        totalVolume += v;
+
+        for (const auto& [ion, mols] : mapa) {
+            acumulado[ion] += mols;
         }
     }
 
-    std::unordered_map<std::string, double> concentracoes;
-    for (const auto& [nome, mols] : molsTotais) {
-        concentracoes[nome] = mols / volumeTotal;
+    for (auto& [ion, totalMols] : acumulado) {
+        totalMols /= totalVolume;
     }
 
-    return concentracoes;
+    return acumulado;
 }
 
-std::vector<CSalmoura> CMisturaSalmouras::getSalmouras() const {
+const std::vector<CSalmoura>& CMisturaSalmouras::getSalmouras() const {
     return salmouras;
 }
 

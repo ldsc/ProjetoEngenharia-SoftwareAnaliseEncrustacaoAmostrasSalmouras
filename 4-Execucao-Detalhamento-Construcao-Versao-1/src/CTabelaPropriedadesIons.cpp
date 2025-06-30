@@ -6,38 +6,26 @@
 CTabelaPropriedadesIons::CTabelaPropriedadesIons() {}
 
 void CTabelaPropriedadesIons::carregarDeArquivo(const std::string& caminho) {
-    std::ifstream arquivo(caminho);
-    if (!arquivo.is_open()) {
-        std::cerr << "Erro ao abrir o arquivo: " << caminho << "\n";
-        return;
-    }
+    std::ifstream arquivo("./dados/" + caminho);
+    if (!arquivo.is_open()) return;
 
     std::string linha;
     while (std::getline(arquivo, linha)) {
+        if (linha.empty() || linha[0] == '#') continue;
         std::istringstream iss(linha);
-        std::string nome, cargaStr;
-
-        if (std::getline(iss, nome, ';') && std::getline(iss, cargaStr)) {
-            int carga = std::stoi(cargaStr);
-            adicionarIon(CIon(nome, carga));
+        std::string nome;
+        int carga;
+        if (iss >> nome >> carga) {
+            m_ions[nome] = CIon(nome, carga);
         }
     }
-
-    arquivo.close();
 }
 
 void CTabelaPropriedadesIons::salvarParaArquivo(const std::string& caminho) const {
-    std::ofstream arquivo(caminho);
-    if (!arquivo.is_open()) {
-        std::cerr << "Erro ao salvar no arquivo: " << caminho << "\n";
-        return;
-    }
-
+    std::ofstream arquivo("./dados/" + caminho);
     for (const auto& [nome, ion] : m_ions) {
-        arquivo << ion.getNome() << ";" << ion.getCarga() << "\n";//esta linha tem erros...
+        arquivo << nome << "\t" << ion.getCarga() << "\n";
     }
-
-    arquivo.close();
 }
 
 void CTabelaPropriedadesIons::adicionarIon(const CIon& ion) {
@@ -49,14 +37,10 @@ CIon CTabelaPropriedadesIons::obterIon(const std::string& nome) const {
     if (it != m_ions.end()) {
         return it->second;
     }
-    std::cerr << "Ion nao encontrado: " << nome << "\n";
-    return CIon(); // precisa informar que retornou ion zerado; ou pedir dados e completar o que falta
+    std::cerr << "Íon não encontrado: " << nome << "\n";
+    return CIon();
 }
 
-std::vector<CIon> CTabelaPropriedadesIons::listarIons() const {
-    std::vector<CIon> lista;
-    for (const auto& [_, ion] : m_ions) {
-        lista.push_back(ion);
-    }
-    return lista;
+const std::unordered_map<std::string, CIon>& CTabelaPropriedadesIons::getMapa() const {
+    return m_ions;
 }

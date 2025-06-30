@@ -6,12 +6,13 @@ CSalmoura::CSalmoura()
 CSalmoura::CSalmoura(double volume)
     : quantidadeLiquido(volume) {}
 
-void CSalmoura::adicionarIon(const std::string& nomeIon, double quantidade) {
-    concentracoesMols[nomeIon] += quantidade;
+void CSalmoura::adicionarIon(const std::string& nomeIon, double mols) {
+    concentracoesMols[nomeIon] += mols;
 }
 
-void CSalmoura::adicionarSal(const CSalt& sal) {
-    sais.push_back(sal);
+void CSalmoura::DefinirCondicoes(double temperaturaK, double pressaoAtm) {
+    temperatura = temperaturaK;
+    pressao = pressaoAtm;
 }
 
 std::unordered_map<std::string, double> CSalmoura::getMapaIonsMols() const {
@@ -22,12 +23,13 @@ double CSalmoura::getVolume() const {
     return quantidadeLiquido;
 }
 
-void CSalmoura::setVolume(double volume) {
-    quantidadeLiquido = volume;
+double CSalmoura::getTemperatura() const
+{
+    return temperatura;
 }
 
-std::vector<CSalt> CSalmoura::getSais() const {
-    return sais;
+void CSalmoura::setVolume(double volume) {
+    quantidadeLiquido = volume;
 }
 
 CSalmoura::~CSalmoura() {}

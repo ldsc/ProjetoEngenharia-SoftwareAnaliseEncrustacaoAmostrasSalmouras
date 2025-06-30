@@ -8,7 +8,7 @@
 
 /**
  * @brief Classe responsável por modelar um sal e calcular sua solubilidade.
- *
+ * 
  * Um sal é formado por uma combinação de íons com coeficientes estequiométricos conhecidos.
  * Sua precipitação depende do produto iônico comparado ao Ksp (constante de solubilidade).
  */
@@ -17,35 +17,38 @@ class CSalt {
 public:
 
     /**
-     * @brief Construtor padrão: inicializa um sal vazio.
+     * @brief Construtor completo do sal.
+     * @param nome Nome do sal
+     * @param kspRef Ksp de referência
+     * @param deltaH ΔHº de dissolução (J/mol)
+     * @param temperaturaRef Temperatura de referência (K)
+     * @param ions Vetor de íons
+     * @param coeficientes Coeficientes estequiométricos
      */
-    CSalt();
+    CSalt(std::string nome, double kspRef, double deltaH, double temperaturaRef, const std::vector<CIon>& ions, const std::vector<int>& coeficientes);
 
-    /**
-     * @brief Construtor parametrizado.
-     *
-     * @param nome Nome do sal (ex: "NaCl").
-     * @param ksp Produto de solubilidade do sal.
-     * @param ions Vetor de íons participantes.
-     * @param coeficientes Vetor com coeficientes estequiométricos dos íons.
+     /**
+     * @brief Corrige o Ksp com base na temperatura atual.
+     * @param temperatura Temperatura (K)
+     * @return Ksp corrigido
      */
-    CSalt(std::string nome, double ksp, const std::vector<CIon>& ions, const std::vector<int>& coeficientes);
+    double KspCorrigido(double temperatura) const;
 
     /**
      * @brief Calcula o produto iônico Q do sal com base nas concentrações fornecidas.
-     *
+     * 
      * @param concentracoes Mapa nome-do-íon → concentração (mol/L)
      * @return Valor de Q (produto iônico)
      */
     double calculateIonicProduct(const std::unordered_map<std::string, double>& concentracoes) const;
 
     /**
-     * @brief Verifica se o sal irá precipitar com base no produto iônico.
-     *
-     * @param concentracoes Mapa nome-do-íon → concentração (mol/L)
-     * @return true se Q > Ksp, ou seja, precipitação ocorre
+     * @brief Verifica se o sal irá precipitar.
+     * @param concentracoes Mapa de concentração molar por íon
+     * @param temperatura Temperatura (K)
+     * @return true se Q > Ksp_corrigido
      */
-    bool willPrecipitate(const std::unordered_map<std::string, double>& concentracoes) const;
+    bool willPrecipitate(const std::unordered_map<std::string, double>& concentracoes, double temperatura) const;
 
     /// @return Nome do sal.
     std::string getName() const;
@@ -75,10 +78,12 @@ public:
     ~CSalt();
 
 private:
-    std::string name;                  /**< Nome do sal */
-    double Ksp;                        /**< Produto de solubilidade (Ksp) */
-    std::vector<CIon> ions;           /**< Íons que compõem o sal */
-    std::vector<int> coeficientes;    /**< Coeficientes estequiométricos dos íons */
+    std::string name;               // Nome do sal
+    double kspRef;                  // Ksp de referência (em temperaturaRef)
+    double deltaH;                  // ΔHº de dissolução (J/mol)
+    double temperaturaRef;          // Temperatura de referência (K)
+    std::vector<CIon> ions;         // Íons que compõem o sal
+    std::vector<int> coeficientes;  // Coeficientes estequiométricos
 };
 
 #endif

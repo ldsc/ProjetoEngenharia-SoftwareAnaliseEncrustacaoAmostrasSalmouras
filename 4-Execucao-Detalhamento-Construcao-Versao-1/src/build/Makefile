@@ -56,10 +56,10 @@ RM = C:\mingw\bin\cmake.exe -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\Allida\OneDrive\Desktop\ProjetoEngenharia-SoftwareAnaliseEncrustacaoAmostrasSalmouras\4-Execucao-Detalhamento-Construcao-Versao-1\src
+CMAKE_SOURCE_DIR = C:\Users\Allida\OneDrive\Downloads\Allida_Joao_30-06\Allida_Joao
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\Allida\OneDrive\Desktop\ProjetoEngenharia-SoftwareAnaliseEncrustacaoAmostrasSalmouras\4-Execucao-Detalhamento-Construcao-Versao-1\src\build
+CMAKE_BINARY_DIR = C:\Users\Allida\OneDrive\Downloads\Allida_Joao_30-06\Allida_Joao\build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -86,9 +86,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Allida\OneDrive\Desktop\ProjetoEngenharia-SoftwareAnaliseEncrustacaoAmostrasSalmouras\4-Execucao-Detalhamento-Construcao-Versao-1\src\build\CMakeFiles C:\Users\Allida\OneDrive\Desktop\ProjetoEngenharia-SoftwareAnaliseEncrustacaoAmostrasSalmouras\4-Execucao-Detalhamento-Construcao-Versao-1\src\build\\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Allida\OneDrive\Downloads\Allida_Joao_30-06\Allida_Joao\build\CMakeFiles C:\Users\Allida\OneDrive\Downloads\Allida_Joao_30-06\Allida_Joao\build\\CMakeFiles\progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Allida\OneDrive\Desktop\ProjetoEngenharia-SoftwareAnaliseEncrustacaoAmostrasSalmouras\4-Execucao-Detalhamento-Construcao-Versao-1\src\build\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Allida\OneDrive\Downloads\Allida_Joao_30-06\Allida_Joao\build\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -175,6 +175,30 @@ CMisturaSalmouras.s: CMisturaSalmouras.cpp.s
 CMisturaSalmouras.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\PrecipitationSimulator.dir\build.make CMakeFiles/PrecipitationSimulator.dir/CMisturaSalmouras.cpp.s
 .PHONY : CMisturaSalmouras.cpp.s
+
+CPlotPrecipitacao.obj: CPlotPrecipitacao.cpp.obj
+.PHONY : CPlotPrecipitacao.obj
+
+# target to build an object file
+CPlotPrecipitacao.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PrecipitationSimulator.dir\build.make CMakeFiles/PrecipitationSimulator.dir/CPlotPrecipitacao.cpp.obj
+.PHONY : CPlotPrecipitacao.cpp.obj
+
+CPlotPrecipitacao.i: CPlotPrecipitacao.cpp.i
+.PHONY : CPlotPrecipitacao.i
+
+# target to preprocess a source file
+CPlotPrecipitacao.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PrecipitationSimulator.dir\build.make CMakeFiles/PrecipitationSimulator.dir/CPlotPrecipitacao.cpp.i
+.PHONY : CPlotPrecipitacao.cpp.i
+
+CPlotPrecipitacao.s: CPlotPrecipitacao.cpp.s
+.PHONY : CPlotPrecipitacao.s
+
+# target to generate assembly for a file
+CPlotPrecipitacao.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PrecipitationSimulator.dir\build.make CMakeFiles/PrecipitationSimulator.dir/CPlotPrecipitacao.cpp.s
+.PHONY : CPlotPrecipitacao.cpp.s
 
 CSalmoura.obj: CSalmoura.cpp.obj
 .PHONY : CSalmoura.obj
@@ -272,30 +296,6 @@ CTabelaPropriedadesIons.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\PrecipitationSimulator.dir\build.make CMakeFiles/PrecipitationSimulator.dir/CTabelaPropriedadesIons.cpp.s
 .PHONY : CTabelaPropriedadesIons.cpp.s
 
-CThermodynamicConditions.obj: CThermodynamicConditions.cpp.obj
-.PHONY : CThermodynamicConditions.obj
-
-# target to build an object file
-CThermodynamicConditions.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\PrecipitationSimulator.dir\build.make CMakeFiles/PrecipitationSimulator.dir/CThermodynamicConditions.cpp.obj
-.PHONY : CThermodynamicConditions.cpp.obj
-
-CThermodynamicConditions.i: CThermodynamicConditions.cpp.i
-.PHONY : CThermodynamicConditions.i
-
-# target to preprocess a source file
-CThermodynamicConditions.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\PrecipitationSimulator.dir\build.make CMakeFiles/PrecipitationSimulator.dir/CThermodynamicConditions.cpp.i
-.PHONY : CThermodynamicConditions.cpp.i
-
-CThermodynamicConditions.s: CThermodynamicConditions.cpp.s
-.PHONY : CThermodynamicConditions.s
-
-# target to generate assembly for a file
-CThermodynamicConditions.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\PrecipitationSimulator.dir\build.make CMakeFiles/PrecipitationSimulator.dir/CThermodynamicConditions.cpp.s
-.PHONY : CThermodynamicConditions.cpp.s
-
 main.obj: main.cpp.obj
 .PHONY : main.obj
 
@@ -335,6 +335,9 @@ help:
 	@echo ... CMisturaSalmouras.obj
 	@echo ... CMisturaSalmouras.i
 	@echo ... CMisturaSalmouras.s
+	@echo ... CPlotPrecipitacao.obj
+	@echo ... CPlotPrecipitacao.i
+	@echo ... CPlotPrecipitacao.s
 	@echo ... CSalmoura.obj
 	@echo ... CSalmoura.i
 	@echo ... CSalmoura.s
@@ -347,9 +350,6 @@ help:
 	@echo ... CTabelaPropriedadesIons.obj
 	@echo ... CTabelaPropriedadesIons.i
 	@echo ... CTabelaPropriedadesIons.s
-	@echo ... CThermodynamicConditions.obj
-	@echo ... CThermodynamicConditions.i
-	@echo ... CThermodynamicConditions.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

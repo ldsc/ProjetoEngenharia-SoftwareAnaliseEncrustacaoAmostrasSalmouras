@@ -3,7 +3,7 @@
 
 #include "CMisturaSalmouras.h"
 #include "CSalt.h"
-#include "CThermodynamicConditions.h"
+#include "CTabelaPropriedadesIons.h"
 #include <vector>
 
 /**
@@ -15,10 +15,12 @@
  */
 class CSimuladorPrecipitacao {
 private:
-    /**
-     * @brief Condições termodinâmicas da simulação (pressão e temperatura).
-     */
-    CthermodynamicConditions condicoes;
+    CTabelaPropriedadesIons tabelaIons;
+    std::vector<CSalt> saisDisponiveis;
+
+    void ConstruirSalmoura(CSalmoura& s) const;
+    void CarregarSais(const std::string& caminhoArquivo);
+    void ListarArquivosTxt(const std::string& titulo, std::string& selecionado) const;
 
 public:
     /**
@@ -31,9 +33,8 @@ public:
     /**
      * @brief Executa a simulação de precipitação com base na mistura e nos sais fornecidos.
      * @param mistura Mistura de salmouras criada pelo usuário.
-     * @param sais Vetor de sais a serem analisados quanto à possibilidade de precipitação.
      */
-    void simular(const CMisturaSalmouras& mistura, const std::vector<CSalt>& sais);
+    void simular(const CMisturaSalmouras& mistura);
 };
 
 #endif

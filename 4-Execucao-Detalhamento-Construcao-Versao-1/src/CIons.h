@@ -6,7 +6,7 @@
 
 /**
  * @brief Estrutura que representa um íon na solução química.
- *
+ * 
  * @param name Nome do íon (ex: "Ca2+").
  * @param charge Carga elétrica do íon.
  */
@@ -15,48 +15,45 @@ class CIon {
     public:
 
         /**
-         * @brief Construtor da estrutura ion. [não é estrutura!]
-         *
-         * @param name Nome do íon.
-         * @param charge Carga do íon.
+         * @brief Construtor da estrutura ion.
+         * 
+         * @param _name Nome do íon.
+         * @param _charge Carga do íon.
          */
-        CIon(std::string nome = "", int carga = 0);
+        CIon(std::string _nome = "", int _carga = 0);
 
-    std::string getNome() const; // não use get/set use Nome() Carga() padrão que usamos.
+        std::string getNome() const;
         int getCarga() const;
 
-        void setNome(const std::string& nome);
-        void setCarga(int carga);
 
 private:
-    std::string m_nome;
-    int m_carga;
+    std::string nome;
+    int carga;
 };
 
 /**
  * @brief Classe responsável pela criação e gerenciamento de íons.
- *
+ * 
  * @param ions Mapa (`unordered_map`) que armazena os íons criados.
  */
-class CreateIons { //[nome ruim! é sua base de dados de ions;]
-
+class CreateIons {
     public:
 
     // Construtor
-    CreateIons();
-
+    CreateIons();                                                           
+    
     // Adiciona um íon ao mapa
-    void addIon(const std::string& name, int charge);
-    // Obtém um íon do mapa
-    CIon getIon(const std::string& name);
+    void addIon(const std::string& _name, int _charge);
+    // Obtém um íon do mapa 
+    CIon getIon(const std::string& _name);                                    
 
     // Destrutor
-    ~CreateIons();
+    ~CreateIons();                                                          
 
     protected:
     // Contêiner de íons armazenados
-    std::unordered_map<std::string, CIon> ions;
-    // [deve incluir Salvar/Ler dados em disco]
+    std::unordered_map<std::string, CIon> ions;                              
+
 };
 
 #endif

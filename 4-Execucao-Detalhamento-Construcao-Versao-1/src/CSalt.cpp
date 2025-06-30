@@ -2,11 +2,9 @@
 #include <cmath>
 #include <iostream>
 
-CSalt::CSalt()
-    : name(""), Ksp(0.0), ions(), coeficientes() {}
-
-CSalt::CSalt(std::string nome, double ksp, const std::vector<CIon>& ions_, const std::vector<int>& coef_)
-    : name(nome), Ksp(ksp), ions(ions_), coeficientes(coef_) {}
+CSalt::CSalt(std::string nome, double kspRef, double deltaH, double temperaturaRef,
+             const std::vector<CIon>& ions, const std::vector<int>& coeficientes)
+    : name(nome), kspRef(kspRef), deltaH(deltaH), temperaturaRef(temperaturaRef), ions(ions), coeficientes(coeficientes) {}
 
 double CSalt::calculateIonicProduct(const std::unordered_map<std::string, double>& concentracoes) const {
     double Q = 1.0;
@@ -17,7 +15,7 @@ double CSalt::calculateIonicProduct(const std::unordered_map<std::string, double
         if (it != concentracoes.end()) {
             Q *= std::pow(it->second, coeficientes[i]);
         } else {
-            std::cerr << "Aviso: concentração para ion " << nomeIon << " nao encontrada. Q = 0\n";
+            std::cerr << "Aviso: concentração para íon " << nomeIon << " não encontrada. Q = 0\n";
             return 0.0;
         }
     }
@@ -25,8 +23,18 @@ double CSalt::calculateIonicProduct(const std::unordered_map<std::string, double
     return Q;
 }
 
-bool CSalt::willPrecipitate(const std::unordered_map<std::string, double>& concentracoes) const {
-    return calculateIonicProduct(concentracoes) > Ksp;
+double CSalt::KspCorrigido(double temperatura) const {
+    constexpr double R = 8.314;
+    double lnK = std::log(kspRef);
+    double ajuste = -deltaH / R * (1.0 / temperatura - 1.0 / temperaturaRef);
+    return std::exp(lnK + ajuste);
+}
+
+bool CSalt::willPrecipitate(const std::unordered_map<std::string, double>& concentracoes, double temperatura) const {
+    double Q = calculateIonicProduct(concentracoes);
+    double kspAtual = KspCorrigido(temperatura);
+    
+    return Q > kspAtual;
 }
 
 std::string CSalt::getName() const {
@@ -34,7 +42,7 @@ std::string CSalt::getName() const {
 }
 
 double CSalt::getKsp() const {
-    return Ksp;
+    return kspRef;
 }
 
 std::vector<CIon> CSalt::getIons() const {
@@ -50,7 +58,7 @@ void CSalt::setName(std::string _name) {
 }
 
 void CSalt::setKsp(double _Kps) {
-    Ksp = _Kps;
+    kspRef = _Kps;
 }
 
 void CSalt::setIons(const std::vector<CIon>& _ions) {

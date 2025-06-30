@@ -1,114 +1,166 @@
 #include "CSimuladorPrecipitacao.h"
-#include "CTabelaPropriedadesIons.h"
+#include "CPlotPrecipitacao.h"
+#include <fstream>
+#include <sstream>
 #include <iostream>
-#include <limits>
+#include <filesystem>
+
+namespace fs = std::filesystem;
 
 void CSimuladorPrecipitacao::executar() {
-    CTabelaPropriedadesIons tabela;
-    tabela.carregarDeArquivo("dados_ions.txt");
+    std::string arqIons;
+    ListarArquivosTxt("Selecione o arquivo de ions:", arqIons);
+    tabelaIons.carregarDeArquivo(arqIons);
 
-    int opcao = 0;
-    do {
-        std::cout << "\n==== Simulador de Precipitacao Quimica ====" << std::endl;
-        std::cout << "1. Definir condicoes termodinamicas" << std::endl;
-        std::cout << "2. Executar simulacao" << std::endl;
-        std::cout << "3. (Futuro) Gerar grafico de concentracoes" << std::endl;
-        std::cout << "4. Sair" << std::endl;
-        std::cout << "Escolha: ";
-        std::cin >> opcao;
+    std::string arqSais;
+    ListarArquivosTxt("Selecione o arquivo de sais:", arqSais);
+    CarregarSais(arqSais);
 
-        switch (opcao) {
-            case 1: {
-                double p, t;
-                std::cout << "Informe a pressao (atm): ";
-                std::cin >> p;
-                std::cout << "Informe a temperatura (Celsius): ";
-                std::cin >> t;
-                condicoes.setPressure(p);
-                condicoes.setTemperature(t);
-                break;
-            }
-            case 2: {
-                int numSalmouras;
-                CMisturaSalmouras mistura; // colocar como membro da classe.
-                std::cout << "Quantas salmouras deseja criar? ";
-                std::cin >> numSalmouras;
-                for (int i = 0; i < numSalmouras; ++i) {
-                    CSalmoura s;
-                    double volume;// a entrada de dados da classe salmoura deveria ser feita na classe salmoura, algo como salmoura.EntradaDados();
-                    std::cout << "\nSalmoura " << (i + 1) << ": volume (L): ";
-                    std::cin >> volume;
-                    s.setVolume(volume);
+    CMisturaSalmouras mistura;
+    int num;
+    std::cout << "Quantas salmouras deseja adicionar? ";
+    std::cin >> num;
 
-                    int numIons;
-                    std::cout << "Quantos ions deseja adicionar? ";
-                    std::cin >> numIons;
-                    for (int j = 0; j < numIons; ++j) {
-                        std::string nomeIon;
-                        double mols;
-                        std::cout << "  Nome do ion " << (j + 1) << ": ";//informar unidades
-                        std::cin >> nomeIon;
-                        std::cout << "  Mols: ";
-                        std::cin >> mols;
-                        s.adicionarIon(nomeIon, mols);
-                    }
-                    mistura.adicionarSalmoura(s);
-                }
+    for (int i = 0; i < num; ++i) {
+        CSalmoura s;
+        std::cout << "\n--- Salmoura " << (i + 1) << " ---" << std::endl;
+        ConstruirSalmoura(s);
+        mistura.adicionarSalmoura(s);
+    }
 
-                int numSais;
-                std::vector<CSalt> sais; // colocar na classe; atributo da classe
-                std::cout << "\nQuantos sais deseja criar? ";
-                std::cin >> numSais;
-                for (int i = 0; i < numSais; ++i) {
-                    std::string nome;
-                    double ksp;
-                    int numIons;
-                    std::cout << "\nNome do sal: ";
-                    std::cin >> nome;
-                    std::cout << "Ksp: ";
-                    std::cin >> ksp;
-                    std::cout << "Numero de ions: ";
-                    std::cin >> numIons;
-                    std::vector<CIon> ions;
-                    std::vector<int> coefs;
-                    for (int j = 0; j < numIons; ++j) {
-                        std::string nomeIon;
-                        int coef;
-                        std::cout << "  Nome do ion " << (j + 1) << ": ";
-                        std::cin >> nomeIon;
-                        CIon ion = tabela.obterIon(nomeIon);
-                        std::cout << "  Coeficiente: ";
-                        std::cin >> coef;
-                        ions.push_back(ion);
-                        coefs.push_back(coef);
-                    }
-                    sais.emplace_back(nome, ksp, ions, coefs);
-                }
-
-                simular(mistura, sais);
-                break;
-            }
-            case 3:
-                std::cout << "[INFO] Funcionalidade de grafico ainda nao implementada." << std::endl;
-                break;
-            case 4:
-                std::cout << "Encerrando..." << std::endl;
-                break;
-            default:
-                std::cout << "Opcao invalida." << std::endl;
-        }
-    } while (opcao != 4);
+    simular(mistura);
 }
 
-void CSimuladorPrecipitacao::simular(const CMisturaSalmouras& mistura, const std::vector<CSalt>& sais) {
-    auto concentracoes = mistura.calcularConcentracoesFinais();
-    for (const auto& sal : sais) {
-        double Q = sal.calculateIonicProduct(concentracoes);
-        std::cout << "Sal: " << sal.getName() << " → Q = " << Q;
-        if (sal.willPrecipitate(concentracoes)) {
-            std::cout << " → [PRECIPITA]" << std::endl;
-        } else {
-            std::cout << " → [estavel]" << std::endl;
+void CSimuladorPrecipitacao::ConstruirSalmoura(CSalmoura& s) const {
+    double v, t, p;
+    std::cout << "Volume (L): ";
+    std::cin >> v;
+    std::cout << "Temperatura (K): ";
+    std::cin >> t;
+    std::cout << "Pressao (atm): ";
+    std::cin >> p;
+    s.setVolume(v);
+    s.DefinirCondicoes(t, p);
+
+    std::string arqSalmoura;
+    ListarArquivosTxt("Selecione o arquivo de ions da salmoura:", arqSalmoura);
+    std::ifstream arq("./dados/" + arqSalmoura);
+    if (!arq.is_open()) {
+        std::cerr << "Erro ao abrir " << arqSalmoura << std::endl;
+        return;
+    }
+
+    std::string linha;
+    while (std::getline(arq, linha)) {
+        if (linha.empty() || linha[0] == '#') continue;
+        std::istringstream iss(linha);
+        std::string nomeIon;
+        double mols;
+        if (iss >> nomeIon >> mols) {
+            s.adicionarIon(nomeIon, mols);
         }
     }
 }
+
+void CSimuladorPrecipitacao::CarregarSais(const std::string& caminhoArquivo) {
+    std::ifstream arq("./dados/" + caminhoArquivo);
+    if (!arq.is_open()) return;
+
+    std::string linha;
+    while (std::getline(arq, linha)) {
+        if (linha.empty() || linha[0] == '#') continue;
+        std::istringstream iss(linha);
+        std::string nome, ion1str, ion2str;
+        double kspRef, deltaH, tempRef;
+        iss >> nome >> kspRef >> deltaH >> tempRef >> ion1str >> ion2str;
+
+        std::vector<CIon> ions;
+        std::vector<int> coefs;
+        for (const std::string& entrada : {ion1str, ion2str}) {
+            size_t sep = entrada.find(":");
+            if (sep == std::string::npos) continue;
+            std::string nomeIon = entrada.substr(0, sep);
+            int coef = std::stoi(entrada.substr(sep + 1));
+            ions.push_back(tabelaIons.obterIon(nomeIon));
+            coefs.push_back(coef);
+        }
+        saisDisponiveis.emplace_back(nome, kspRef, deltaH, tempRef, ions, coefs);
+    }
+}
+
+void CSimuladorPrecipitacao::ListarArquivosTxt(const std::string& titulo, std::string& selecionado) const {
+    std::vector<std::string> arquivos;
+    std::cout << "\n" << titulo << std::endl;
+    int index = 1;
+    for (const auto& entry : fs::directory_iterator("./dados/")) {
+        if (entry.is_regular_file() && entry.path().extension() == ".txt") {
+            std::cout << "[" << index << "] " << entry.path().filename().string() << std::endl;
+            arquivos.push_back(entry.path().filename().string());
+            ++index;
+        }
+    }
+    if (arquivos.empty()) {
+        std::cerr << "Nenhum arquivo .txt encontrado." << std::endl;
+        exit(1);
+    }
+    int escolha = 0;
+    do {
+        std::cout << "Digite o numero do arquivo desejado: ";
+        std::cin >> escolha;
+    } while (escolha < 1 || escolha > static_cast<int>(arquivos.size()));
+
+    selecionado = arquivos[escolha - 1];
+}
+
+void CSimuladorPrecipitacao::simular(const CMisturaSalmouras& mistura) {
+    auto concentracoes = mistura.calcularConcentracoesFinais();
+    double somaTemperatura = 0.0;
+    double somaVolume = 0.0;
+    for (const auto& s : mistura.getSalmouras()) {
+        somaTemperatura += s.getTemperatura() * s.getVolume();
+        somaVolume += s.getVolume();
+    }
+    double temperaturaMedia = somaVolume > 0 ? somaTemperatura / somaVolume : 298.15;
+
+    std::vector<std::string> nomes;
+    std::vector<double> qs;
+    std::vector<double> ksps;
+
+    std::cout << "\n==== Resultados ====" << std::endl;
+    for (const auto& sal : saisDisponiveis) {
+        double Q = sal.calculateIonicProduct(concentracoes);
+        double K = sal.KspCorrigido(temperaturaMedia);
+        nomes.push_back(sal.getName());
+        qs.push_back(Q);
+        ksps.push_back(K);
+
+        std::cout << "Sal: " << sal.getName()
+                  << " | Q = " << Q
+                  << " | Ksp_corrigido = " << K
+                  << " | T(K) = " << temperaturaMedia << std::endl;
+
+        if (Q > K) {
+            std::cout << "  " << sal.getName() << " - PRECIPITA" << std::endl;
+        } else {
+            std::cout << "  " << sal.getName() << " - estavel" << std::endl;
+        }
+    }
+
+    CPlotPrecipitacao plot;
+    plot.PlotQvsKsp(nomes, qs, ksps);
+
+    std::cout << "\nDigite o indice do sal para visualizar Q x Ksp(T): ";
+    int escolha = 0;
+    std::cin >> escolha;
+    if (escolha >= 0 && escolha < static_cast<int>(saisDisponiveis.size())) {
+        const auto& salSelecionado = saisDisponiveis[escolha];
+        double Qfixo = salSelecionado.calculateIonicProduct(concentracoes);
+        std::vector<double> temps, kspsT;
+        for (double T = temperaturaMedia - 20; T <= temperaturaMedia + 20; T += 1.0) {
+            temps.push_back(T);
+            kspsT.push_back(salSelecionado.KspCorrigido(T));
+        }
+        plot.PlotQvsKspVsTemperatura(salSelecionado.getName(), Qfixo, temps, kspsT);
+    }
+}
+

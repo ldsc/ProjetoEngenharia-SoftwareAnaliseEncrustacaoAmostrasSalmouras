@@ -1,0 +1,9 @@
+# nome	ksp_ref	deltaH	temp_ref	ions
+Barita(BaSO4)	1.08e-10	-131000	298.15	Ba2+:1	SO4--:1
+Calcita(CaCO3)	3.36e-9	-91200	298.15	Ca2+:1	CO3--:1
+Gipsita(CaSO4)	2.4e-5	-66000	298.15	Ca2+:1	SO4--:1
+Halita(NaCl)	36	-38500	298.15	Na+:1	Cl-:1
+Magnesita(MgCO3)	6.82e-6	-111000	298.15	Mg2+:1	CO3--:1
+Celestita(SrSO4)	3.2e-7	-133000	298.15	Sr2+:1	SO4--:1
+Fluorita(CaF2)	3.2e-11	-151000	298.15	Ca2+:1	F-:2
+Barrilha(Na2CO3)	1.6e-2	-29000	298.15	Na+:2	CO3--:1

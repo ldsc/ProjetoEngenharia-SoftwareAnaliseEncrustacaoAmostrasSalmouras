@@ -1,0 +1,14 @@
+# nomeIon	carga
+Na+		 1
+Cl-		-1
+Ca2+		 2
+CO3--		-2
+SO4--		-2
+Ba2+		 2
+Sr2+		 2
+Mg2+		 2
+F-		-1
+HCO3-		-1
+OH-		-1
+Fe3+		 3
+Al3+		 3
