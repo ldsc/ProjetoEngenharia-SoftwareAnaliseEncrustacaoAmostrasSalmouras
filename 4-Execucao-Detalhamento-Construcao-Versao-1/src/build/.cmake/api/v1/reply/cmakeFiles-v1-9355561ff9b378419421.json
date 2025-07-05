@@ -2,7 +2,7 @@
 	"inputs" : 
 	[
 		{
-			"path" : "CmakeLists.txt"
+			"path" : "CMakeLists.txt"
 		},
 		{
 			"isGenerated" : true,
@@ -140,8 +140,8 @@
 	"kind" : "cmakeFiles",
 	"paths" : 
 	{
-		"build" : "C:/Users/Allida/OneDrive/Downloads/Allida_Joao_30-06/Allida_Joao/build",
-		"source" : "C:/Users/Allida/OneDrive/Downloads/Allida_Joao_30-06/Allida_Joao"
+		"build" : "C:/Users/Allida/OneDrive/Desktop/05-07 Bueno/ProjetoEngenharia-SoftwareAnaliseEncrustacaoAmostrasSalmouras/4-Execucao-Detalhamento-Construcao-Versao-1/src/build",
+		"source" : "C:/Users/Allida/OneDrive/Desktop/05-07 Bueno/ProjetoEngenharia-SoftwareAnaliseEncrustacaoAmostrasSalmouras/4-Execucao-Detalhamento-Construcao-Versao-1/src"
 	},
 	"version" : 
 	{

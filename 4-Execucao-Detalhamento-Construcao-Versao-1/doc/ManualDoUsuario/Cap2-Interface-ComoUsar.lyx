@@ -1,5 +1,5 @@
-#LyX 2.3 created this file. For more info see http://www.lyx.org/
-\lyxformat 544
+#LyX 2.4 created this file. For more info see https://www.lyx.org/
+\lyxformat 620
 \begin_document
 \begin_header
 \save_transient_properties true
@@ -28,11 +28,11 @@
 \options normaltoc, sumarioincompleto
 \use_default_options false
 \master DocumentoMestre-Trabalho-ProgramacaoPratica.lyx
-\maintain_unincluded_children false
+\maintain_unincluded_children no
 \language brazilian
 \language_package auto
 \inputencoding utf8
-\fontencoding global
+\fontencoding auto
 \font_roman "default" "default"
 \font_sans "default" "default"
 \font_typewriter "default" "default"
@@ -40,7 +40,9 @@
 \font_default_family default
 \use_non_tex_fonts false
 \font_sc false
-\font_osf false
+\font_roman_osf false
+\font_sans_osf false
+\font_typewriter_osf false
 \font_sf_scale 100 100
 \font_tt_scale 100 100
 \use_microtype false
@@ -66,7 +68,7 @@
 \pdf_colorlinks false
 \pdf_backref page
 \pdf_pdfusetitle true
-\papersize a4paper
+\papersize a4
 \use_geometry true
 \use_package amsmath 1
 \use_package amssymb 1
@@ -87,7 +89,9 @@
 \suppress_date false
 \justification true
 \use_refstyle 0
+\use_formatted_ref 0
 \use_minted 0
+\use_lineno 0
 \index Índice
 \shortcut idx
 \color #008000
@@ -109,11 +113,16 @@
 \papercolumns 1
 \papersides 1
 \paperpagestyle fancy
+\tablestyle default
 \tracking_changes false
 \output_changes false
+\change_bars false
+\postpone_fragile_content false
 \html_math_output 0
 \html_css_as_file 0
 \html_be_strict false
+\docbook_table_output 0
+\docbook_mathml_prefix 1
 \end_header
 
 \begin_body
@@ -121,6 +130,8 @@
 \begin_layout Chapter
 Interface Gráfica
 \begin_inset Index idx
+range none
+pageformat default
 status open
 
 \begin_layout Plain Layout
@@ -141,6 +152,7 @@ A interface do programa é apresentada na Figura
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:Imagem da Interface Gráfica"
+nolink "false"
 
 \end_inset
 
@@ -153,8 +165,7 @@ na imagem simulador desenvolvido pelo aluno Nicholas
 \end_layout
 
 \begin_layout Plain Layout
-note que capturamos a imagem da tela do software e adicionamos na figura
- abaixo algumas informações de uso
+note que capturamos a imagem da tela do software e adicionamos na figura abaixo algumas informações de uso
 \end_layout
 
 \end_inset
@@ -165,6 +176,7 @@ note que capturamos a imagem da tela do software e adicionamos na figura
 \begin_layout Standard
 \begin_inset Float figure
 placement H
+alignment document
 wide false
 sideways false
 status open
@@ -172,11 +184,10 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename imagens/Interface-SimuladorTranscal-Nicholas.png
-	lyxscale 30
+	filename C:/Users/Allida/OneDrive/Desktop/05-07 Bueno/ProjetoEngenharia-SoftwareAnaliseEncrustacaoAmostrasSalmouras/4-Execucao-Detalhamento-Construcao-Versao-1/doc/Imagem/Interface Programa.png
+	lyxscale 50
 	width 100text%
-	height 85theight%
-	keepAspectRatio
+	special height=0.85\textheight
 
 \end_inset
 
@@ -212,73 +223,459 @@ O Figura
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:Imagem da Interface Gráfica"
+nolink "false"
 
 \end_inset
 
- mostra a janela principal do software e foram listadas grupos de funcionalidade
-s importantes ao usuário.
+ mostra a janela principal do software e foram listadas grupos de funcionalidades importantes ao usuário.
 \end_layout
 
 \begin_layout Itemize
-explicar o funcionamento do software na prática...explicando o uso de cada
- uma das features/funcionalidades.
+Selecionar a salmoura que será analisada
 \end_layout
 
 \begin_layout Itemize
-aqui você dá um apanhado geral...
+Selecionar os Ions que estarão presente na salmoura
 \end_layout
 
 \begin_layout Itemize
-Depois vai criar seções para funcionalidades específicas, detalhando seu
- uso...como nos exemplos abaixo
+Imputar as condições termodinâmicas ( Pressão e Temperatura)
+\end_layout
+
+\begin_layout Itemize
+Verificar quais Ions irão precipitar
 \end_layout
 
 \begin_layout Section
-Funcionalidade específica A
+Funcionalidade do Software
 \end_layout
 
 \begin_layout Standard
-O que é?
+Nesse tópico será descrito as funcionalidades do software
+\end_layout
+
+\begin_layout Subsection
+Documento Salmoura Exemplo
 \end_layout
 
 \begin_layout Standard
-Como usar - exemplo de uso:
+Os dados da salmoura são lidos no documento 
+\begin_inset Quotes eld
+\end_inset
+
+salmoura_exemplo.txt
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Imagem da Interface Gráfica-1"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+.
+ Caso o usuário queira criar uma nova salmoura,
+ precisar colocar os Sais da salmoura nesse documento.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement document
+alignment center
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename C:/Users/Allida/OneDrive/Desktop/05-07 Bueno/ProjetoEngenharia-SoftwareAnaliseEncrustacaoAmostrasSalmouras/4-Execucao-Detalhamento-Construcao-Versao-1/doc/Imagem/Salmoura Exemplo.png
+	width 100page%
+	height 90theight%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Imagem Exemplo Salmoura.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Imagem da Interface Gráfica-1"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
-Item específico A1
+Documento Tabela Ions
+\end_layout
+
+\begin_layout Standard
+Os dados dos ions são lidos no documento 
+\begin_inset Quotes eld
+\end_inset
+
+tabela_ions.txt
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Imagem tabela Ion"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+.
+ Caso o usuário queira criar uma salmoura que tenha um Ion diferente,
+ precisar colocar os Ions da salmoura nesse documento.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement document
+alignment center
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename C:/Users/Allida/OneDrive/Desktop/05-07 Bueno/ProjetoEngenharia-SoftwareAnaliseEncrustacaoAmostrasSalmouras/4-Execucao-Detalhamento-Construcao-Versao-1/doc/Imagem/tabela de ions.png
+	lyxscale 90
+	width 100text%
+	height 90theight%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Imagem Tabela Ion.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Imagem tabela Ion"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
-Item específico A2
+Tabela informações Sais
 \end_layout
 
-\begin_layout Subsection
-Item específico An
+\begin_layout Standard
+Os dados dos íons (como carga e Ksp e deltaH) são lidos no documento 
+\begin_inset Quotes eld
+\end_inset
+
+tabela_sais_tabs.txt
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Imagem tabela Ion"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+.
+ Caso o usuário queira criar uma salmoura que tenha um Ion diferente o usuário precisa adicionar o Ion com sua respectiva carga e Ksp nesse documento.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement document
+alignment center
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename C:/Users/Allida/OneDrive/Desktop/05-07 Bueno/ProjetoEngenharia-SoftwareAnaliseEncrustacaoAmostrasSalmouras/4-Execucao-Detalhamento-Construcao-Versao-1/doc/Imagem/tabela sais KSP.png
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Tabela Sais.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Tabela Sais"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
-Funcionalidade específica B
+Saida de resultados
 \end_layout
 
 \begin_layout Standard
-O que é?
+Após imputar todas as salmouras,
+ ions,
+ cargas,
+ Ksp e deltaH o software irá mostrar as seguintes informações:
+\end_layout
+
+\begin_layout Subsection
+Precipitação dos sais
 \end_layout
 
 \begin_layout Standard
-Como usar - exemplo de uso:
+O software irá fornecedor informações separadas se os sais irão precipitar ou se manterá estável
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement document
+alignment center
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename C:/Users/Allida/OneDrive/Desktop/05-07 Bueno/ProjetoEngenharia-SoftwareAnaliseEncrustacaoAmostrasSalmouras/4-Execucao-Detalhamento-Construcao-Versao-1/doc/Imagem/Resultado Sofwtare.png
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Resultado Software.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Tabela Sais-1"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
-Item específico B1
+Gráficos
 \end_layout
 
-\begin_layout Subsection
-Item específico B2
+\begin_layout Standard
+O software irá mostrar a partir de gráficos qual o limite que será possível submeter essa salmoura sem que cada ela começa a incrustar
 \end_layout
 
-\begin_layout Subsection
-Item específico Bn
+\begin_layout Subsection*
+1) Sais Precipitados
+\end_layout
+
+\begin_layout Standard
+No gráfico 1.6 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Gráfico de Incrustação1-1"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+o software mostra para o usuário todos os sais presentes na salmoura e também quais sais 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement document
+alignment center
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename C:/Users/Allida/OneDrive/Desktop/05-07 Bueno/ProjetoEngenharia-SoftwareAnaliseEncrustacaoAmostrasSalmouras/4-Execucao-Detalhamento-Construcao-Versao-1/doc/Imagem/Grafico.png
+	lyxscale 80
+	width 100text%
+	height 90theight%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Gráfico de Incrustação.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Gráfico de Incrustação1-1"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+2) Limite de Precipitação
+\end_layout
+
+\begin_layout Standard
+No gráfico 1.7 o software mostra ao usuário o sal selecionado,
+ qual será o limite das condições termodinâmicas que a salmoura pode ser submetida sem que precipite.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement document
+alignment center
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename C:/Users/Allida/OneDrive/Desktop/05-07 Bueno/ProjetoEngenharia-SoftwareAnaliseEncrustacaoAmostrasSalmouras/4-Execucao-Detalhamento-Construcao-Versao-1/doc/Imagem/Limite Incrustação.png
+	lyxscale 80
+	width 100text%
+	height 90theight%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Gráfico Limite Incrustação.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Gráfico de Incrustação1-1-1"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_body

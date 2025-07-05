@@ -56,10 +56,10 @@ RM = C:\mingw\bin\cmake.exe -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\Allida\OneDrive\Downloads\Allida_Joao_30-06\Allida_Joao
+CMAKE_SOURCE_DIR = "C:\Users\Allida\OneDrive\Desktop\05-07 Bueno\ProjetoEngenharia-SoftwareAnaliseEncrustacaoAmostrasSalmouras\4-Execucao-Detalhamento-Construcao-Versao-1\src"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\Allida\OneDrive\Downloads\Allida_Joao_30-06\Allida_Joao\build
+CMAKE_BINARY_DIR = "C:\Users\Allida\OneDrive\Desktop\05-07 Bueno\ProjetoEngenharia-SoftwareAnaliseEncrustacaoAmostrasSalmouras\4-Execucao-Detalhamento-Construcao-Versao-1\src\build"
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -86,9 +86,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Allida\OneDrive\Downloads\Allida_Joao_30-06\Allida_Joao\build\CMakeFiles C:\Users\Allida\OneDrive\Downloads\Allida_Joao_30-06\Allida_Joao\build\\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\Allida\OneDrive\Desktop\05-07 Bueno\ProjetoEngenharia-SoftwareAnaliseEncrustacaoAmostrasSalmouras\4-Execucao-Detalhamento-Construcao-Versao-1\src\build\CMakeFiles" "C:\Users\Allida\OneDrive\Desktop\05-07 Bueno\ProjetoEngenharia-SoftwareAnaliseEncrustacaoAmostrasSalmouras\4-Execucao-Detalhamento-Construcao-Versao-1\src\build\\CMakeFiles\progress.marks"
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Allida\OneDrive\Downloads\Allida_Joao_30-06\Allida_Joao\build\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\Allida\OneDrive\Desktop\05-07 Bueno\ProjetoEngenharia-SoftwareAnaliseEncrustacaoAmostrasSalmouras\4-Execucao-Detalhamento-Construcao-Versao-1\src\build\CMakeFiles" 0
 .PHONY : all
 
 # The main clean target

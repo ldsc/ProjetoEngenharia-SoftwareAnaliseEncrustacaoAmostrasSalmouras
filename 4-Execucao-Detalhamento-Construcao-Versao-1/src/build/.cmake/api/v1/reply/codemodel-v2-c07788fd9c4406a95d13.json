@@ -39,7 +39,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "PrecipitationSimulator::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-PrecipitationSimulator-Debug-452dd99a73f7c576e028.json",
+					"jsonFile" : "target-PrecipitationSimulator-Debug-c286e959dee3adea0c89.json",
 					"name" : "PrecipitationSimulator",
 					"projectIndex" : 0
 				}
@@ -49,8 +49,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "C:/Users/Allida/OneDrive/Downloads/Allida_Joao_30-06/Allida_Joao/build",
-		"source" : "C:/Users/Allida/OneDrive/Downloads/Allida_Joao_30-06/Allida_Joao"
+		"build" : "C:/Users/Allida/OneDrive/Desktop/05-07 Bueno/ProjetoEngenharia-SoftwareAnaliseEncrustacaoAmostrasSalmouras/4-Execucao-Detalhamento-Construcao-Versao-1/src/build",
+		"source" : "C:/Users/Allida/OneDrive/Desktop/05-07 Bueno/ProjetoEngenharia-SoftwareAnaliseEncrustacaoAmostrasSalmouras/4-Execucao-Detalhamento-Construcao-Versao-1/src"
 	},
 	"version" : 
 	{

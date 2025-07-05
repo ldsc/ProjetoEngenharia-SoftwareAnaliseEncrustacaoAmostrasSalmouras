@@ -1,5 +1,5 @@
-#LyX 2.3 created this file. For more info see http://www.lyx.org/
-\lyxformat 544
+#LyX 2.4 created this file. For more info see https://www.lyx.org/
+\lyxformat 620
 \begin_document
 \begin_header
 \save_transient_properties true
@@ -27,11 +27,11 @@
 \end_preamble
 \use_default_options false
 \master DocumentoMestre-Trabalho-ProgramacaoPratica.lyx
-\maintain_unincluded_children false
+\maintain_unincluded_children no
 \language brazilian
 \language_package auto
-\inputencoding auto
-\fontencoding global
+\inputencoding auto-legacy
+\fontencoding auto
 \font_roman "default" "default"
 \font_sans "default" "default"
 \font_typewriter "default" "default"
@@ -39,7 +39,9 @@
 \font_default_family default
 \use_non_tex_fonts false
 \font_sc false
-\font_osf false
+\font_roman_osf false
+\font_sans_osf false
+\font_typewriter_osf false
 \font_sf_scale 100 100
 \font_tt_scale 100 100
 \use_microtype false
@@ -53,7 +55,7 @@
 \paperfontsize 12
 \spacing onehalf
 \use_hyperref false
-\papersize a4paper
+\papersize a4
 \use_geometry true
 \use_package amsmath 1
 \use_package amssymb 1
@@ -74,7 +76,9 @@
 \suppress_date false
 \justification true
 \use_refstyle 0
+\use_formatted_ref 0
 \use_minted 0
+\use_lineno 0
 \index Índice
 \shortcut idx
 \color #008000
@@ -96,11 +100,16 @@
 \papercolumns 1
 \papersides 1
 \paperpagestyle fancy
+\tablestyle default
 \tracking_changes false
 \output_changes false
+\change_bars false
+\postpone_fragile_content false
 \html_math_output 0
 \html_css_as_file 0
 \html_be_strict false
+\docbook_table_output 0
+\docbook_mathml_prefix 1
 \end_header
 
 \begin_body
@@ -137,49 +146,38 @@ thechapter - Teste}
 \begin_layout Standard
 Todo projeto de engenharia passa por uma etapa de testes.
  Neste capítulo apresentamos alguns testes do software desenvolvido.
- Estes testes devem dar resposta aos diagramas de caso de uso inicialmente
- apresentados (diagramas de caso de uso geral e específicos).
+ Estes testes devem dar resposta aos diagramas de caso de uso inicialmente apresentados (diagramas de caso de uso geral e específicos).
 \end_layout
 
 \begin_layout Section
-Exemplo 1
-\begin_inset CommandInset label
-LatexCommand label
-name "sec:Exemplo-1"
+Estrutura de Arquivos
+\end_layout
 
-\end_inset
-
-: Descrição
+\begin_layout Standard
+Antes de iniciar,
+ verifique se você tem os arquivos necessários na pasta ./dados/:
 \end_layout
 
 \begin_layout Itemize
-Explique, passo a passo, e de forma detalhada o que irá fazer.
+Arquivos de íons:
+ contêm os íons e suas concentrações para salmouras.
 \end_layout
 
 \begin_layout Itemize
-Importante falar aonda o usuário deve clicar, o que deve informar, quais
- as entradas e saídas;
-\end_layout
-
-\begin_layout Itemize
-Coloque figuras ilustrativas;
-\end_layout
-
-\begin_layout Itemize
-A ideia é fazer com que o usuário realize uma determinada atividade usando
- o software e compreendendo claramente o que esta fazendo.
-\end_layout
-
-\begin_layout Itemize
-Como sugestão monte estes exemplos tomando como base os testes realizados
- no manual de desenvolvimento.
+Arquivos de sais:
+ contêm os sais que podem precipitar,
+ com seus dados de solubilidade.
 \end_layout
 
 \begin_layout Standard
 Veja Figura 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "fig:Teste-TelaPrograma-Captura1"
+reference "fig:Inicio do Software"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
 
 \end_inset
 
@@ -189,6 +187,7 @@ reference "fig:Teste-TelaPrograma-Captura1"
 \begin_layout Standard
 \begin_inset Float figure
 placement H
+alignment document
 wide false
 sideways false
 status open
@@ -196,8 +195,9 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename imagens/Interface-Simulador-Transcal-Guilherme2.png
+	filename C:/Users/Allida/OneDrive/Desktop/05-07 Bueno/ProjetoEngenharia-SoftwareAnaliseEncrustacaoAmostrasSalmouras/4-Execucao-Detalhamento-Construcao-Versao-1/doc/Imagem/Usuario1.png
 	width 100text%
+	height 90theight%
 
 \end_inset
 
@@ -208,10 +208,10 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Tela do programa mostrando xxx
+Inicio do Software 
 \begin_inset CommandInset label
 LatexCommand label
-name "fig:Teste-TelaPrograma-Captura1"
+name "fig:Inicio do Software"
 
 \end_inset
 
@@ -229,44 +229,35 @@ name "fig:Teste-TelaPrograma-Captura1"
 \end_layout
 
 \begin_layout Section
-Exemplo 2
-\begin_inset CommandInset label
-LatexCommand label
-name "sec: Exemplo-2"
-
-\end_inset
-
-: Descrição
+Selecionar o arquivo de íons disponíveis
 \end_layout
 
 \begin_layout Standard
-Explique, passo a passo, e de forma detalhada o que irá fazer.
+Para que serve?
 \end_layout
 
-\begin_layout Itemize
-Importante falar aonda o usuário deve clicar, o que deve informar, quais
- as entradas e saídas;
+\begin_layout Standard
+Esse arquivo contém os íons disponíveis na biblioteca,
+ que podem ser utilizados na formação de sais (ex:
+ Ca²⁺,
+ SO₄²⁻).
 \end_layout
 
-\begin_layout Itemize
-Coloque figuras ilustrativas;
+\begin_layout Standard
+O software listará os arquivos .txt da pasta ./dados/.
 \end_layout
 
-\begin_layout Itemize
-A ideia é fazer com que o usuário realize uma determinada atividade usando
- o software e compreendendo claramente o que esta fazendo.
-\end_layout
-
-\begin_layout Itemize
-Como sugestão monte estes exemplos tomando como base os testes realizados
- no manual de desenvolvimento.
+\begin_layout Standard
+Ação do usuário:
+ digite o número do arquivo de íons 4.
 \end_layout
 
 \begin_layout Standard
 Veja Figura 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "fig:Teste-TelaPrograma-1"
+reference "fig:Documento Ion"
+nolink "false"
 
 \end_inset
 
@@ -286,6 +277,7 @@ Na Figura simulador desenvolvido pelo aluno Tiago Schauwer
 \begin_layout Standard
 \begin_inset Float figure
 placement H
+alignment document
 wide false
 sideways false
 status open
@@ -293,7 +285,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename imagens/Interface-Simulador-Tiago.png
+	filename C:/Users/Allida/OneDrive/Desktop/05-07 Bueno/ProjetoEngenharia-SoftwareAnaliseEncrustacaoAmostrasSalmouras/4-Execucao-Detalhamento-Construcao-Versao-1/doc/Imagem/Documento Ion.png
 	width 100text%
 
 \end_inset
@@ -305,10 +297,10 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Tela do programa mostrando xxx
+Documento Íon.
 \begin_inset CommandInset label
 LatexCommand label
-name "fig:Teste-TelaPrograma-1"
+name "fig:Documento Ion"
 
 \end_inset
 
@@ -326,44 +318,158 @@ name "fig:Teste-TelaPrograma-1"
 \end_layout
 
 \begin_layout Section
-Exemplo 3
-\begin_inset CommandInset label
-LatexCommand label
-name "sec: Exemplo-3"
+Selecionar o arquivo de sais disponíveis
+\end_layout
+
+\begin_layout Standard
+Esse arquivo lista os sais que podem precipitar,
+ com seus valores de Kps,
+ entalpia de dissolução (deltaP) e íons constituintes.
+ 
+\end_layout
+
+\begin_layout Standard
+Exemplo:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="6">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Nome
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Ksp
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+DeltaP
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Temperatura 
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="3" alignment="center" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Ions
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Carga
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Barita(BaSO4)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.08e-10
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-131000
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+298.15
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Ba2+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
++2
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
 
 \end_inset
 
-: Descrição
+
 \end_layout
 
 \begin_layout Standard
-Explique, passo a passo, e de forma detalhada o que irá fazer.
-\end_layout
-
-\begin_layout Itemize
-Importante falar aonda o usuário deve clicar, o que deve informar, quais
- as entradas e saídas;
-\end_layout
-
-\begin_layout Itemize
-Coloque figuras ilustrativas;
-\end_layout
-
-\begin_layout Itemize
-A ideia é fazer com que o usuário realize uma determinada atividade usando
- o software e compreendendo claramente o que esta fazendo.
-\end_layout
-
-\begin_layout Itemize
-Como sugestão monte estes exemplos tomando como base os testes realizados
- no manual de desenvolvimento.
-\end_layout
-
-\begin_layout Standard
-Veja Figura 
+Veja Figura 1.3 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "fig:Teste-TelaPrograma-Captura1-1"
+reference "fig:Documento Salmoura"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
 
 \end_inset
 
@@ -373,6 +479,7 @@ reference "fig:Teste-TelaPrograma-Captura1-1"
 \begin_layout Standard
 \begin_inset Float figure
 placement H
+alignment document
 wide false
 sideways false
 status open
@@ -380,9 +487,9 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename imagens/Interface-SimuladorTranscal-Nicholas.png
-	lyxscale 25
+	filename C:/Users/Allida/OneDrive/Desktop/05-07 Bueno/ProjetoEngenharia-SoftwareAnaliseEncrustacaoAmostrasSalmouras/4-Execucao-Detalhamento-Construcao-Versao-1/doc/Imagem/Inicio Salmoura.png
 	width 100text%
+	height 90theight%
 
 \end_inset
 
@@ -393,10 +500,10 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Tela do programa mostrando xxx
+Documento Salmoura.
 \begin_inset CommandInset label
 LatexCommand label
-name "fig:Teste-TelaPrograma-Captura1-1"
+name "fig:Documento Salmoura"
 
 \end_inset
 
@@ -413,18 +520,485 @@ name "fig:Teste-TelaPrograma-Captura1-1"
 
 \end_layout
 
-\begin_layout Description
-Nota: 
-\begin_inset space ~
+\begin_layout Section
+Informar quantas salmouras serão misturadas
+\end_layout
+
+\begin_layout Standard
+Ação do usuário:
+ digite a quantidade de salmouras (ex:
+ 1,2 ).
+ 
+\end_layout
+
+\begin_layout Standard
+Veja Figura 1.4.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Quantidade de salmoura adicionada"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement document
+alignment center
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename C:/Users/Allida/OneDrive/Desktop/05-07 Bueno/ProjetoEngenharia-SoftwareAnaliseEncrustacaoAmostrasSalmouras/4-Execucao-Detalhamento-Construcao-Versao-1/doc/Imagem/Quantidade de Salmoura.png
+	width 100text%
+	height 90theight%
+
 \end_inset
 
 
-\begin_inset Newline newline
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Quantidade de salmoura adicionada.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Quantidade de salmoura adicionada"
+
 \end_inset
 
-Não perca de vista a visão do todo; explique para o usuário o que é e como
- funciona o software; lembre-se que ele não desenvolveu nada, apenas vai
- usar!
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Inserir dados do cenário
+\end_layout
+
+\begin_layout Standard
+Para cada salmoura deve-se inserir as condições termodinâmica,
+ o usuário deve informar:
+\end_layout
+
+\begin_layout Itemize
+Volume (L):
+ volume total da salmoura.
+\end_layout
+
+\begin_layout Itemize
+Temperatura (K):
+ temperatura em Kelvin.
+\end_layout
+
+\begin_layout Itemize
+Pressão (atm):
+ pressão da salmoura.
+\end_layout
+
+\begin_layout Standard
+Veja Figura 1.5.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Condições termodinâmica"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement document
+alignment center
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename C:/Users/Allida/OneDrive/Desktop/05-07 Bueno/ProjetoEngenharia-SoftwareAnaliseEncrustacaoAmostrasSalmouras/4-Execucao-Detalhamento-Construcao-Versao-1/doc/Imagem/condições termodinâmicas.png
+	width 100text%
+	height 90theight%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Condições termodinâmica
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Condições termodinâmica"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Calculo da Precipitação
+\end_layout
+
+\begin_layout Standard
+O programa calcula:
+\end_layout
+
+\begin_layout Itemize
+As concentrações finais de cada íon.
+\end_layout
+
+\begin_layout Itemize
+A temperatura média da mistura.
+\end_layout
+
+\begin_layout Itemize
+O produto iônico 𝑄 e compara com o 𝐾𝑠𝑝 de cada sal.
+\end_layout
+
+\begin_layout Standard
+Resultado:
+\end_layout
+
+\begin_layout Itemize
+Se 𝑄 > 𝐾𝑠𝑝:
+ o sal precipita.
+\end_layout
+
+\begin_layout Itemize
+Se 𝑄<𝐾𝑠𝑝 :
+ o sal permanece dissolvido.
+\end_layout
+
+\begin_layout Standard
+Veja Figura 1.6.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Resultado Precipitação"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+.
+\begin_inset Float figure
+placement document
+alignment center
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename C:/Users/Allida/OneDrive/Desktop/05-07 Bueno/ProjetoEngenharia-SoftwareAnaliseEncrustacaoAmostrasSalmouras/4-Execucao-Detalhamento-Construcao-Versao-1/doc/Imagem/resultado precipitação.png
+	width 100text%
+	height 90theight%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Resultado Precipitação
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Resultado Precipitação"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Visualização gráfica (Q vs Ksp)
+\end_layout
+
+\begin_layout Standard
+O programa plota:
+\end_layout
+
+\begin_layout Itemize
+Um gráfico com o valor de 𝑄 𝐾𝑠𝑝 para cada sal.
+\end_layout
+
+\begin_layout Standard
+Veja Figura 1.7.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Resultado Precipitação Gráfico"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement document
+alignment center
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename C:/Users/Allida/OneDrive/Desktop/05-07 Bueno/ProjetoEngenharia-SoftwareAnaliseEncrustacaoAmostrasSalmouras/4-Execucao-Detalhamento-Construcao-Versao-1/doc/Imagem/resultado grafico exemplo precipitação.png
+	lyxscale 70
+	width 100text%
+	height 90theight%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Resultado Precipitação Gráfico
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Resultado Precipitação Gráfico"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Ação do usuário:
+\end_layout
+
+\begin_layout Itemize
+Digitar o índice do sal desejado para ver o gráfico com variação de temperatura.
+\end_layout
+
+\begin_layout Standard
+Veja Figura 1.8.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Condições que o sal se precipita"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement document
+alignment center
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename C:/Users/Allida/OneDrive/Desktop/05-07 Bueno/ProjetoEngenharia-SoftwareAnaliseEncrustacaoAmostrasSalmouras/4-Execucao-Detalhamento-Construcao-Versao-1/doc/Imagem/Resultado Sal Especifico.png
+	width 100text%
+	height 90theight%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Condições que o sal se precipita 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Condições que o sal se precipita"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Ação do usuário:
+\end_layout
+
+\begin_layout Standard
+Digitar o índice do sal desejado para ver o gráfico com variação de temperatura.
+\end_layout
+
+\begin_layout Itemize
+Um gráfico adicional opcional (Q fixo vs Ksp em função da temperatura),
+ para o sal selecionado.
+\end_layout
+
+\begin_layout Standard
+Veja Figura 1.9.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Sal especifico precipitado"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement document
+alignment center
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename C:/Users/Allida/OneDrive/Desktop/05-07 Bueno/ProjetoEngenharia-SoftwareAnaliseEncrustacaoAmostrasSalmouras/4-Execucao-Detalhamento-Construcao-Versao-1/doc/Imagem/Sal especifico precipitação 2.png
+	lyxscale 80
+	width 100text%
+	height 90theight%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Sal especifico precipitado 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Sal especifico precipitado"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
 \end_layout
 
 \end_body
