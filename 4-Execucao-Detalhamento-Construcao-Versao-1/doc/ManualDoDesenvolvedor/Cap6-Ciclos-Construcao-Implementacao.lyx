@@ -1,5 +1,5 @@
-#LyX 2.3 created this file. For more info see http://www.lyx.org/
-\lyxformat 544
+#LyX 2.4 created this file. For more info see https://www.lyx.org/
+\lyxformat 620
 \begin_document
 \begin_header
 \save_transient_properties true
@@ -27,11 +27,11 @@
 \end_preamble
 \use_default_options false
 \master DocumentoMestre-Trabalho-ProgramacaoPratica.lyx
-\maintain_unincluded_children false
+\maintain_unincluded_children no
 \language brazilian
 \language_package auto
-\inputencoding auto
-\fontencoding global
+\inputencoding auto-legacy
+\fontencoding auto
 \font_roman "default" "default"
 \font_sans "default" "default"
 \font_typewriter "default" "default"
@@ -39,7 +39,9 @@
 \font_default_family default
 \use_non_tex_fonts false
 \font_sc false
-\font_osf false
+\font_roman_osf false
+\font_sans_osf false
+\font_typewriter_osf false
 \font_sf_scale 100 100
 \font_tt_scale 100 100
 \use_microtype false
@@ -53,7 +55,7 @@
 \paperfontsize 12
 \spacing onehalf
 \use_hyperref false
-\papersize a4paper
+\papersize a4
 \use_geometry true
 \use_package amsmath 1
 \use_package amssymb 1
@@ -74,7 +76,9 @@
 \suppress_date false
 \justification true
 \use_refstyle 0
+\use_formatted_ref 0
 \use_minted 0
+\use_lineno 0
 \index Índice
 \shortcut idx
 \color #008000
@@ -96,11 +100,16 @@
 \papercolumns 1
 \papersides 1
 \paperpagestyle fancy
+\tablestyle default
 \tracking_changes false
 \output_changes false
+\change_bars false
+\postpone_fragile_content false
 \html_math_output 0
 \html_css_as_file 0
 \html_be_strict false
+\docbook_table_output 0
+\docbook_mathml_prefix 1
 \end_header
 
 \begin_body
@@ -115,6 +124,8 @@ name "chap:Ciclos-Construção-Implementacao"
 
 
 \begin_inset Index idx
+range none
+pageformat default
 status open
 
 \begin_layout Plain Layout
@@ -125,6 +136,8 @@ Ciclo construção
 
  - Implementação
 \begin_inset Index idx
+range none
+pageformat default
 status open
 
 \begin_layout Plain Layout
@@ -162,11 +175,13 @@ thechapter - Implementação}
 \end_layout
 
 \begin_layout Standard
-Neste capítulo, são apresentados os códigos fonte implementados.
+Neste capítulo,
+ são apresentados os códigos fonte implementados.
 \end_layout
 
 \begin_layout Description
-Nota: os códigos devem ser documentados usando padrão 
+Nota:
+ os códigos devem ser documentados usando padrão 
 \series bold
 javadoc
 \series default
@@ -210,15 +225,14 @@ literal "false"
 
 \end_deeper
 \begin_layout Description
-Nota: ao longo deste capítulo usamos inclusão direta de arquivos externos
- usando o pacote 
+Nota:
+ ao longo deste capítulo usamos inclusão direta de arquivos externos usando o pacote 
 \emph on
 listings
 \emph default
  do \SpecialChar LaTeX
 .
- Maiores detalhes de como a saída pode ser gerada estão disponíveis nos
- links abaixo.
+ Maiores detalhes de como a saída pode ser gerada estão disponíveis nos links abaixo.
 \begin_inset Separator latexpar
 \end_inset
 
@@ -259,6 +273,8 @@ name "sec:Codigo-fonte"
 
 
 \begin_inset Index idx
+range none
+pageformat default
 status collapsed
 
 \begin_layout Plain Layout
@@ -272,19 +288,21 @@ Implementação
 
 \begin_layout Standard
 \begin_inset Note Note
-status open
+status collapsed
 
 \begin_layout Plain Layout
-Nota importante: as listagens, arquivos .h .cpp, devem ser salvas usando formato
- ISO 8859-1, que é um formato internacional para línguas latinas (o que
- inclui o portugues).
- Se os arquivos forem salvos no formato UTF-8 alguns caracteres de acentuação
- irão aparecer errados.
+Nota importante:
+ as listagens,
+ arquivos .h .cpp,
+ devem ser salvas usando formato ISO 8859-1,
+ que é um formato internacional para línguas latinas (o que inclui o portugues).
+ Se os arquivos forem salvos no formato UTF-8 alguns caracteres de acentuação irão aparecer errados.
 \end_layout
 
 \begin_layout Plain Layout
-Se o arquivo já existe, você pode mudar a codificação no Kate/Gedit indo
- em SALVAR-COMO, e selecionando o formato ISO 8859-1.
+Se o arquivo já existe,
+ você pode mudar a codificação no Kate/Gedit indo em SALVAR-COMO,
+ e selecionando o formato ISO 8859-1.
 \end_layout
 
 \end_inset
@@ -293,8 +311,7 @@ Se o arquivo já existe, você pode mudar a codificação no Kate/Gedit indo
 \end_layout
 
 \begin_layout Standard
-Apresenta-se a seguir um conjunto de classes (arquivos .h e .cpp) além do
- programa 
+Apresenta-se a seguir um conjunto de classes (arquivos .h e .cpp) além do programa 
 \family typewriter
 main
 \family default
@@ -310,29 +327,16 @@ status open
 
 
 \backslash
-ref{CSimulador-nome.h}
+ref{CIons.h}
 \end_layout
 
 \end_inset
 
-
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-note que dentro de 
-\backslash
-ref{CAplicacao-h} temos o label; o mesmo deve ser igual ao que se encontra
- abaixo label={CSimulador-nome}
-\end_layout
-
-\end_inset
-
- o arquivo com código da classe 
+o arquivo com código da classe 
 \family typewriter
-CSimulador-nome
+C
 \family default
-.
+Ions.
 \end_layout
 
 \begin_layout Standard
@@ -343,10 +347,12 @@ status open
 
 
 \backslash
-lstset{style=C++} 
+lstinputlisting[caption={Arquivo de cabeçalho da classe CIons},label={CIons-h},
+ extendedchars=true,breaklines=true,basicstyle=
 \backslash
-lstinputlisting[ caption={Arquivo de cabeçalho da classe CSimulador-nome},
- label={CSimulador-nome.h}] {../../src/CSimulador-nome.h}
+footnotesize
+\backslash
+tt]{../../src/CIons.h}
 \end_layout
 
 \end_inset
@@ -363,16 +369,244 @@ status open
 
 
 \backslash
-ref{CSimulador-nome.cpp}
+ref{Csal.h}
+\end_layout
+
+\end_inset
+
+o arquivo com código da classe 
+\family typewriter
+C
+\family default
+Sal.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lstinputlisting[caption={Arquivo de cabeçalho da classe CSalt},label={CSalt-h},extendedchars=true,breaklines=true,basicstyle=
+\backslash
+footnotesize
+\backslash
+tt]{../../src/CSalt.h}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Apresenta-se na listagem 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+ref{CSalmoura.h}
+\end_layout
+
+\end_inset
+
+o arquivo com código da classe 
+\family typewriter
+C
+\family default
+Salmoura.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lstinputlisting[caption={Arquivo de cabeçalho da classe CSalmoura},label={CSalmoura-h},extendedchars=true,breaklines=true,basicstyle=
+\backslash
+footnotesize
+\backslash
+tt]{../../src/CSalmoura.h}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Apresenta-se na listagem 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+ref{MisturaSalmoura.h}
+\end_layout
+
+\end_inset
+
+o arquivo com código da classe 
+\family typewriter
+CMisturaSalmoura.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lstinputlisting[caption={Arquivo de cabeçalho da classe CMisturaSalmouras},
+ label={CMisturaSalmouras-h},extendedchars=true,breaklines=true,basicstyle=
+\backslash
+footnotesize
+\backslash
+tt]{../../src/CMisturaSalmouras.h}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Apresenta-se na listagem 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+ref{CSimuladorPrecipitacao.h}
+\end_layout
+
+\end_inset
+
+o arquivo com código da classe 
+\family typewriter
+C
+\family default
+SimuladorPrecipitacao.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lstinputlisting[caption={Arquivo de cabeçalho da classe CSimuladorPrecipitacao},
+ label={CSimuladorPrecipitacao-h},extendedchars=true,breaklines=true,basicstyle=
+\backslash
+footnotesize
+\backslash
+tt
+\end_layout
+
+\begin_layout Plain Layout
+
+]{../../src/CSimuladorPrecipitacao.h}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Apresenta-se na listagem 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+ref{CTabelaPropriedadesIons.h}
+\end_layout
+
+\end_inset
+
+o arquivo com código da classe 
+\family typewriter
+C
+\family default
+TabelaPropriedadesIons.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lstinputlisting[caption={Arquivo de cabeçalho da classe CTabelaPropriedadesIons},
+ label={CTabelaPropriedadesIons-h},extendedchars=true,breaklines=true,
+ basicstyle=
+\backslash
+footnotesize
+\backslash
+tt]{../../src/CTabelaPropriedadesIons.h}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Apresenta-se na listagem 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+ref{CPlotPrecipitacao.h}
 \end_layout
 
 \end_inset
 
  o arquivo de implementação da classe 
 \family typewriter
-CAplicacao
+C
 \family default
-.
+PlotPrecipitacao.
  
 \end_layout
 
@@ -384,14 +618,23 @@ status open
 
 
 \backslash
-lstset{style=C++} 
+lstinputlisting[caption={Arquivo de cabeçalho da classe CPlotPrecipitacao},pon k label={CPlotPrecipitacao-h},extendedchars=true,breaklines=true,basicstyle=
 \backslash
-lstinputlisting[ caption={Arquivo de implementação da classe CSimulador-nome},
- label={CSimulador-nome.cpp}] {../../src/CSimulador-nome.cpp}
+footnotesize
+\backslash
+tt]{../../src/CPlotPrecipitacao.h}
+\end_layout
+
+\begin_layout Plain Layout
+
 \end_layout
 
 \end_inset
 
+
+\end_layout
+
+\begin_layout Standard
 Apresenta-se na listagem 
 \begin_inset ERT
 status open
@@ -400,14 +643,95 @@ status open
 
 
 \backslash
-ref{Simulador-nome.cpp}
+ref{CIons.cpp}
 \end_layout
 
 \end_inset
 
- o programa que usa a classe 
+o arquivo com código da classe CIons.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lstinputlisting[caption={Arquivo de implementação da classe CIons},label={CIons-cpp},
+ extendedchars=true,breaklines=true,basicstyle=
+\backslash
+footnotesize
+\backslash
+tt]{../../src/CIons.cpp}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Apresenta-se na listagem 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+ref{CSal.cpp}
+\end_layout
+
+\end_inset
+
+o arquivo com código da classe 
 \family typewriter
-CSimulador-nome
+C
+\family default
+Sal.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lstinputlisting[caption={Arquivo de implementação da classe CSalt},label={CSal-cpp},
+ extendedchars=true,breaklines=true,
+ basicstyle=
+\backslash
+footnotesize
+\backslash
+tt]{../../src/CSal.cpp}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Apresenta-se na listagem 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+ref{CSalmoura-cpp}
+\end_layout
+
+\end_inset
+
+ o arquivo de implementação da classe 
+\family typewriter
+CSalmoura
 \family default
 .
  
@@ -421,16 +745,12 @@ status open
 
 
 \backslash
-lstset{style=C++} 
+lstinputlisting[Caption={Arquivo de implementação da classe CSalmoura},label={CSalmoura-cpp},
+  extendedchars=true,breaklines=true,basicstyle=
 \backslash
-lstinputlisting[ caption={
-\end_layout
-
-\begin_layout Plain Layout
-
-Arquivo de implementação da função 
+footnotesize
 \backslash
-texttt{main()}}, label={Simulador-nome.cpp}] {../../src/Simulador-nome.cpp}
+tt]{../../src/CSalmoura.cpp}
 \end_layout
 
 \end_inset
@@ -439,17 +759,20 @@ texttt{main()}}, label={Simulador-nome.cpp}] {../../src/Simulador-nome.cpp}
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Note
+Apresenta-se na listagem 
+\begin_inset ERT
 status open
 
 \begin_layout Plain Layout
-note que para saída mudamos a cor de fundo para azul; geramos a saída e
- depois redefinimos para "sem cor de fundo".
+
+
+\backslash
+ref{CMisturaSalmouras-cpp}
 \end_layout
 
 \end_inset
 
-
+o arquivo com código da classe CMisturaSalmouras.
 \end_layout
 
 \begin_layout Standard
@@ -460,9 +783,172 @@ status open
 
 
 \backslash
-lstset{style=out}   
+lstinputlisting[caption={Arquivo de implementação da classe CMisturaSalmouras},label={CMisturaSalmouras-cpp},extendedchars=true,breaklines=true,
+ basicstyle=
 \backslash
-lstinputlisting[caption=] {../../src/Simulador-nome.out}
+footnotesize
+\backslash
+tt]{../../src/CMisturaSalmouras.cpp}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Apresenta-se na listagem 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+ref{CSimuladorPrecipitacao-cpp}
+\end_layout
+
+\end_inset
+
+ o arquivo de implementação da classe CSimuladorPrecipitacao.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lstinputlisting[caption={Arquivo de implementação da classe CSimuladorPrecipitacao},
+   label={CSimuladorPrecipitacao-cpp},extendedchars=true,breaklines=true,
+    basicstyle=
+\backslash
+footnotesize
+\backslash
+tt]{../../src/CSimuladorPrecipitacao.cpp}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Apresenta-se na listagem 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+ref{main-cpp}
+\end_layout
+
+\end_inset
+
+o arquivo com código da classe 
+\family typewriter
+main.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lstinputlisting[caption={Arquivo de implementação da função 
+\backslash
+texttt{main()}},label={main-cpp},
+ extendedchars=true,breaklines=true,basicstyle=
+\backslash
+footnotesize
+\backslash
+tt]{../../src/main.cpp}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Apresenta-se na listagem 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+ref{CPlotPrecipitacao-cpp}
+\end_layout
+
+\end_inset
+
+o arquivo com código da classe CPlotPrecipitacao.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lstinputlisting[caption={Arquivo de implementação da classe CPlotPrecipitacao},
+   label={CPlotPrecipitacao-cpp},extendedchars=true,breaklines=true,basicstyle=
+\backslash
+footnotesize
+\backslash
+tt]{../../src/CPlotPrecipitacao.cpp}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Apresenta-se na listagem 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+ref{CTabelaPropriedadesIons-cpp}
+\end_layout
+
+\end_inset
+
+ o arquivo de implementação da classe CTabelaPropriedadesIons.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lstinputlisting[caption={Arquivo de implementação da classe CTabelaPropriedadesIons},
+   label={CTabelaPropriedadesIons-cpp},extendedchars=true,breaklines=true,
+ basicstyle=
+\backslash
+footnotesize
+\backslash
+tt]{../../src/CTabelaPropriedadesIons.cpp}
 \end_layout
 
 \end_inset
@@ -471,7 +957,8 @@ lstinputlisting[caption=] {../../src/Simulador-nome.out}
 \end_layout
 
 \begin_layout Description
-Nota: 
+Nota:
+ 
 \begin_inset space ~
 \end_inset
 
@@ -479,10 +966,14 @@ Nota:
 \begin_inset Newline newline
 \end_inset
 
-Não perca de vista a visão do todo; do projeto de engenharia como um todo.
- Cada capítulo, cada seção, cada parágrafo deve se encaixar.
+Não perca de vista a visão do todo;
+ do projeto de engenharia como um todo.
+ Cada capítulo,
+ cada seção,
+ cada parágrafo deve se encaixar.
  Este é um diferencial fundamental do engenheiro em relação ao técnico,
- a capacidade de desenvolver projetos, de ver o todo e suas diferentes partes,
+ a capacidade de desenvolver projetos,
+ de ver o todo e suas diferentes partes,
  de modelar processos/sistemas/produtos de engenharia.
 \end_layout
 

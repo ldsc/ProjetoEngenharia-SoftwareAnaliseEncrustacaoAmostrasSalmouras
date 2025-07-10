@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
-  "C:/Users/Allida/OneDrive/Desktop/05-07 Bueno/ProjetoEngenharia-SoftwareAnaliseEncrustacaoAmostrasSalmouras/4-Execucao-Detalhamento-Construcao-Versao-1/src/PrecipitationSimulator.exe"
-  "C:/Users/Allida/OneDrive/Desktop/05-07 Bueno/ProjetoEngenharia-SoftwareAnaliseEncrustacaoAmostrasSalmouras/4-Execucao-Detalhamento-Construcao-Versao-1/src/PrecipitationSimulator.exe.manifest"
-  "C:/Users/Allida/OneDrive/Desktop/05-07 Bueno/ProjetoEngenharia-SoftwareAnaliseEncrustacaoAmostrasSalmouras/4-Execucao-Detalhamento-Construcao-Versao-1/src/PrecipitationSimulator.pdb"
+  "C:/Users/Allida/OneDrive/Desktop/ProjetoEngenharia-SoftwareAnaliseEncrustacaoAmostrasSalmouras/4-Execucao-Detalhamento-Construcao-Versao-1/src/PrecipitationSimulator.exe"
+  "C:/Users/Allida/OneDrive/Desktop/ProjetoEngenharia-SoftwareAnaliseEncrustacaoAmostrasSalmouras/4-Execucao-Detalhamento-Construcao-Versao-1/src/PrecipitationSimulator.exe.manifest"
+  "C:/Users/Allida/OneDrive/Desktop/ProjetoEngenharia-SoftwareAnaliseEncrustacaoAmostrasSalmouras/4-Execucao-Detalhamento-Construcao-Versao-1/src/PrecipitationSimulator.pdb"
   "CMakeFiles/PrecipitationSimulator.dir/CIons.cpp.obj"
   "CMakeFiles/PrecipitationSimulator.dir/CIons.cpp.obj.d"
   "CMakeFiles/PrecipitationSimulator.dir/CMisturaSalmouras.cpp.obj"
