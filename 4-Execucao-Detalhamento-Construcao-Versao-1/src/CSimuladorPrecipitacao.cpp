@@ -9,11 +9,11 @@ namespace fs = std::filesystem;
 
 void CSimuladorPrecipitacao::executar() {
 
-    std::cout << "\nEscolha a qualidade dos gráficos:\n";
+    std::cout << "\nEscolha a qualidade dos graficos:\n";
     std::cout << "[1] Alta (1920x1080)\n";
     std::cout << "[2] Media (1280x720)\n";
     std::cout << "[3] Baixa (800x600)\n";
-    std::cout << "Seleção: ";
+    std::cout << "Selecao: ";
 
     std::cin >> m_Quality;
 

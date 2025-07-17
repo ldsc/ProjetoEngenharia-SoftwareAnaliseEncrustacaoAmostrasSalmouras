@@ -1,49 +1,49 @@
 [
 {
   "directory": "C:/Users/Allida/OneDrive/Desktop/ProjetoEngenharia-SoftwareAnaliseEncrustacaoAmostrasSalmouras/4-Execucao-Detalhamento-Construcao-Versao-1/src/build",
-  "command": "C:\\mingw\\bin\\g++.exe   -g -std=gnu++20 -Wall -Wextra -Wpedantic -o CMakeFiles\\PrecipitationSimulator.dir\\CIons.cpp.obj -c C:\\Users\\Allida\\OneDrive\\Desktop\\ProjetoEngenharia-SoftwareAnaliseEncrustacaoAmostrasSalmouras\\4-Execucao-Detalhamento-Construcao-Versao-1\\src\\CIons.cpp",
+  "command": "C:\\mingw\\bin\\g++.exe   -g -std=gnu++23 -Wall -Wextra -Wpedantic -o CMakeFiles\\PrecipitationSimulator.dir\\CIons.cpp.obj -c C:\\Users\\Allida\\OneDrive\\Desktop\\ProjetoEngenharia-SoftwareAnaliseEncrustacaoAmostrasSalmouras\\4-Execucao-Detalhamento-Construcao-Versao-1\\src\\CIons.cpp",
   "file": "C:/Users/Allida/OneDrive/Desktop/ProjetoEngenharia-SoftwareAnaliseEncrustacaoAmostrasSalmouras/4-Execucao-Detalhamento-Construcao-Versao-1/src/CIons.cpp",
   "output": "CMakeFiles/PrecipitationSimulator.dir/CIons.cpp.obj"
 },
 {
   "directory": "C:/Users/Allida/OneDrive/Desktop/ProjetoEngenharia-SoftwareAnaliseEncrustacaoAmostrasSalmouras/4-Execucao-Detalhamento-Construcao-Versao-1/src/build",
-  "command": "C:\\mingw\\bin\\g++.exe   -g -std=gnu++20 -Wall -Wextra -Wpedantic -o CMakeFiles\\PrecipitationSimulator.dir\\CSalt.cpp.obj -c C:\\Users\\Allida\\OneDrive\\Desktop\\ProjetoEngenharia-SoftwareAnaliseEncrustacaoAmostrasSalmouras\\4-Execucao-Detalhamento-Construcao-Versao-1\\src\\CSalt.cpp",
+  "command": "C:\\mingw\\bin\\g++.exe   -g -std=gnu++23 -Wall -Wextra -Wpedantic -o CMakeFiles\\PrecipitationSimulator.dir\\CSalt.cpp.obj -c C:\\Users\\Allida\\OneDrive\\Desktop\\ProjetoEngenharia-SoftwareAnaliseEncrustacaoAmostrasSalmouras\\4-Execucao-Detalhamento-Construcao-Versao-1\\src\\CSalt.cpp",
   "file": "C:/Users/Allida/OneDrive/Desktop/ProjetoEngenharia-SoftwareAnaliseEncrustacaoAmostrasSalmouras/4-Execucao-Detalhamento-Construcao-Versao-1/src/CSalt.cpp",
   "output": "CMakeFiles/PrecipitationSimulator.dir/CSalt.cpp.obj"
 },
 {
   "directory": "C:/Users/Allida/OneDrive/Desktop/ProjetoEngenharia-SoftwareAnaliseEncrustacaoAmostrasSalmouras/4-Execucao-Detalhamento-Construcao-Versao-1/src/build",
-  "command": "C:\\mingw\\bin\\g++.exe   -g -std=gnu++20 -Wall -Wextra -Wpedantic -o CMakeFiles\\PrecipitationSimulator.dir\\main.cpp.obj -c C:\\Users\\Allida\\OneDrive\\Desktop\\ProjetoEngenharia-SoftwareAnaliseEncrustacaoAmostrasSalmouras\\4-Execucao-Detalhamento-Construcao-Versao-1\\src\\main.cpp",
+  "command": "C:\\mingw\\bin\\g++.exe   -g -std=gnu++23 -Wall -Wextra -Wpedantic -o CMakeFiles\\PrecipitationSimulator.dir\\main.cpp.obj -c C:\\Users\\Allida\\OneDrive\\Desktop\\ProjetoEngenharia-SoftwareAnaliseEncrustacaoAmostrasSalmouras\\4-Execucao-Detalhamento-Construcao-Versao-1\\src\\main.cpp",
   "file": "C:/Users/Allida/OneDrive/Desktop/ProjetoEngenharia-SoftwareAnaliseEncrustacaoAmostrasSalmouras/4-Execucao-Detalhamento-Construcao-Versao-1/src/main.cpp",
   "output": "CMakeFiles/PrecipitationSimulator.dir/main.cpp.obj"
 },
 {
   "directory": "C:/Users/Allida/OneDrive/Desktop/ProjetoEngenharia-SoftwareAnaliseEncrustacaoAmostrasSalmouras/4-Execucao-Detalhamento-Construcao-Versao-1/src/build",
-  "command": "C:\\mingw\\bin\\g++.exe   -g -std=gnu++20 -Wall -Wextra -Wpedantic -o CMakeFiles\\PrecipitationSimulator.dir\\CSalmoura.cpp.obj -c C:\\Users\\Allida\\OneDrive\\Desktop\\ProjetoEngenharia-SoftwareAnaliseEncrustacaoAmostrasSalmouras\\4-Execucao-Detalhamento-Construcao-Versao-1\\src\\CSalmoura.cpp",
+  "command": "C:\\mingw\\bin\\g++.exe   -g -std=gnu++23 -Wall -Wextra -Wpedantic -o CMakeFiles\\PrecipitationSimulator.dir\\CSalmoura.cpp.obj -c C:\\Users\\Allida\\OneDrive\\Desktop\\ProjetoEngenharia-SoftwareAnaliseEncrustacaoAmostrasSalmouras\\4-Execucao-Detalhamento-Construcao-Versao-1\\src\\CSalmoura.cpp",
   "file": "C:/Users/Allida/OneDrive/Desktop/ProjetoEngenharia-SoftwareAnaliseEncrustacaoAmostrasSalmouras/4-Execucao-Detalhamento-Construcao-Versao-1/src/CSalmoura.cpp",
   "output": "CMakeFiles/PrecipitationSimulator.dir/CSalmoura.cpp.obj"
 },
 {
   "directory": "C:/Users/Allida/OneDrive/Desktop/ProjetoEngenharia-SoftwareAnaliseEncrustacaoAmostrasSalmouras/4-Execucao-Detalhamento-Construcao-Versao-1/src/build",
-  "command": "C:\\mingw\\bin\\g++.exe   -g -std=gnu++20 -Wall -Wextra -Wpedantic -o CMakeFiles\\PrecipitationSimulator.dir\\CTabelaPropriedadesIons.cpp.obj -c C:\\Users\\Allida\\OneDrive\\Desktop\\ProjetoEngenharia-SoftwareAnaliseEncrustacaoAmostrasSalmouras\\4-Execucao-Detalhamento-Construcao-Versao-1\\src\\CTabelaPropriedadesIons.cpp",
+  "command": "C:\\mingw\\bin\\g++.exe   -g -std=gnu++23 -Wall -Wextra -Wpedantic -o CMakeFiles\\PrecipitationSimulator.dir\\CTabelaPropriedadesIons.cpp.obj -c C:\\Users\\Allida\\OneDrive\\Desktop\\ProjetoEngenharia-SoftwareAnaliseEncrustacaoAmostrasSalmouras\\4-Execucao-Detalhamento-Construcao-Versao-1\\src\\CTabelaPropriedadesIons.cpp",
   "file": "C:/Users/Allida/OneDrive/Desktop/ProjetoEngenharia-SoftwareAnaliseEncrustacaoAmostrasSalmouras/4-Execucao-Detalhamento-Construcao-Versao-1/src/CTabelaPropriedadesIons.cpp",
   "output": "CMakeFiles/PrecipitationSimulator.dir/CTabelaPropriedadesIons.cpp.obj"
 },
 {
   "directory": "C:/Users/Allida/OneDrive/Desktop/ProjetoEngenharia-SoftwareAnaliseEncrustacaoAmostrasSalmouras/4-Execucao-Detalhamento-Construcao-Versao-1/src/build",
-  "command": "C:\\mingw\\bin\\g++.exe   -g -std=gnu++20 -Wall -Wextra -Wpedantic -o CMakeFiles\\PrecipitationSimulator.dir\\CMisturaSalmouras.cpp.obj -c C:\\Users\\Allida\\OneDrive\\Desktop\\ProjetoEngenharia-SoftwareAnaliseEncrustacaoAmostrasSalmouras\\4-Execucao-Detalhamento-Construcao-Versao-1\\src\\CMisturaSalmouras.cpp",
+  "command": "C:\\mingw\\bin\\g++.exe   -g -std=gnu++23 -Wall -Wextra -Wpedantic -o CMakeFiles\\PrecipitationSimulator.dir\\CMisturaSalmouras.cpp.obj -c C:\\Users\\Allida\\OneDrive\\Desktop\\ProjetoEngenharia-SoftwareAnaliseEncrustacaoAmostrasSalmouras\\4-Execucao-Detalhamento-Construcao-Versao-1\\src\\CMisturaSalmouras.cpp",
   "file": "C:/Users/Allida/OneDrive/Desktop/ProjetoEngenharia-SoftwareAnaliseEncrustacaoAmostrasSalmouras/4-Execucao-Detalhamento-Construcao-Versao-1/src/CMisturaSalmouras.cpp",
   "output": "CMakeFiles/PrecipitationSimulator.dir/CMisturaSalmouras.cpp.obj"
 },
 {
   "directory": "C:/Users/Allida/OneDrive/Desktop/ProjetoEngenharia-SoftwareAnaliseEncrustacaoAmostrasSalmouras/4-Execucao-Detalhamento-Construcao-Versao-1/src/build",
-  "command": "C:\\mingw\\bin\\g++.exe   -g -std=gnu++20 -Wall -Wextra -Wpedantic -o CMakeFiles\\PrecipitationSimulator.dir\\CSimuladorPrecipitacao.cpp.obj -c C:\\Users\\Allida\\OneDrive\\Desktop\\ProjetoEngenharia-SoftwareAnaliseEncrustacaoAmostrasSalmouras\\4-Execucao-Detalhamento-Construcao-Versao-1\\src\\CSimuladorPrecipitacao.cpp",
+  "command": "C:\\mingw\\bin\\g++.exe   -g -std=gnu++23 -Wall -Wextra -Wpedantic -o CMakeFiles\\PrecipitationSimulator.dir\\CSimuladorPrecipitacao.cpp.obj -c C:\\Users\\Allida\\OneDrive\\Desktop\\ProjetoEngenharia-SoftwareAnaliseEncrustacaoAmostrasSalmouras\\4-Execucao-Detalhamento-Construcao-Versao-1\\src\\CSimuladorPrecipitacao.cpp",
   "file": "C:/Users/Allida/OneDrive/Desktop/ProjetoEngenharia-SoftwareAnaliseEncrustacaoAmostrasSalmouras/4-Execucao-Detalhamento-Construcao-Versao-1/src/CSimuladorPrecipitacao.cpp",
   "output": "CMakeFiles/PrecipitationSimulator.dir/CSimuladorPrecipitacao.cpp.obj"
 },
 {
   "directory": "C:/Users/Allida/OneDrive/Desktop/ProjetoEngenharia-SoftwareAnaliseEncrustacaoAmostrasSalmouras/4-Execucao-Detalhamento-Construcao-Versao-1/src/build",
-  "command": "C:\\mingw\\bin\\g++.exe   -g -std=gnu++20 -Wall -Wextra -Wpedantic -o CMakeFiles\\PrecipitationSimulator.dir\\CPlotPrecipitacao.cpp.obj -c C:\\Users\\Allida\\OneDrive\\Desktop\\ProjetoEngenharia-SoftwareAnaliseEncrustacaoAmostrasSalmouras\\4-Execucao-Detalhamento-Construcao-Versao-1\\src\\CPlotPrecipitacao.cpp",
+  "command": "C:\\mingw\\bin\\g++.exe   -g -std=gnu++23 -Wall -Wextra -Wpedantic -o CMakeFiles\\PrecipitationSimulator.dir\\CPlotPrecipitacao.cpp.obj -c C:\\Users\\Allida\\OneDrive\\Desktop\\ProjetoEngenharia-SoftwareAnaliseEncrustacaoAmostrasSalmouras\\4-Execucao-Detalhamento-Construcao-Versao-1\\src\\CPlotPrecipitacao.cpp",
   "file": "C:/Users/Allida/OneDrive/Desktop/ProjetoEngenharia-SoftwareAnaliseEncrustacaoAmostrasSalmouras/4-Execucao-Detalhamento-Construcao-Versao-1/src/CPlotPrecipitacao.cpp",
   "output": "CMakeFiles/PrecipitationSimulator.dir/CPlotPrecipitacao.cpp.obj"
 }
