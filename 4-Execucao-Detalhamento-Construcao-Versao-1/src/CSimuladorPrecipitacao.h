@@ -4,6 +4,7 @@
 #include "CMisturaSalmouras.h"
 #include "CSalt.h"
 #include "CTabelaPropriedadesIons.h"
+#include "CPlotConfig.h"
 #include <vector>
 
 /**
@@ -17,6 +18,8 @@ class CSimuladorPrecipitacao {
 private:
     CTabelaPropriedadesIons tabelaIons;
     std::vector<CSalt> saisDisponiveis;
+    size_t m_Quality = 1;
+    QualidadePlot qualidade = QualidadePlot::Alta;
 
     void ConstruirSalmoura(CSalmoura& s) const;
     void CarregarSais(const std::string& caminhoArquivo);

@@ -4,7 +4,7 @@ cmake_minimum_required(VERSION 3.27)
 project(PrecipitationSimulator LANGUAGES CXX)
 
 # Definição da versão do C++
-set(CMAKE_CXX_STANDARD 20)
+set(CMAKE_CXX_STANDARD 23)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 # Adiciona todos os arquivos de cabeçalho e código-fonte ao projeto
