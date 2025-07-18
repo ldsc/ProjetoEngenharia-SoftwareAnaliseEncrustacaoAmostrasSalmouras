@@ -1,7 +1,7 @@
 
 # Table of Contents
 
-1. Nome do Software (ou Biblioteca): 
+1. Nome do Software (ou Biblioteca):
 2. Resumo e/ou informação extra:
 3. Versão:
 4. Data:
