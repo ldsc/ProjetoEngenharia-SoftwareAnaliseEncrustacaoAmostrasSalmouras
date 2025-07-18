@@ -1,23 +1,23 @@
 
 # Table of Contents
 
-Nome do Software (ou Biblioteca): 
-Resumo e/ou informação extra:
-Versão:
-Data:
-Autor de Contato:
-Lista dos Autores:
-Áreas de pesquisa vinculadas:
-Vinculo com:
-Paradigmas:
-Tipo de Interface:
-Plataformas Suportadas:
-Linguagens Utilizadas:
-Bibliotecas Utilizadas (dependências):
-Softwares utilizados (dependências)
-Tipo de Licença:
-Novas Versões
-Links:
+1. Nome do Software (ou Biblioteca): 
+2. Resumo e/ou informação extra:
+3. Versão:
+4. Data:
+5. Autor de Contato:
+6. Lista dos Autores:
+7. Áreas de pesquisa vinculadas:
+7. Vinculo com:
+8. Paradigmas:
+10. Tipo de Interface:
+11. Plataformas Suportadas:
+12. Linguagens Utilizadas:
+13. Bibliotecas Utilizadas (dependências):
+14. Softwares utilizados (dependências)
+15. Tipo de Licença:
+16. Novas Versões
+17. Links:
 
 
 
