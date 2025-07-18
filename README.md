@@ -23,24 +23,13 @@
 
 <a id="orga63642c"></a>
 
-# Nome do Desafio Tecnológico
-
-
 <a id="org2ebec41"></a>
 
-## Coloque aqui o nome do desafio tecnológico
-
-
-<a id="org855260d"></a>
-
-## Coloque aqui link para documentos relacionados ao desafio tecnológico (links para detalhes do desafio)
-
-
-<a id="org8132f6f"></a>
+Softaware Análise de Incrustação de Salmouras
 
 # Nome do Software (ou Biblioteca):
 
--   Coloque aqui o nome do simulador desenvolvido.
+Softaware Análise de Incrustação de Salmouras
 
 
 <a id="org72ffa40"></a>
