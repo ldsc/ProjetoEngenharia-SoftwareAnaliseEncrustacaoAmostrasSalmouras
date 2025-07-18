@@ -1,23 +1,23 @@
 
 # Table of Contents
 
-1. Nome do Software (ou Biblioteca): 
-2. Resumo e/ou informação extra:
-3. Versão:
-4. Data:
-5. Autor de Contato:
-6. Lista dos Autores:
-7. Áreas de pesquisa vinculadas:
-7. Vinculo com:
-8. Paradigmas:
-10. Tipo de Interface:
-11. Plataformas Suportadas:
-12. Linguagens Utilizadas:
-13. Bibliotecas Utilizadas (dependências):
-14. Softwares utilizados (dependências)
-15. Tipo de Licença:
-16. Novas Versões
-17. Links:
+1. <Nome do Software (ou Biblioteca):>
+2. <Resumo e/ou informação extra:>
+3. <Versão:>
+4. <Data:>
+5. <Autor de Contato:>
+6. <Lista dos Autores:>
+7. <Áreas de pesquisa vinculadas:>
+7. <Vinculo com:>
+8. <Paradigmas:>
+10. <Tipo de Interface:>
+11. <Plataformas Suportadas:>
+12. <Linguagens Utilizadas:>
+13. <Bibliotecas Utilizadas (dependências):>
+14. <Softwares utilizados (dependências)>
+15. <Tipo de Licença:>
+16. <Novas Versões>
+17. <Links:>
 
 <a id="orga63642c"></a>
 
