@@ -21,6 +21,13 @@
 
 <a id="orga63642c"></a>
 
+# Resumo
+
+Nosso software é um simulador educacional desenvolvido em C++23 com o objetivo de prever a precipitação de sais em soluções salinas, como as salmouras encontradas em operações da indústria do petróleo. Ele foi criado para resolver um problema crítico e recorrente: a formação de incrustações sólidas em tubulações e equipamentos, causadas pela precipitação de sais como calcita, barita, halita, entre outros. Essas incrustações podem obstruir o fluxo de fluido, reduzir a eficiência do sistema e gerar altos custos de manutenção.
+
+O funcionamento do simulador é baseado em princípios da química de solubilidade. O usuário informa as concentrações dos íons presentes na solução, assim como as condições de temperatura e pressão. O programa então calcula o produto iônico entre os íons que formam determinado sal e o compara com o produto de solubilidade (Kps) desse sal. Se o valor calculado for superior ao Kps, o software indica que haverá precipitação; caso contrário, a solução é considerada estável.
+
+Desenvolvido com foco na aplicação prática e educacional, o simulador permite analisar diferentes cenários operacionais e prever, de forma rápida e precisa, quais sais têm potencial para precipitar em determinadas condições. Isso torna a ferramenta especialmente útil em ambientes complexos, como plataformas offshore, onde mudanças na salinidade, pH, temperatura ou pressão podem favorecer a formação de incrustações. Ao antecipar esses riscos, é possível tomar decisões mais assertivas, como o uso de inibidores ou ajustes no processo, garantindo maior segurança e eficiência operacional.
 <a id="org2ebec41"></a>
 
 # Nome do Software (ou Biblioteca):
