@@ -737,9 +737,9 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename ../../../../../ProjetoEngenharia-SoftwareAnaliseEncrustacaoAmostrasSalmouras/3-Execucao-ModelosDeEngenharia/lyx/imagens/Diagrama de Pacote.png
+	filename ../imagens/Diagrama de Pacote.png
 	lyxscale 40
-	width 100text%
+	width 60text%
 
 \end_inset
 
@@ -867,7 +867,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename ../../../../../ProjetoEngenharia-SoftwareAnaliseEncrustacaoAmostrasSalmouras/3-Execucao-ModelosDeEngenharia/lyx/imagens/DiagramaDeExecucao.png
+	filename ../imagens/DiagramaDeExecucao.png
 	lyxscale 50
 	width 100text%
 

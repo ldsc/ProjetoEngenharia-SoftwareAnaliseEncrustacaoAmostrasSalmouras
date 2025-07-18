@@ -327,7 +327,7 @@ status open
 
 
 \backslash
-ref{CIons.h}
+ref{CIons-h}
 \end_layout
 
 \end_inset
@@ -369,7 +369,7 @@ status open
 
 
 \backslash
-ref{Csal.h}
+ref{Csal-h}
 \end_layout
 
 \end_inset
@@ -410,7 +410,7 @@ status open
 
 
 \backslash
-ref{CSalmoura.h}
+ref{CSalmoura-h}
 \end_layout
 
 \end_inset
@@ -451,7 +451,7 @@ status open
 
 
 \backslash
-ref{MisturaSalmoura.h}
+ref{MisturaSalmoura-h}
 \end_layout
 
 \end_inset
@@ -491,7 +491,7 @@ status open
 
 
 \backslash
-ref{CSimuladorPrecipitacao.h}
+ref{CSimuladorPrecipitacao-h}
 \end_layout
 
 \end_inset
@@ -538,7 +538,7 @@ status open
 
 
 \backslash
-ref{CTabelaPropriedadesIons.h}
+ref{CTabelaPropriedadesIons-h}
 \end_layout
 
 \end_inset
@@ -581,7 +581,7 @@ status open
 
 
 \backslash
-ref{CPlotPrecipitacao.h}
+ref{CPlotPrecipitacao-h}
 \end_layout
 
 \end_inset
@@ -602,7 +602,8 @@ status open
 
 
 \backslash
-lstinputlisting[caption={Arquivo de cabeçalho da classe CPlotPrecipitacao},pon k label={CPlotPrecipitacao-h},extendedchars=true,breaklines=true,basicstyle=
+lstinputlisting[caption={Arquivo de cabeçalho da classe CPlotPrecipitacao},
+ label={CPlotPrecipitacao-h},extendedchars=true,breaklines=true,basicstyle=
 \backslash
 footnotesize
 \backslash
@@ -623,7 +624,7 @@ status open
 
 
 \backslash
-ref{CIons.cpp}
+ref{CIons-cpp}
 \end_layout
 
 \end_inset
@@ -661,7 +662,7 @@ status open
 
 
 \backslash
-ref{CSal.cpp}
+ref{CSalt-cpp}
 \end_layout
 
 \end_inset
@@ -670,7 +671,7 @@ o arquivo com código da classe
 \family typewriter
 C
 \family default
-Sal.
+Salt.
 \end_layout
 
 \begin_layout Standard
@@ -681,13 +682,13 @@ status open
 
 
 \backslash
-lstinputlisting[caption={Arquivo de implementação da classe CSalt},label={CSal-cpp},
+lstinputlisting[caption={Arquivo de implementação da classe CSalt},label={CSalt-cpp},
  extendedchars=true,breaklines=true,
  basicstyle=
 \backslash
 footnotesize
 \backslash
-tt]{../../src/CSal.cpp}
+tt]{../../src/CSalt.cpp}
 \end_layout
 
 \end_inset
@@ -725,8 +726,9 @@ status open
 
 
 \backslash
-lstinputlisting[Caption={Arquivo de implementação da classe CSalmoura},label={CSalmoura-cpp},
-  extendedchars=true,breaklines=true,basicstyle=
+lstinputlisting[caption={Arquivo de implementação da classe CSalmoura},label={CSalmoura-cpp},
+  extendedchars=true,breaklines=true,
+ basicstyle=
 \backslash
 footnotesize
 \backslash

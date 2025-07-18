@@ -289,9 +289,12 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename ../../../../../ProjetoEngenharia-SoftwareAnaliseEncrustacaoAmostrasSalmouras/3-Execucao-ModelosDeEngenharia/lyx/imagens/Diagrama de Classes.png
+	filename ../imagens/Diagrama de Classes.png
 	lyxscale 30
 	width 100text%
+	height 90theight%
+	keepAspectRatio
+	rotateAngle 90
 
 \end_inset
 
@@ -442,9 +445,12 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename ../../../../../ProjetoEngenharia-SoftwareAnaliseEncrustacaoAmostrasSalmouras/3-Execucao-ModelosDeEngenharia/lyx/imagens/Diagrama de Sequencia.png
+	filename ../imagens/Diagrama de Sequencia.png
 	lyxscale 20
 	width 100text%
+	height 90theight%
+	keepAspectRatio
+	rotateAngle 90
 
 \end_inset
 
@@ -502,8 +508,9 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+\align center
 \begin_inset Graphics
-	filename ../../../../../ProjetoEngenharia-SoftwareAnaliseEncrustacaoAmostrasSalmouras/3-Execucao-ModelosDeEngenharia/lyx/imagens/Diagrama de Sequencia Especifico.png
+	filename ../imagens/Diagrama de Sequencia Especifico.png
 	lyxscale 20
 	BoundingBox 0bp 0bp 7825bp 2915bp
 	clip
@@ -614,7 +621,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename ../../../../../ProjetoEngenharia-SoftwareAnaliseEncrustacaoAmostrasSalmouras/3-Execucao-ModelosDeEngenharia/lyx/imagens/Diagrama de Comunicao.png
+	filename ../imagens/Diagrama de Comunicao.png
 	lyxscale 20
 	width 100text%
 	height 90theight%
@@ -709,11 +716,9 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename ../../../../../ProjetoEngenharia-SoftwareAnaliseEncrustacaoAmostrasSalmouras/3-Execucao-ModelosDeEngenharia/lyx/imagens/Diagrama de Estado - Salmoura.png
+	filename ../imagens/Diagrama de Estado - Salmoura.png
 	lyxscale 20
-	width 100text%
-	height 90theight%
-	keepAspectRatio
+	width 40text%
 
 \end_inset
 
@@ -766,9 +771,9 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename ../../../../../ProjetoEngenharia-SoftwareAnaliseEncrustacaoAmostrasSalmouras/3-Execucao-ModelosDeEngenharia/lyx/imagens/Diagrama de Atividade.png
+	filename ../imagens/Diagrama de Atividade.png
 	lyxscale 25
-	width 100text%
+	width 85text%
 
 \end_inset
 

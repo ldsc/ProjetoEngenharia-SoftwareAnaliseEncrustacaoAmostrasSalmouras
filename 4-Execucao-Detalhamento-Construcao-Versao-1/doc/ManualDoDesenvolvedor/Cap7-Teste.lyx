@@ -196,8 +196,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename ../Imagem/inicio-do-software.png
-	width 100text%
-	height 90theight%
+	width 40text%
 
 \end_inset
 
@@ -286,7 +285,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename ../Imagem/Documento_Ion.png
-	width 100text%
+	width 50text%
 
 \end_inset
 
@@ -488,8 +487,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename ../Imagem/Inicio-Salmoura.png
-	width 100text%
-	height 90theight%
+	width 50text%
 
 \end_inset
 
@@ -562,8 +560,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename ../Imagem/Quantidade_de_Salmoura.png
-	width 100text%
-	height 90theight%
+	width 50text%
 
 \end_inset
 
@@ -650,8 +647,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename ../Imagem/condicoes_termodinamicas.png
-	width 100text%
-	height 90theight%
+	width 35text%
 
 \end_inset
 
@@ -741,8 +737,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename ../Imagem/resultado-precipitacao.png
-	width 100text%
-	height 90theight%
+	width 90text%
 
 \end_inset
 
@@ -818,8 +813,7 @@ status open
 \begin_inset Graphics
 	filename ../Imagem/resultado-grafico-exemplo-precipitacao.png
 	lyxscale 70
-	width 100text%
-	height 90theight%
+	width 80text%
 
 \end_inset
 
@@ -886,8 +880,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename ../Imagem/Resultado-Sal-Especifico.png
-	width 100text%
-	height 90theight%
+	width 90text%
 
 \end_inset
 
@@ -964,8 +957,7 @@ status open
 \begin_inset Graphics
 	filename ../Imagem/Sal-especifico-precipitação-2.png
 	lyxscale 80
-	width 100text%
-	height 90theight%
+	width 80text%
 
 \end_inset
 
@@ -1040,8 +1032,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename ../Imagem/inicio-do-software.png
-	width 100text%
-	height 90theight%
+	width 50text%
 
 \end_inset
 
@@ -1130,7 +1121,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename ../Imagem/Documento_Ion.png
-	width 100text%
+	width 60text%
 
 \end_inset
 
@@ -1332,8 +1323,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename ../Imagem/Inicio-Salmoura.png
-	width 100text%
-	height 90theight%
+	width 60text%
 
 \end_inset
 
@@ -1402,8 +1392,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename ../Imagem/Quantidade_de_Salmoura.png
-	width 100text%
-	height 90theight%
+	width 60text%
 
 \end_inset
 
@@ -1482,8 +1471,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename ../Imagem/condicoes_termodinamicas.png
-	width 100text%
-	height 90theight%
+	width 40text%
 
 \end_inset
 
@@ -1570,7 +1558,6 @@ status open
 \begin_inset Graphics
 	filename ../Imagem/resultado-precipitacao.png
 	width 100text%
-	height 90theight%
 
 \end_inset
 
@@ -1638,8 +1625,7 @@ status open
 \begin_inset Graphics
 	filename ../Imagem/resultado-grafico-exemplo-precipitacao.png
 	lyxscale 70
-	width 100text%
-	height 90theight%
+	width 90text%
 
 \end_inset
 
@@ -1703,7 +1689,6 @@ status open
 \begin_inset Graphics
 	filename ../Imagem/Resultado-Sal-Especifico.png
 	width 100text%
-	height 90theight%
 
 \end_inset
 
@@ -1772,8 +1757,7 @@ status open
 \begin_inset Graphics
 	filename ../Imagem/Sal-especifico-precipitação-2.png
 	lyxscale 80
-	width 100text%
-	height 90theight%
+	width 90text%
 
 \end_inset
 

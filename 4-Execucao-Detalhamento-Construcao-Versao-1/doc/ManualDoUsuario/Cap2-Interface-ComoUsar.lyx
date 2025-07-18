@@ -302,7 +302,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename ../Imagem/Salmoura-Exemplo.png
-	width 100text%
+	width 60text%
 	height 90theight%
 	keepAspectRatio
 
@@ -381,9 +381,7 @@ status open
 \begin_inset Graphics
 	filename ../Imagem/tabela-de-ions.png
 	lyxscale 90
-	width 100text%
-	height 90theight%
-	keepAspectRatio
+	width 50text%
 
 \end_inset
 
@@ -458,6 +456,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename ../Imagem/tabela-sais-KSP.png
+	width 60text%
 
 \end_inset
 
@@ -523,9 +522,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename ../Imagem/Resultado-Sofwtare.png
-	width 90text%
-	height 90theight%
-	keepAspectRatio
+	width 60text%
 
 \end_inset
 
@@ -596,9 +593,7 @@ status open
 \begin_inset Graphics
 	filename ../Imagem/Grafico_Incrustacao.png
 	lyxscale 80
-	width 100text%
-	height 90theight%
-	keepAspectRatio
+	width 70text%
 
 \end_inset
 
@@ -655,9 +650,7 @@ status open
 \begin_inset Graphics
 	filename ../Imagem/Limite_Incrustacao.png
 	lyxscale 80
-	width 100text%
-	height 90theight%
-	keepAspectRatio
+	width 70text%
 
 \end_inset
 

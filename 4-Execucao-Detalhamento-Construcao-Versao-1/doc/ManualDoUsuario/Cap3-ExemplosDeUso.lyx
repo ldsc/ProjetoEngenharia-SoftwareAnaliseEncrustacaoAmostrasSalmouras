@@ -195,9 +195,9 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename C:/Users/Allida/OneDrive/Desktop/ProjetoEngenharia-SoftwareAnaliseEncrustacaoAmostrasSalmouras ATUAL/4-Execucao-Detalhamento-Construcao-Versao-1/doc/Imagem/inicio-do-software.png
-	width 100text%
-	height 90theight%
+	filename ../Imagem/inicio-do-software.png
+	width 50text%
+	height 50theight%
 	keepAspectRatio
 
 \end_inset
@@ -287,7 +287,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename ../Imagem/Documento_Ion.png
-	width 100text%
+	width 60text%
 
 \end_inset
 
@@ -489,7 +489,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename ../Imagem/Inicio-Salmoura.png
-	width 100text%
+	width 60text%
 	height 90theight%
 	keepAspectRatio
 
@@ -564,7 +564,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename ../Imagem/Quantidade_de_Salmoura.png
-	width 100text%
+	width 60text%
 	height 90theight%
 	keepAspectRatio
 
@@ -653,7 +653,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename ../Imagem/condicoes_termodinamicas.png
-	width 80text%
+	width 60text%
 	height 90theight%
 	keepAspectRatio
 
@@ -745,7 +745,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename ../Imagem/resultado-precipitacao.png
-	width 90text%
+	width 60text%
 	height 90theight%
 	keepAspectRatio
 
@@ -1002,10 +1002,6 @@ name "fig:Sal especifico precipitado"
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
 
 \end_layout
 

@@ -232,7 +232,11 @@ today ele vai colocar data no material impresso
 \end_layout
 
 \begin_layout Standard
-No presente projeto de engenharia desenvolve-se o software PrecipitationSimulator,
+No presente projeto de engenharia desenvolve-se o software 
+\emph on
+PrecipitationSimulator
+\emph default
+,
  uma ferramenta aplicada à engenharia de petróleo,
  utilizando o paradigma da orientação a objetos.
  O sistema permite prever a precipitação de sais com base em dados de concentração iônica e condições termodinâmicas,
@@ -251,7 +255,7 @@ name "sec:Escopo-do-Problema"
 \end_layout
 
 \begin_layout Standard
-egundo o CREA/CONFEA,
+Segundo o CREA/CONFEA,
  um dos quesitos fundamentais que diferenciam a atuação de um tecnólogo da atuação de um engenheiro é a capacidade de desenvolver um projeto completo de engenharia.
  Neste trabalho,
  desenvolve-se um projeto de engenharia de software voltado à solução de um problema específico da engenharia de petróleo:
