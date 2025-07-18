@@ -71,10 +71,10 @@ Softaware Análise de Incrustação de Salmouras
 # Áreas de pesquisa vinculadas:
 
 -   Modelagem Matemática Computacional
--   &#x2026;Poço
--   &#x2026;Geoquímica
--   &#x2026;Termodinâmica
--   &#x2026;Elevação e Escoamento
+-   Poço
+-   Geoquímica
+-   Termodinâmica
+-   Elevação e Escoamento
 
 
 <a id="org3a88e7c"></a>
