@@ -19,13 +19,9 @@
 16. Novas Versões
 17. Links:
 
-
-
 <a id="orga63642c"></a>
 
 <a id="org2ebec41"></a>
-
-Softaware Análise de Incrustação de Salmouras
 
 # Nome do Software (ou Biblioteca):
 
@@ -34,17 +30,11 @@ Softaware Análise de Incrustação de Salmouras
 
 <a id="org72ffa40"></a>
 
-# Resumo e/ou informação extra:
-
--   
-
-
 <a id="org10111d4"></a>
 
 # Versão:
 
 -   1.0.
-
 
 <a id="orgf581e60"></a>
 
@@ -52,20 +42,20 @@ Softaware Análise de Incrustação de Salmouras
 
 -   2025/1 - primeiro semestre.
 
-
 <a id="org50824d1"></a>
 
 # Autor de Contato:
 
 -   André Duarte Bueno <andreduartebueno@gmail.com>
--   Coloque aqui nome e contato do lider da equipe
-
+-   Állida R. S. Faial <allidarsfaial@gmail.com>
+-   João Vitor Pardo <joaovitorpardo@gmail.com>
 
 <a id="orgdcfbf20"></a>
 
 # Lista dos Autores:
 
--   &#x2026;
+-   Állida R. S. Faial <allidarsfaial@gmail.com>
+-   João Vitor Pardo <joaovitorpardo@gmail.com>
 -   André Duarte Bueno <andreduartebueno@gmail.com>
 
 
@@ -74,10 +64,10 @@ Softaware Análise de Incrustação de Salmouras
 # Áreas de pesquisa vinculadas:
 
 -   Modelagem Matemática Computacional
--   &#x2026;Engenharia de Reservatório?
--   &#x2026;Geofísica?
--   &#x2026;Petrofísica?
--   &#x2026;Geologia e geoquímica?
+-   &#x2026;Poço
+-   &#x2026;Geoquímica
+-   &#x2026;Termodinâmica
+-   &#x2026;Elevação e Escoamento
 
 
 <a id="org3a88e7c"></a>
@@ -124,8 +114,6 @@ Softaware Análise de Incrustação de Salmouras
 
 -   CGnuplot - <https://github.com/ldsc/CGnuplot>
 -   QCustomPlot - <https://www.qcustomplot.com/>
--   ?
-
 
 <a id="orga7939eb"></a>
 
@@ -133,13 +121,11 @@ Softaware Análise de Incrustação de Salmouras
 
 -   gnuplot <http://www.gnuplot.info/>
 
-
 <a id="orga5804b1"></a>
 
 # Tipo de Licença:
 
 -   GPL
-
 
 <a id="orgf4e6c94"></a>
 
@@ -163,15 +149,6 @@ Softaware Análise de Incrustação de Salmouras
 
 <a id="org7997b0d"></a>
 
-# Vinculo com:
-
--   Em alguns casos a versão 1 foi desenvolvida utilizando a metodologia antiga. Nestes casos é necessário copiar os dados da nova versão para a versão antiga. De forma que as próximas versões devem usar a metodologia descrita [aqui](https://github.com/ldsc/LDSC-ProjetoEngenharia-0-Metodologia-Instrucoes-Etapas).
-    Havendo dúvidas consulte o professor.
--   [Trabalho da disciplina Projeto de Software Aplicado à Engenharia](https://sites.google.com/view/professorandreduartebueno/ensino/projeto-de-software-aplicado).
--   Uma lista de outros projetos desenvolvidos no LDSC é disponibilizado [aqui](https://github.com/ldsc/LDSC-ProjetoEngenharia-0-Metodologia-Instrucoes-Etapas).
-
-
-<a id="org1611c19"></a>
 
 # Links:
 
@@ -182,10 +159,4 @@ Softaware Análise de Incrustação de Salmouras
 
 <a id="org0b6cfa5"></a>
 
-# Todo
-
-
-<a id="org1c7467e"></a>
-
-## TODO Você pode colocar aqui atividades a serem desenvolvidas
 
