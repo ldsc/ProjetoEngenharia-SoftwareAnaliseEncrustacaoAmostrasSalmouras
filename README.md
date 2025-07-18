@@ -1,30 +1,23 @@
 
 # Table of Contents
 
-1.  [Nome do Desafio Tecnológico](#orga63642c)
-    1.  [Coloque aqui o nome do desafio tecnológico](#org2ebec41)
-    2.  [Coloque aqui link para documentos relacionados ao desafio tecnológico (links para detalhes do desafio)](#org855260d)
-2.  [Nome do Software (ou Biblioteca):](#org8132f6f)
-3.  [Resumo e/ou informação extra:](#org72ffa40)
-4.  [Versão:](#org10111d4)
-5.  [Data:](#orgf581e60)
-6.  [Autor de Contato:](#org50824d1)
-7.  [Lista dos Autores:](#orgdcfbf20)
-8.  [Áreas de pesquisa vinculadas:](#org3e9046d)
-9.  [Vinculo com:](#org3a88e7c)
-10. [Paradigmas:](#orgbece9a4)
-11. [Tipo de Interface:](#orgdcc4e41)
-12. [Plataformas Suportadas:](#org5edb591)
-13. [Linguagens Utilizadas:](#orgb633128)
-14. [Bibliotecas Utilizadas (dependências):](#org22706d5)
-15. [Softwares utilizados (dependências)](#orga7939eb)
-16. [Tipo de Licença:](#orga5804b1)
-17. [Novas Versões](#orgf4e6c94)
-18. [Links:](#org3498266)
-19. [Vinculo com:](#org7997b0d)
-20. [Links:](#org1611c19)
-21. [Todo](#org0b6cfa5)
-    1.  [Você pode colocar aqui atividades a serem desenvolvidas](#org1c7467e)
+Nome do Software (ou Biblioteca): 
+Resumo e/ou informação extra:
+Versão:
+Data:
+Autor de Contato:
+Lista dos Autores:
+Áreas de pesquisa vinculadas:
+Vinculo com:
+Paradigmas:
+Tipo de Interface:
+Plataformas Suportadas:
+Linguagens Utilizadas:
+Bibliotecas Utilizadas (dependências):
+Softwares utilizados (dependências)
+Tipo de Licença:
+Novas Versões
+Links:
 
 
 
