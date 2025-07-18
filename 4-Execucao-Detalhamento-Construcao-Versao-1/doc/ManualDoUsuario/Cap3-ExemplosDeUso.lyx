@@ -195,7 +195,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename C:/Users/Allida/OneDrive/Desktop/05-07 Bueno/ProjetoEngenharia-SoftwareAnaliseEncrustacaoAmostrasSalmouras/4-Execucao-Detalhamento-Construcao-Versao-1/doc/Imagem/Usuario1.png
+	filename C:/Users/Allida/OneDrive/Desktop/ProjetoEngenharia-SoftwareAnaliseEncrustacaoAmostrasSalmouras ATUAL/4-Execucao-Detalhamento-Construcao-Versao-1/doc/Imagem/inicio-do-software.png
 	width 100text%
 	height 90theight%
 
@@ -285,7 +285,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename C:/Users/Allida/OneDrive/Desktop/05-07 Bueno/ProjetoEngenharia-SoftwareAnaliseEncrustacaoAmostrasSalmouras/4-Execucao-Detalhamento-Construcao-Versao-1/doc/Imagem/Documento Ion.png
+	filename ../Imagem/Documento_Ion.png
 	width 100text%
 
 \end_inset
@@ -487,9 +487,9 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename C:/Users/Allida/OneDrive/Desktop/05-07 Bueno/ProjetoEngenharia-SoftwareAnaliseEncrustacaoAmostrasSalmouras/4-Execucao-Detalhamento-Construcao-Versao-1/doc/Imagem/Inicio Salmoura.png
-	width 100text%
-	height 90theight%
+	filename ../Imagem/Inicio-Salmoura.png
+	width 100pheight%
+	height 90pheight%
 
 \end_inset
 
@@ -561,7 +561,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename C:/Users/Allida/OneDrive/Desktop/05-07 Bueno/ProjetoEngenharia-SoftwareAnaliseEncrustacaoAmostrasSalmouras/4-Execucao-Detalhamento-Construcao-Versao-1/doc/Imagem/Quantidade de Salmoura.png
+	filename ../Imagem/Quantidade_de_Salmoura.png
 	width 100text%
 	height 90theight%
 
@@ -649,7 +649,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename C:/Users/Allida/OneDrive/Desktop/05-07 Bueno/ProjetoEngenharia-SoftwareAnaliseEncrustacaoAmostrasSalmouras/4-Execucao-Detalhamento-Construcao-Versao-1/doc/Imagem/condições termodinâmicas.png
+	filename ../Imagem/condicoes_termodinamicas.png
 	width 100text%
 	height 90theight%
 
@@ -740,7 +740,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename C:/Users/Allida/OneDrive/Desktop/05-07 Bueno/ProjetoEngenharia-SoftwareAnaliseEncrustacaoAmostrasSalmouras/4-Execucao-Detalhamento-Construcao-Versao-1/doc/Imagem/resultado precipitação.png
+	filename ../Imagem/resultado-precipitacao.png
 	width 100text%
 	height 90theight%
 
@@ -816,7 +816,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename C:/Users/Allida/OneDrive/Desktop/05-07 Bueno/ProjetoEngenharia-SoftwareAnaliseEncrustacaoAmostrasSalmouras/4-Execucao-Detalhamento-Construcao-Versao-1/doc/Imagem/resultado grafico exemplo precipitação.png
+	filename ../Imagem/resultado-grafico-exemplo-precipitacao.png
 	lyxscale 70
 	width 100text%
 	height 90theight%
@@ -885,7 +885,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename C:/Users/Allida/OneDrive/Desktop/05-07 Bueno/ProjetoEngenharia-SoftwareAnaliseEncrustacaoAmostrasSalmouras/4-Execucao-Detalhamento-Construcao-Versao-1/doc/Imagem/Resultado Sal Especifico.png
+	filename ../Imagem/Resultado-Sal-Especifico.png
 	width 100text%
 	height 90theight%
 
@@ -962,7 +962,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename C:/Users/Allida/OneDrive/Desktop/05-07 Bueno/ProjetoEngenharia-SoftwareAnaliseEncrustacaoAmostrasSalmouras/4-Execucao-Detalhamento-Construcao-Versao-1/doc/Imagem/Sal especifico precipitação 2.png
+	filename ../Imagem/Sal-especifico-precipitação-2.png
 	lyxscale 80
 	width 100text%
 	height 90theight%

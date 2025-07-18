@@ -396,10 +396,6 @@ footnotesize
 tt]{../../src/CSalt.h}
 \end_layout
 
-\begin_layout Plain Layout
-
-\end_layout
-
 \end_inset
 
 
@@ -441,10 +437,6 @@ footnotesize
 tt]{../../src/CSalmoura.h}
 \end_layout
 
-\begin_layout Plain Layout
-
-\end_layout
-
 \end_inset
 
 
@@ -483,10 +475,6 @@ lstinputlisting[caption={Arquivo de cabeçalho da classe CMisturaSalmouras},
 footnotesize
 \backslash
 tt]{../../src/CMisturaSalmouras.h}
-\end_layout
-
-\begin_layout Plain Layout
-
 \end_layout
 
 \end_inset
@@ -534,10 +522,6 @@ tt
 \begin_layout Plain Layout
 
 ]{../../src/CSimuladorPrecipitacao.h}
-\end_layout
-
-\begin_layout Plain Layout
-
 \end_layout
 
 \end_inset
@@ -623,10 +607,6 @@ lstinputlisting[caption={Arquivo de cabeçalho da classe CPlotPrecipitacao},pon 
 footnotesize
 \backslash
 tt]{../../src/CPlotPrecipitacao.h}
-\end_layout
-
-\begin_layout Plain Layout
-
 \end_layout
 
 \end_inset

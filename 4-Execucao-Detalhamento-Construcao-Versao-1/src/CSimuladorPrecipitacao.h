@@ -9,10 +9,10 @@
 
 /**
  * @class CSimuladorPrecipitacao
- * @brief Classe responsÃ¡vel por gerenciar a interaÃ§Ã£o com o usuÃ¡rio e a execuÃ§Ã£o da simulaÃ§Ã£o quÃ­mica.
+ * @brief Classe responsável por gerenciar a interação com o usuário e a execução da simulação química.
  *
- * Esta classe encapsula a lÃ³gica de iteraÃ§Ã£o via terminal, coleta de dados como temperatura e pressÃ£o,
- * construÃ§Ã£o das salmouras, sais, e delega os cÃ¡lculos de precipitaÃ§Ã£o com base nas concentraÃ§Ãµes finais.
+ * Esta classe encapsula a lógica de iteração via terminal, coleta de dados como temperatura e pressão,
+ * construção das salmouras, sais, e delega os cálculos de precipitação com base nas concentrações finais.
  */
 class CSimuladorPrecipitacao {
 private:
@@ -27,15 +27,15 @@ private:
 
 public:
     /**
-     * @brief Executa a interface interativa de terminal com o usuÃ¡rio.
+     * @brief Executa a interface interativa de terminal com o usuário.
      *
-     * Permite definir condiÃ§Ãµes termodinÃ¢micas, criar salmouras, sais e executar a simulaÃ§Ã£o completa.
+     * Permite definir condições termodinâmicas, criar salmouras, sais e executar a simulação completa.
      */
     void executar();
 
     /**
-     * @brief Executa a simulaÃ§Ã£o de precipitaÃ§Ã£o com base na mistura e nos sais fornecidos.
-     * @param mistura Mistura de salmouras criada pelo usuÃ¡rio.
+     * @brief Executa a simulação de precipitação com base na mistura e nos sais fornecidos.
+     * @param mistura Mistura de salmouras criada pelo usuário.
      */
     void simular(const CMisturaSalmouras& mistura);
 };

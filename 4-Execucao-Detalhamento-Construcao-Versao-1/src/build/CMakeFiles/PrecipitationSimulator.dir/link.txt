@@ -1,0 +1,3 @@
+C:\mingw\bin\cmake.exe -E rm -f CMakeFiles\PrecipitationSimulator.dir/objects.a
+C:\mingw\bin\ar.exe qc CMakeFiles\PrecipitationSimulator.dir/objects.a @CMakeFiles\PrecipitationSimulator.dir\objects1.rsp
+C:\mingw\bin\g++.exe -g -Wl,--whole-archive CMakeFiles\PrecipitationSimulator.dir/objects.a -Wl,--no-whole-archive -o "C:\Users\Allida\OneDrive\Desktop\ProjetoEngenharia-SoftwareAnaliseEncrustacaoAmostrasSalmouras ATUAL\4-Execucao-Detalhamento-Construcao-Versao-1\src\PrecipitationSimulator.exe" -Wl,--out-implib,libPrecipitationSimulator.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\PrecipitationSimulator.dir\linkLibs.rsp

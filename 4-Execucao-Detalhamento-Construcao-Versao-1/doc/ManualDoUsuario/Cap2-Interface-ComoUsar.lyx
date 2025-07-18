@@ -184,9 +184,12 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename C:/Users/Allida/OneDrive/Desktop/05-07 Bueno/ProjetoEngenharia-SoftwareAnaliseEncrustacaoAmostrasSalmouras/4-Execucao-Detalhamento-Construcao-Versao-1/doc/Imagem/Interface Programa.png
+	filename ../Imagem/Interface_Programa.png
 	lyxscale 50
-	width 100text%
+	width 60text%
+	height 60text%
+	clip
+	rotateOrigin center
 	special height=0.85\textheight
 
 \end_inset
@@ -297,7 +300,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename C:/Users/Allida/OneDrive/Desktop/05-07 Bueno/ProjetoEngenharia-SoftwareAnaliseEncrustacaoAmostrasSalmouras/4-Execucao-Detalhamento-Construcao-Versao-1/doc/Imagem/Salmoura Exemplo.png
+	filename ../Imagem/Salmoura-Exemplo.png
 	width 100page%
 	height 90theight%
 
@@ -374,7 +377,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename C:/Users/Allida/OneDrive/Desktop/05-07 Bueno/ProjetoEngenharia-SoftwareAnaliseEncrustacaoAmostrasSalmouras/4-Execucao-Detalhamento-Construcao-Versao-1/doc/Imagem/tabela de ions.png
+	filename ../Imagem/tabela-de-ions.png
 	lyxscale 90
 	width 100text%
 	height 90theight%
@@ -451,7 +454,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename C:/Users/Allida/OneDrive/Desktop/05-07 Bueno/ProjetoEngenharia-SoftwareAnaliseEncrustacaoAmostrasSalmouras/4-Execucao-Detalhamento-Construcao-Versao-1/doc/Imagem/tabela sais KSP.png
+	filename ../Imagem/tabela-sais-KSP.png
 
 \end_inset
 
@@ -516,7 +519,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename C:/Users/Allida/OneDrive/Desktop/05-07 Bueno/ProjetoEngenharia-SoftwareAnaliseEncrustacaoAmostrasSalmouras/4-Execucao-Detalhamento-Construcao-Versao-1/doc/Imagem/Resultado Sofwtare.png
+	filename ../Imagem/Resultado-Sofwtare.png
 
 \end_inset
 
@@ -585,7 +588,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename C:/Users/Allida/OneDrive/Desktop/05-07 Bueno/ProjetoEngenharia-SoftwareAnaliseEncrustacaoAmostrasSalmouras/4-Execucao-Detalhamento-Construcao-Versao-1/doc/Imagem/Grafico.png
+	filename ../Imagem/Grafico_Incrustacao.png
 	lyxscale 80
 	width 100text%
 	height 90theight%
@@ -643,7 +646,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename C:/Users/Allida/OneDrive/Desktop/05-07 Bueno/ProjetoEngenharia-SoftwareAnaliseEncrustacaoAmostrasSalmouras/4-Execucao-Detalhamento-Construcao-Versao-1/doc/Imagem/Limite Incrustação.png
+	filename ../Imagem/Limite_Incrustacao.png
 	lyxscale 80
 	width 100text%
 	height 90theight%

@@ -7,10 +7,10 @@
 #include <unordered_map>
 
 /**
- * @brief Classe responsÃ¡vel por modelar um sal e calcular sua solubilidade.
+ * @brief Classe responsável por modelar um sal e calcular sua solubilidade.
  * 
- * Um sal Ã© formado por uma combinaÃ§Ã£o de Ã­ons com coeficientes estequiomÃ©tricos conhecidos.
- * Sua precipitaÃ§Ã£o depende do produto iÃ´nico comparado ao Ksp (constante de solubilidade).
+ * Um sal é formado por uma combinação de íons com coeficientes estequiométricos conhecidos.
+ * Sua precipitação depende do produto iônico comparado ao Ksp (constante de solubilidade).
  */
 class CSalt {
 
@@ -19,11 +19,11 @@ public:
     /**
      * @brief Construtor completo do sal.
      * @param nome Nome do sal
-     * @param kspRef Ksp de referÃªncia
-     * @param deltaH Î”HÂº de dissoluÃ§Ã£o (J/mol)
-     * @param temperaturaRef Temperatura de referÃªncia (K)
-     * @param ions Vetor de Ã­ons
-     * @param coeficientes Coeficientes estequiomÃ©tricos
+     * @param kspRef Ksp de referência
+     * @param deltaH ?Hº de dissolução (J/mol)
+     * @param temperaturaRef Temperatura de referência (K)
+     * @param ions Vetor de íons
+     * @param coeficientes Coeficientes estequiométricos
      */
     CSalt(std::string nome, double kspRef, double deltaH, double temperaturaRef, const std::vector<CIon>& ions, const std::vector<int>& coeficientes);
 
@@ -35,16 +35,16 @@ public:
     double KspCorrigido(double temperatura) const;
 
     /**
-     * @brief Calcula o produto iÃ´nico Q do sal com base nas concentraÃ§Ãµes fornecidas.
+     * @brief Calcula o produto iônico Q do sal com base nas concentrações fornecidas.
      * 
-     * @param concentracoes Mapa nome-do-Ã­on â†’ concentraÃ§Ã£o (mol/L)
-     * @return Valor de Q (produto iÃ´nico)
+     * @param concentracoes Mapa nome-do-íon ? concentração (mol/L)
+     * @return Valor de Q (produto iônico)
      */
     double calculateIonicProduct(const std::unordered_map<std::string, double>& concentracoes) const;
 
     /**
-     * @brief Verifica se o sal irÃ¡ precipitar.
-     * @param concentracoes Mapa de concentraÃ§Ã£o molar por Ã­on
+     * @brief Verifica se o sal irá precipitar.
+     * @param concentracoes Mapa de concentração molar por íon
      * @param temperatura Temperatura (K)
      * @return true se Q > Ksp_corrigido
      */
@@ -56,10 +56,10 @@ public:
     /// @return Produto de solubilidade do sal (Ksp).
     double getKsp() const;
 
-    /// @return Vetor de Ã­ons que compÃµem o sal.
+    /// @return Vetor de íons que compõem o sal.
     std::vector<CIon> getIons() const;
 
-    /// @return Vetor de coeficientes estequiomÃ©tricos.
+    /// @return Vetor de coeficientes estequiométricos.
     std::vector<int> getCoeficientes() const;
 
     /// Define o nome do sal.
@@ -68,10 +68,10 @@ public:
     /// Define o valor do Ksp.
     void setKsp(double ksp);
 
-    /// Define os Ã­ons do sal.
+    /// Define os íons do sal.
     void setIons(const std::vector<CIon>& ions);
 
-    /// Define os coeficientes dos Ã­ons.
+    /// Define os coeficientes dos íons.
     void setCoeficientes(const std::vector<int>& coeficientes);
 
     /// Destrutor.
@@ -79,11 +79,11 @@ public:
 
 private:
     std::string name;               // Nome do sal
-    double kspRef;                  // Ksp de referÃªncia (em temperaturaRef)
-    double deltaH;                  // Î”HÂº de dissoluÃ§Ã£o (J/mol)
-    double temperaturaRef;          // Temperatura de referÃªncia (K)
-    std::vector<CIon> ions;         // Ãons que compÃµem o sal
-    std::vector<int> coeficientes;  // Coeficientes estequiomÃ©tricos
+    double kspRef;                  // Ksp de referência (em temperaturaRef)
+    double deltaH;                  // ?Hº de dissolução (J/mol)
+    double temperaturaRef;          // Temperatura de referência (K)
+    std::vector<CIon> ions;         // Íons que compõem o sal
+    std::vector<int> coeficientes;  // Coeficientes estequiométricos
 };
 
 #endif

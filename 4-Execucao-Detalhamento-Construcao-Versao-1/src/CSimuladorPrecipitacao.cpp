@@ -70,7 +70,7 @@ void CSimuladorPrecipitacao::ConstruirSalmoura(CSalmoura& s) const {
         if (linha.empty() || linha[0] == '#') continue;
         std::string nomeIon;
         double mols;
-        std::replace(linha.begin(), linha.end(), '\t', ' ');  // Normaliza tabs para espaÃ§os
+        std::replace(linha.begin(), linha.end(), '\t', ' ');  // Normaliza tabs para espaços
         std::istringstream iss(linha);
         if (iss >> nomeIon >> mols) {
             s.adicionarIon(nomeIon, mols);
@@ -160,12 +160,12 @@ void CSimuladorPrecipitacao::simular(const CMisturaSalmouras& mistura) {
             todosKsps.push_back(ksps);
         }
 
-        // AQUI ESTAVA O ERRO: vocÃª chamava o mÃ©todo errado
+        // AQUI ESTAVA O ERRO: você chamava o método errado
         plot.MultiplotQvsKspVsTemperatura(nomesSalmouras, todosNomesSais, todosQs, todosKsps);
         return;
     }
 
-    // CASO PADRÃƒO: salmoura Ãºnica
+    // CASO PADRÃO: salmoura única
     for (size_t idx = 0; idx < salmouras.size(); ++idx) {
         const auto& salmoura = salmouras[idx];
         std::cout << "\n===== Salmoura " << (idx + 1) << " =====\n";

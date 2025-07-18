@@ -3,11 +3,11 @@ cmake_minimum_required(VERSION 3.27)
 # Nome do projeto
 project(PrecipitationSimulator LANGUAGES CXX)
 
-# Defini√ß√£o da vers√£o do C++
+# DefiniÁ„o da vers„o do C++
 set(CMAKE_CXX_STANDARD 23)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-# Adiciona todos os arquivos de cabe√ßalho e c√≥digo-fonte ao projeto
+# Adiciona todos os arquivos de cabeÁalho e cÛdigo-fonte ao projeto
 set(SOURCES
     CIons.cpp
     CSalt.cpp
@@ -29,15 +29,15 @@ set(HEADERS
     CPlotPrecipitacao.h
 )
 
-# Cria√ß√£o do execut√°vel
+# CriaÁ„o do execut·vel
 add_executable(${PROJECT_NAME} ${SOURCES} ${HEADERS})
 
-# Define o diret√≥rio de sa√≠da do execut√°vel na pasta root
+# Define o diretÛrio de saÌda do execut·vel na pasta root
 set_target_properties(${PROJECT_NAME} PROPERTIES
     RUNTIME_OUTPUT_DIRECTORY "${CMAKE_SOURCE_DIR}"
 )
 
-# Configura√ß√µes adicionais para warnings e otimiza√ß√µes
+# ConfiguraÁıes adicionais para warnings e otimizaÁıes
 if (MSVC)
     target_compile_options(${PROJECT_NAME} PRIVATE /W4 /WX) # Ativa avisos no Visual Studio
 else()

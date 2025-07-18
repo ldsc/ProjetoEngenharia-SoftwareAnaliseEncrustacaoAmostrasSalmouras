@@ -5,10 +5,10 @@
 #include <unordered_map>
 
 /**
- * @brief Estrutura que representa um Ã­on na soluÃ§Ã£o quÃ­mica.
+ * @brief Estrutura que representa um íon na solução química.
  * 
- * @param name Nome do Ã­on (ex: "Ca2+").
- * @param charge Carga elÃ©trica do Ã­on.
+ * @param name Nome do íon (ex: "Ca2+").
+ * @param charge Carga elétrica do íon.
  */
 
 class CIon {
@@ -17,8 +17,8 @@ class CIon {
         /**
          * @brief Construtor da estrutura ion.
          * 
-         * @param _name Nome do Ã­on.
-         * @param _charge Carga do Ã­on.
+         * @param _name Nome do íon.
+         * @param _charge Carga do íon.
          */
         CIon(std::string _nome = "", int _carga = 0);
 
@@ -32,9 +32,9 @@ private:
 };
 
 /**
- * @brief Classe responsÃ¡vel pela criaÃ§Ã£o e gerenciamento de Ã­ons.
+ * @brief Classe responsável pela criação e gerenciamento de íons.
  * 
- * @param ions Mapa (`unordered_map`) que armazena os Ã­ons criados.
+ * @param ions Mapa (`unordered_map`) que armazena os íons criados.
  */
 class CreateIons {
     public:
@@ -42,16 +42,16 @@ class CreateIons {
     // Construtor
     CreateIons();                                                           
     
-    // Adiciona um Ã­on ao mapa
+    // Adiciona um íon ao mapa
     void addIon(const std::string& _name, int _charge);
-    // ObtÃ©m um Ã­on do mapa 
+    // Obtém um íon do mapa 
     CIon getIon(const std::string& _name);                                    
 
     // Destrutor
     ~CreateIons();                                                          
 
     protected:
-    // ContÃªiner de Ã­ons armazenados
+    // Contêiner de íons armazenados
     std::unordered_map<std::string, CIon> ions;                              
 
 };

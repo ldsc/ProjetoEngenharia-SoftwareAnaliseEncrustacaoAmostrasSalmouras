@@ -195,7 +195,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename ../Imagem/Inicio do Sofwtare.png
+	filename ../Imagem/inicio-do-software.png
 	width 100text%
 	height 90theight%
 
@@ -285,7 +285,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename ../Imagem/Documento Ion.png
+	filename ../Imagem/Documento_Ion.png
 	width 100text%
 
 \end_inset
@@ -487,7 +487,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename ../Imagem/Inicio Salmoura.png
+	filename ../Imagem/Inicio-Salmoura.png
 	width 100text%
 	height 90theight%
 
@@ -561,7 +561,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename ../Imagem/Quantidade de Salmoura.png
+	filename ../Imagem/Quantidade_de_Salmoura.png
 	width 100text%
 	height 90theight%
 
@@ -649,7 +649,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename ../Imagem/condições termodinâmicas.png
+	filename ../Imagem/condicoes_termodinamicas.png
 	width 100text%
 	height 90theight%
 
@@ -740,7 +740,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename ../Imagem/resultado precipitação.png
+	filename ../Imagem/resultado-precipitacao.png
 	width 100text%
 	height 90theight%
 
@@ -816,7 +816,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename ../Imagem/resultado grafico exemplo precipitação.png
+	filename ../Imagem/resultado-grafico-exemplo-precipitacao.png
 	lyxscale 70
 	width 100text%
 	height 90theight%
@@ -885,7 +885,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename ../Imagem/Resultado Sal Especifico.png
+	filename ../Imagem/Resultado-Sal-Especifico.png
 	width 100text%
 	height 90theight%
 
@@ -962,7 +962,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename ../Imagem/Sal especifico precipitação 2.png
+	filename ../Imagem/Sal-especifico-precipitação-2.png
 	lyxscale 80
 	width 100text%
 	height 90theight%

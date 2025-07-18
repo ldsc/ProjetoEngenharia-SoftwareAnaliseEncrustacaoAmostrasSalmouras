@@ -66,7 +66,7 @@
        <UML:Classifier.feature>
         <UML:Attribute visibility="private" isSpecification="false" xmi.id="uXuzQlDX7iSwV" type="u8sX92Vrvkxva" name="m_nome"/>
         <UML:Attribute visibility="private" isSpecification="false" xmi.id="uuzVjJv6HHB9L" type="uvuTNFqYW32Qp" name="m_carga"/>
-        <UML:Operation stereotype="constructor" visibility="public" isSpecification="false" isQuery="false" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="uw283UAL5ylT5" comment="@brief Construtor da estrutura ion.&#xa;&#xa;@param name Nome do Ã­on.&#xa;@param charge Carga do Ã­on.&#xa;" isOverride="false" name="CIon" isInline="false" isVirtual="false">
+        <UML:Operation stereotype="constructor" visibility="public" isSpecification="false" isQuery="false" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="uw283UAL5ylT5" comment="@brief Construtor da estrutura ion.&#xa;&#xa;@param name Nome do íon.&#xa;@param charge Carga do íon.&#xa;" isOverride="false" name="CIon" isInline="false" isVirtual="false">
          <UML:BehavioralFeature.parameter>
           <UML:Parameter visibility="private" isSpecification="false" xmi.id="uGgvC5sYpsxLw" type="u8sX92Vrvkxva" value="" name="nome"/>
           <UML:Parameter visibility="private" isSpecification="false" xmi.id="u9JmkafHpJvT8" type="uvuTNFqYW32Qp" value="" name="carga"/>
@@ -97,8 +97,8 @@
       <UML:Class visibility="public" isSpecification="false" namespace="Logical_View" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="uqFQQekxMQSXf" name="CMisturaSalmouras">
        <UML:Classifier.feature>
         <UML:Attribute visibility="private" isSpecification="false" xmi.id="un3hTIBbtxb89" type="uaEFINUDWQegq" comment="&lt; Lista de salmouras adicionadas " name="salmouras"/>
-        <UML:Operation stereotype="constructor" visibility="public" isSpecification="false" isQuery="false" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="urYrAMMCmDbSg" comment="@brief Construtor padrÃ£o.&#xd;" isOverride="false" name="CMisturaSalmouras" isInline="false" isVirtual="false"/>
-        <UML:Operation visibility="public" isSpecification="false" isQuery="false" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="uXGJazJXGkl46" comment="@brief Adiciona uma salmoura Ã  mistura.&#xd;&#xa;&#xa;@param salmoura Objeto `CSalmoura`.&#xd;" isOverride="false" name="adicionarSalmoura" isInline="false" isVirtual="false">
+        <UML:Operation stereotype="constructor" visibility="public" isSpecification="false" isQuery="false" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="urYrAMMCmDbSg" comment="@brief Construtor padrão.&#xd;" isOverride="false" name="CMisturaSalmouras" isInline="false" isVirtual="false"/>
+        <UML:Operation visibility="public" isSpecification="false" isQuery="false" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="uXGJazJXGkl46" comment="@brief Adiciona uma salmoura à mistura.&#xd;&#xa;&#xa;@param salmoura Objeto `CSalmoura`.&#xd;" isOverride="false" name="adicionarSalmoura" isInline="false" isVirtual="false">
          <UML:BehavioralFeature.parameter>
           <UML:Parameter visibility="private" isSpecification="false" xmi.id="uAN81AlQtrzQY" type="uhtUYjXKyHgLa" value="" name="salmoura"/>
          </UML:BehavioralFeature.parameter>
@@ -113,7 +113,7 @@
           <UML:Parameter kind="return" xmi.id="u1qUxrLPrtAC1" type="uNNeqy89ifPwO"/>
          </UML:BehavioralFeature.parameter>
         </UML:Operation>
-        <UML:Operation visibility="public" isSpecification="false" isQuery="true" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="uJjprOGgTkL54" comment="@brief Retorna um mapa de concentraÃ§Ãµes finais (mol/L) de cada Ã­on na mistura.&#xd;" isOverride="false" name="calcularConcentracoesFinais" isInline="false" isVirtual="false">
+        <UML:Operation visibility="public" isSpecification="false" isQuery="true" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="uJjprOGgTkL54" comment="@brief Retorna um mapa de concentrações finais (mol/L) de cada íon na mistura.&#xd;" isOverride="false" name="calcularConcentracoesFinais" isInline="false" isVirtual="false">
          <UML:BehavioralFeature.parameter>
           <UML:Parameter kind="return" xmi.id="ur0w5rUnxQQ8h" type="uIFs4woXKkbJr"/>
          </UML:BehavioralFeature.parameter>
@@ -128,32 +128,32 @@
       </UML:Class>
       <UML:Class visibility="public" isSpecification="false" namespace="Logical_View" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="uzMIQ2kuLfz8Q" name="CSalmoura">
        <UML:Classifier.feature>
-        <UML:Attribute visibility="private" isSpecification="false" xmi.id="uTFV7GC2YGHOT" type="uDCy8TpQJHQB4" comment="&lt; Volume total da Ã¡gua em litros " name="quantidadeLiquido"/>
-        <UML:Attribute visibility="private" isSpecification="false" xmi.id="uhGhlIyW4P1Kr" type="uNNeqy89ifPwO" comment="&lt; Sais adicionados Ã  salmoura " name="sais"/>
-        <UML:Attribute visibility="private" isSpecification="false" xmi.id="uTtbqb4BJ80Kh" type="uIFs4woXKkbJr" comment="&lt; Quantidade de mols de cada Ã­on " name="concentracoesMols"/>
-        <UML:Operation stereotype="constructor" visibility="public" isSpecification="false" isQuery="false" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="unq8msT1bTySr" comment="@brief Construtor padrÃ£o.&#xd;" isOverride="false" name="CSalmoura" isInline="false" isVirtual="false"/>
+        <UML:Attribute visibility="private" isSpecification="false" xmi.id="uTFV7GC2YGHOT" type="uDCy8TpQJHQB4" comment="&lt; Volume total da água em litros " name="quantidadeLiquido"/>
+        <UML:Attribute visibility="private" isSpecification="false" xmi.id="uhGhlIyW4P1Kr" type="uNNeqy89ifPwO" comment="&lt; Sais adicionados à salmoura " name="sais"/>
+        <UML:Attribute visibility="private" isSpecification="false" xmi.id="uTtbqb4BJ80Kh" type="uIFs4woXKkbJr" comment="&lt; Quantidade de mols de cada íon " name="concentracoesMols"/>
+        <UML:Operation stereotype="constructor" visibility="public" isSpecification="false" isQuery="false" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="unq8msT1bTySr" comment="@brief Construtor padrão.&#xd;" isOverride="false" name="CSalmoura" isInline="false" isVirtual="false"/>
         <UML:Operation stereotype="constructor" visibility="public" isSpecification="false" isQuery="false" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="ueiW7wcmSuiiX" comment="@brief Construtor parametrizado.&#xd;&#xa;&#xa;@param volume Volume da salmoura em litros.&#xd;" isOverride="false" name="CSalmoura" isInline="false" isVirtual="false">
          <UML:BehavioralFeature.parameter>
           <UML:Parameter visibility="private" isSpecification="false" xmi.id="uzSjxuycNaq1o" type="uDCy8TpQJHQB4" value="" name="volume"/>
          </UML:BehavioralFeature.parameter>
         </UML:Operation>
-        <UML:Operation visibility="public" isSpecification="false" isQuery="false" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="u78QmO4VGmOkY" comment="@brief Define a quantidade (em mols) de um Ã­on na soluÃ§Ã£o.&#xd;&#xa;&#xa;@param nomeIon Nome do Ã­on (ex: &quot;Na&quot;).&#xd;&#xa;@param quantidade NÃºmero de mols adicionados.&#xd;" isOverride="false" name="adicionarIon" isInline="false" isVirtual="false">
+        <UML:Operation visibility="public" isSpecification="false" isQuery="false" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="u78QmO4VGmOkY" comment="@brief Define a quantidade (em mols) de um íon na solução.&#xd;&#xa;&#xa;@param nomeIon Nome do íon (ex: &quot;Na&quot;).&#xd;&#xa;@param quantidade Número de mols adicionados.&#xd;" isOverride="false" name="adicionarIon" isInline="false" isVirtual="false">
          <UML:BehavioralFeature.parameter>
           <UML:Parameter visibility="private" isSpecification="false" xmi.id="uVd8fIs0TjZ6r" type="ui5cSt4SnZCXl" value="" name="nomeIon"/>
           <UML:Parameter visibility="private" isSpecification="false" xmi.id="umh63OvRXg33G" type="uDCy8TpQJHQB4" value="" name="quantidade"/>
          </UML:BehavioralFeature.parameter>
         </UML:Operation>
-        <UML:Operation visibility="public" isSpecification="false" isQuery="false" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="ue5qLPfra6UFk" comment="@brief Adiciona um sal Ã  salmoura.&#xd;&#xa;&#xa;@param sal Objeto `CSalt` a ser adicionado.&#xd;" isOverride="false" name="adicionarSal" isInline="false" isVirtual="false">
+        <UML:Operation visibility="public" isSpecification="false" isQuery="false" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="ue5qLPfra6UFk" comment="@brief Adiciona um sal à salmoura.&#xd;&#xa;&#xa;@param sal Objeto `CSalt` a ser adicionado.&#xd;" isOverride="false" name="adicionarSal" isInline="false" isVirtual="false">
          <UML:BehavioralFeature.parameter>
           <UML:Parameter visibility="private" isSpecification="false" xmi.id="uLCer1qCalCk4" type="uZYzQvi1SpWyB" value="" name="sal"/>
          </UML:BehavioralFeature.parameter>
         </UML:Operation>
-        <UML:Operation visibility="public" isSpecification="false" isQuery="true" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="uNuKm1dLNt7jI" comment="@brief ObtÃ©m todos os Ã­ons e suas quantidades (mols).&#xd;&#xa;&#xa;@return Mapa nome-do-Ã­on â†’ nÃºmero de mols.&#xd;" isOverride="false" name="getMapaIonsMols" isInline="false" isVirtual="false">
+        <UML:Operation visibility="public" isSpecification="false" isQuery="true" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="uNuKm1dLNt7jI" comment="@brief Obtém todos os íons e suas quantidades (mols).&#xd;&#xa;&#xa;@return Mapa nome-do-íon ? número de mols.&#xd;" isOverride="false" name="getMapaIonsMols" isInline="false" isVirtual="false">
          <UML:BehavioralFeature.parameter>
           <UML:Parameter kind="return" xmi.id="uf5mbOOFvrKGI" type="uIFs4woXKkbJr"/>
          </UML:BehavioralFeature.parameter>
         </UML:Operation>
-        <UML:Operation visibility="public" isSpecification="false" isQuery="true" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="u3qWqeDbXP0Qw" comment="@brief ObtÃ©m o volume da salmoura (em litros).&#xd;" isOverride="false" name="getVolume" isInline="false" isVirtual="false">
+        <UML:Operation visibility="public" isSpecification="false" isQuery="true" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="u3qWqeDbXP0Qw" comment="@brief Obtém o volume da salmoura (em litros).&#xd;" isOverride="false" name="getVolume" isInline="false" isVirtual="false">
          <UML:BehavioralFeature.parameter>
           <UML:Parameter kind="return" xmi.id="unFLO1Wxkaz6K" type="uDCy8TpQJHQB4"/>
          </UML:BehavioralFeature.parameter>
@@ -187,10 +187,10 @@
        <UML:Classifier.feature>
         <UML:Attribute visibility="private" isSpecification="false" xmi.id="uhvotcaI5jnQS" type="u8sX92Vrvkxva" comment="&lt; Nome do sal " name="name"/>
         <UML:Attribute visibility="private" isSpecification="false" xmi.id="uWhk3hg7Jnygk" type="uDCy8TpQJHQB4" comment="&lt; Produto de solubilidade (Ksp) " name="Ksp"/>
-        <UML:Attribute visibility="private" isSpecification="false" xmi.id="uf8JZWOH0u8sM" type="uFtVwBqM0ppnd" comment="&lt; Ãons que compÃµem o sal " name="ions"/>
-        <UML:Attribute visibility="private" isSpecification="false" xmi.id="uMne4SxCdzD55" type="uj10Vqr7G2StP" comment="&lt; Coeficientes estequiomÃ©tricos dos Ã­ons " name="coeficientes"/>
-        <UML:Operation stereotype="constructor" visibility="public" isSpecification="false" isQuery="false" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="uoChUbLLj0r6F" comment="@brief Construtor padrÃ£o: inicializa um sal vazio.&#xd;" isOverride="false" name="CSalt" isInline="false" isVirtual="false"/>
-        <UML:Operation stereotype="constructor" visibility="public" isSpecification="false" isQuery="false" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="uA20NURn6T95x" comment="@brief Construtor parametrizado.&#xa;&#xa;@param nome Nome do sal (ex: &quot;NaCl&quot;).&#xa;@param ksp Produto de solubilidade do sal.&#xa;@param ions Vetor de Ã­ons participantes.&#xa;@param coeficientes Vetor com coeficientes estequiomÃ©tricos dos Ã­ons.&#xa;" isOverride="false" name="CSalt" isInline="false" isVirtual="false">
+        <UML:Attribute visibility="private" isSpecification="false" xmi.id="uf8JZWOH0u8sM" type="uFtVwBqM0ppnd" comment="&lt; Íons que compõem o sal " name="ions"/>
+        <UML:Attribute visibility="private" isSpecification="false" xmi.id="uMne4SxCdzD55" type="uj10Vqr7G2StP" comment="&lt; Coeficientes estequiométricos dos íons " name="coeficientes"/>
+        <UML:Operation stereotype="constructor" visibility="public" isSpecification="false" isQuery="false" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="uoChUbLLj0r6F" comment="@brief Construtor padrão: inicializa um sal vazio.&#xd;" isOverride="false" name="CSalt" isInline="false" isVirtual="false"/>
+        <UML:Operation stereotype="constructor" visibility="public" isSpecification="false" isQuery="false" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="uA20NURn6T95x" comment="@brief Construtor parametrizado.&#xa;&#xa;@param nome Nome do sal (ex: &quot;NaCl&quot;).&#xa;@param ksp Produto de solubilidade do sal.&#xa;@param ions Vetor de íons participantes.&#xa;@param coeficientes Vetor com coeficientes estequiométricos dos íons.&#xa;" isOverride="false" name="CSalt" isInline="false" isVirtual="false">
          <UML:BehavioralFeature.parameter>
           <UML:Parameter visibility="private" isSpecification="false" xmi.id="uYVvEClACsIqW" type="u8sX92Vrvkxva" value="" name="nome"/>
           <UML:Parameter visibility="private" isSpecification="false" xmi.id="uyq7tfLlOeNn3" type="uDCy8TpQJHQB4" value="" name="ksp"/>
@@ -198,13 +198,13 @@
           <UML:Parameter visibility="private" isSpecification="false" xmi.id="uxVHdljoAJQYV" type="ul0vu3DmTCCLv" value="" name="coeficientes"/>
          </UML:BehavioralFeature.parameter>
         </UML:Operation>
-        <UML:Operation visibility="public" isSpecification="false" isQuery="true" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="uP2g5SosIvMUH" comment="@brief Calcula o produto iÃ´nico Q do sal com base nas concentraÃ§Ãµes fornecidas.&#xd;&#xa;&#xa;@param concentracoes Mapa nome-do-Ã­on â†’ concentraÃ§Ã£o (mol/L)&#xd;&#xa;@return Valor de Q (produto iÃ´nico)&#xd;" isOverride="false" name="calculateIonicProduct" isInline="false" isVirtual="false">
+        <UML:Operation visibility="public" isSpecification="false" isQuery="true" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="uP2g5SosIvMUH" comment="@brief Calcula o produto iônico Q do sal com base nas concentrações fornecidas.&#xd;&#xa;&#xa;@param concentracoes Mapa nome-do-íon ? concentração (mol/L)&#xd;&#xa;@return Valor de Q (produto iônico)&#xd;" isOverride="false" name="calculateIonicProduct" isInline="false" isVirtual="false">
          <UML:BehavioralFeature.parameter>
           <UML:Parameter kind="return" xmi.id="ugSmGeQwCKMkT" type="uDCy8TpQJHQB4"/>
           <UML:Parameter visibility="private" isSpecification="false" xmi.id="uHFW715Lko1Rp" type="ub2cECQq6TXqd" value="" name="concentracoes"/>
          </UML:BehavioralFeature.parameter>
         </UML:Operation>
-        <UML:Operation visibility="public" isSpecification="false" isQuery="true" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="uSFPWbBCNQC3d" comment="@brief Verifica se o sal irÃ¡ precipitar com base no produto iÃ´nico.&#xd;&#xa;&#xa;@param concentracoes Mapa nome-do-Ã­on â†’ concentraÃ§Ã£o (mol/L)&#xd;&#xa;@return true se Q > Ksp, ou seja, precipitaÃ§Ã£o ocorre&#xd;" isOverride="false" name="willPrecipitate" isInline="false" isVirtual="false">
+        <UML:Operation visibility="public" isSpecification="false" isQuery="true" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="uSFPWbBCNQC3d" comment="@brief Verifica se o sal irá precipitar com base no produto iônico.&#xd;&#xa;&#xa;@param concentracoes Mapa nome-do-íon ? concentração (mol/L)&#xd;&#xa;@return true se Q > Ksp, ou seja, precipitação ocorre&#xd;" isOverride="false" name="willPrecipitate" isInline="false" isVirtual="false">
          <UML:BehavioralFeature.parameter>
           <UML:Parameter kind="return" xmi.id="uN8moPKx324vV" type="uL7spPLPRtl0u"/>
           <UML:Parameter visibility="private" isSpecification="false" xmi.id="uP47nWlLMSkwq" type="ub2cECQq6TXqd" value="" name="concentracoes"/>
@@ -220,12 +220,12 @@
           <UML:Parameter kind="return" xmi.id="u7qQIwzAVTXTd" type="uDCy8TpQJHQB4"/>
          </UML:BehavioralFeature.parameter>
         </UML:Operation>
-        <UML:Operation visibility="public" isSpecification="false" isQuery="true" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="uTTjIGlzCaIh8" comment="@return Vetor de Ã­ons que compÃµem o sal.&#xd;" isOverride="false" name="getIons" isInline="false" isVirtual="false">
+        <UML:Operation visibility="public" isSpecification="false" isQuery="true" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="uTTjIGlzCaIh8" comment="@return Vetor de íons que compõem o sal.&#xd;" isOverride="false" name="getIons" isInline="false" isVirtual="false">
          <UML:BehavioralFeature.parameter>
           <UML:Parameter kind="return" xmi.id="uAyuH6gJVP9aC" type="uFtVwBqM0ppnd"/>
          </UML:BehavioralFeature.parameter>
         </UML:Operation>
-        <UML:Operation visibility="public" isSpecification="false" isQuery="true" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="udQvsvgCpHCyd" comment="@return Vetor de coeficientes estequiomÃ©tricos.&#xd;" isOverride="false" name="getCoeficientes" isInline="false" isVirtual="false">
+        <UML:Operation visibility="public" isSpecification="false" isQuery="true" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="udQvsvgCpHCyd" comment="@return Vetor de coeficientes estequiométricos.&#xd;" isOverride="false" name="getCoeficientes" isInline="false" isVirtual="false">
          <UML:BehavioralFeature.parameter>
           <UML:Parameter kind="return" xmi.id="uboPSrt8a7NXv" type="uj10Vqr7G2StP"/>
          </UML:BehavioralFeature.parameter>
@@ -240,12 +240,12 @@
           <UML:Parameter visibility="private" isSpecification="false" xmi.id="ucKb9Ho6roNNg" type="uDCy8TpQJHQB4" value="" name="ksp"/>
          </UML:BehavioralFeature.parameter>
         </UML:Operation>
-        <UML:Operation visibility="public" isSpecification="false" isQuery="false" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="uCWtCFZvdFclf" comment="Define os Ã­ons do sal.&#xd;" isOverride="false" name="setIons" isInline="false" isVirtual="false">
+        <UML:Operation visibility="public" isSpecification="false" isQuery="false" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="uCWtCFZvdFclf" comment="Define os íons do sal.&#xd;" isOverride="false" name="setIons" isInline="false" isVirtual="false">
          <UML:BehavioralFeature.parameter>
           <UML:Parameter visibility="private" isSpecification="false" xmi.id="uIhDcyVs3DlKP" type="ul1T73wkwsRv6" value="" name="ions"/>
          </UML:BehavioralFeature.parameter>
         </UML:Operation>
-        <UML:Operation visibility="public" isSpecification="false" isQuery="false" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="urpl5Dd82wqVR" comment="Define os coeficientes dos Ã­ons.&#xd;" isOverride="false" name="setCoeficientes" isInline="false" isVirtual="false">
+        <UML:Operation visibility="public" isSpecification="false" isQuery="false" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="urpl5Dd82wqVR" comment="Define os coeficientes dos íons.&#xd;" isOverride="false" name="setCoeficientes" isInline="false" isVirtual="false">
          <UML:BehavioralFeature.parameter>
           <UML:Parameter visibility="private" isSpecification="false" xmi.id="u2STmH0SADxoP" type="ul0vu3DmTCCLv" value="" name="coeficientes"/>
          </UML:BehavioralFeature.parameter>
@@ -279,7 +279,7 @@
       <UML:Dependency visibility="public" isSpecification="false" namespace="Logical_View" supplier="u8sX92Vrvkxva" xmi.id="uulbpwrf5M3p1" client="u7G7KdZsrR2bj" name=""/>
       <UML:Class visibility="public" isSpecification="false" namespace="Logical_View" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="u3sljjW6hlhkl" name="CSimuladorPrecipitacao">
        <UML:Classifier.feature>
-        <UML:Operation visibility="public" isSpecification="false" isQuery="false" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="uAR39gO8rDRHc" comment="@brief Executa a simulaÃ§Ã£o completa com base nas salmouras fornecidas.&#xd;" isOverride="false" name="executar" isInline="false" isVirtual="false"/>
+        <UML:Operation visibility="public" isSpecification="false" isQuery="false" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="uAR39gO8rDRHc" comment="@brief Executa a simulação completa com base nas salmouras fornecidas.&#xd;" isOverride="false" name="executar" isInline="false" isVirtual="false"/>
         <UML:Operation visibility="private" isSpecification="false" isQuery="true" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="uS6hUdlbnItMC" comment="@brief Cria uma salmoura simples para teste.&#xd;" isOverride="false" name="criarSalmouraTeste1" isInline="false" isVirtual="false">
          <UML:BehavioralFeature.parameter>
           <UML:Parameter kind="return" xmi.id="uAPZb1xrjtwjc" type="uzMIQ2kuLfz8Q"/>
@@ -294,30 +294,30 @@
       </UML:Class>
       <UML:Class visibility="public" isSpecification="false" namespace="Logical_View" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="uEKccwMuhZ0wV" name="CTabelaPropriedadesIons">
        <UML:Classifier.feature>
-        <UML:Attribute visibility="private" isSpecification="false" xmi.id="u8GhnOIC2aTCJ" type="uxV9mq3hTnzPk" comment="&lt; Mapa de Ã­ons: nome -> CIon " name="m_ions"/>
-        <UML:Operation stereotype="constructor" visibility="public" isSpecification="false" isQuery="false" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="uI1927TxpDPUV" comment="@brief Construtor padrÃ£o da tabela de Ã­ons.&#xd;" isOverride="false" name="CTabelaPropriedadesIons" isInline="false" isVirtual="false"/>
-        <UML:Operation visibility="public" isSpecification="false" isQuery="false" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="ugXMVGduaM9Mn" comment="@brief Carrega os Ã­ons de um arquivo texto (formato CSV: nome;carga).&#xd;&#xa;&#xa;@param caminho Caminho para o arquivo a ser lido.&#xd;" isOverride="false" name="carregarDeArquivo" isInline="false" isVirtual="false">
+        <UML:Attribute visibility="private" isSpecification="false" xmi.id="u8GhnOIC2aTCJ" type="uxV9mq3hTnzPk" comment="&lt; Mapa de íons: nome -> CIon " name="m_ions"/>
+        <UML:Operation stereotype="constructor" visibility="public" isSpecification="false" isQuery="false" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="uI1927TxpDPUV" comment="@brief Construtor padrão da tabela de íons.&#xd;" isOverride="false" name="CTabelaPropriedadesIons" isInline="false" isVirtual="false"/>
+        <UML:Operation visibility="public" isSpecification="false" isQuery="false" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="ugXMVGduaM9Mn" comment="@brief Carrega os íons de um arquivo texto (formato CSV: nome;carga).&#xd;&#xa;&#xa;@param caminho Caminho para o arquivo a ser lido.&#xd;" isOverride="false" name="carregarDeArquivo" isInline="false" isVirtual="false">
          <UML:BehavioralFeature.parameter>
           <UML:Parameter visibility="private" isSpecification="false" xmi.id="unsd7XYoTkqVF" type="ui5cSt4SnZCXl" value="" name="caminho"/>
          </UML:BehavioralFeature.parameter>
         </UML:Operation>
-        <UML:Operation visibility="public" isSpecification="false" isQuery="true" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="uRwfVOcIFGMOw" comment="@brief Salva os Ã­ons da tabela em um arquivo texto (formato CSV: nome;carga).&#xd;&#xa;&#xa;@param caminho Caminho para o arquivo de destino.&#xd;" isOverride="false" name="salvarParaArquivo" isInline="false" isVirtual="false">
+        <UML:Operation visibility="public" isSpecification="false" isQuery="true" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="uRwfVOcIFGMOw" comment="@brief Salva os íons da tabela em um arquivo texto (formato CSV: nome;carga).&#xd;&#xa;&#xa;@param caminho Caminho para o arquivo de destino.&#xd;" isOverride="false" name="salvarParaArquivo" isInline="false" isVirtual="false">
          <UML:BehavioralFeature.parameter>
           <UML:Parameter visibility="private" isSpecification="false" xmi.id="ulbHejZTN79c7" type="ui5cSt4SnZCXl" value="" name="caminho"/>
          </UML:BehavioralFeature.parameter>
         </UML:Operation>
-        <UML:Operation visibility="public" isSpecification="false" isQuery="false" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="uwQxjRW5lb3ZS" comment="@brief Adiciona um novo Ã­on Ã  tabela.&#xd;&#xa;&#xa;@param ion Objeto CIon contendo nome e carga do Ã­on.&#xd;" isOverride="false" name="adicionarIon" isInline="false" isVirtual="false">
+        <UML:Operation visibility="public" isSpecification="false" isQuery="false" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="uwQxjRW5lb3ZS" comment="@brief Adiciona um novo íon à tabela.&#xd;&#xa;&#xa;@param ion Objeto CIon contendo nome e carga do íon.&#xd;" isOverride="false" name="adicionarIon" isInline="false" isVirtual="false">
          <UML:BehavioralFeature.parameter>
           <UML:Parameter visibility="private" isSpecification="false" xmi.id="uJodtK5naMgQD" type="uQ9f4N8sworhu" value="" name="ion"/>
          </UML:BehavioralFeature.parameter>
         </UML:Operation>
-        <UML:Operation visibility="public" isSpecification="false" isQuery="true" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="ufDYtLeg5iczr" comment="@brief Retorna um Ã­on a partir de seu nome.&#xd;&#xa;&#xa;@param nome Nome do Ã­on a ser buscado.&#xd;&#xa;@return Objeto CIon correspondente (ou vazio, caso nÃ£o exista).&#xd;" isOverride="false" name="obterIon" isInline="false" isVirtual="false">
+        <UML:Operation visibility="public" isSpecification="false" isQuery="true" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="ufDYtLeg5iczr" comment="@brief Retorna um íon a partir de seu nome.&#xd;&#xa;&#xa;@param nome Nome do íon a ser buscado.&#xd;&#xa;@return Objeto CIon correspondente (ou vazio, caso não exista).&#xd;" isOverride="false" name="obterIon" isInline="false" isVirtual="false">
          <UML:BehavioralFeature.parameter>
           <UML:Parameter kind="return" xmi.id="uCN6KSNY5gQzM" type="udkcOkESTV5uE"/>
           <UML:Parameter visibility="private" isSpecification="false" xmi.id="ubh1ZtT3vfoH9" type="ui5cSt4SnZCXl" value="" name="nome"/>
          </UML:BehavioralFeature.parameter>
         </UML:Operation>
-        <UML:Operation visibility="public" isSpecification="false" isQuery="true" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="u5fN2wtErEvGz" comment="@brief Retorna todos os Ã­ons da tabela como um vetor.&#xd;&#xa;&#xa;@return Vetor contendo todos os Ã­ons armazenados.&#xd;" isOverride="false" name="listarIons" isInline="false" isVirtual="false">
+        <UML:Operation visibility="public" isSpecification="false" isQuery="true" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="u5fN2wtErEvGz" comment="@brief Retorna todos os íons da tabela como um vetor.&#xd;&#xa;&#xa;@return Vetor contendo todos os íons armazenados.&#xd;" isOverride="false" name="listarIons" isInline="false" isVirtual="false">
          <UML:BehavioralFeature.parameter>
           <UML:Parameter kind="return" xmi.id="uVT8ieUnwJFIg" type="uFtVwBqM0ppnd"/>
          </UML:BehavioralFeature.parameter>
@@ -334,21 +334,21 @@
       <UML:Dependency visibility="public" isSpecification="false" namespace="Logical_View" supplier="u8sX92Vrvkxva" xmi.id="uXhv0iquqKDP4" client="uEKccwMuhZ0wV" name=""/>
       <UML:Class visibility="public" isSpecification="false" namespace="Logical_View" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="ugbZhkfxswto5" name="CthermodynamicConditions">
        <UML:Classifier.feature>
-        <UML:Attribute visibility="protected" isSpecification="false" xmi.id="uvYLOqf4MWCJA" type="uDCy8TpQJHQB4" comment="PressÃ£o em atm&#xd;" name="pressure"/>
+        <UML:Attribute visibility="protected" isSpecification="false" xmi.id="uvYLOqf4MWCJA" type="uDCy8TpQJHQB4" comment="Pressão em atm&#xd;" name="pressure"/>
         <UML:Attribute visibility="protected" isSpecification="false" xmi.id="uJdb6aahaehgL" type="uDCy8TpQJHQB4" comment="Temperatura em Kelvin&#xd;" name="temperature"/>
-        <UML:Operation stereotype="constructor" visibility="public" isSpecification="false" isQuery="false" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="uHZRwCs4FuhWx" comment="Construtor padrÃ£o: inicializa pressÃ£o e temperatura com valores padrÃ£o.&#xd;" isOverride="false" name="CthermodynamicConditions" isInline="false" isVirtual="false"/>
-        <UML:Operation stereotype="constructor" visibility="public" isSpecification="false" isQuery="false" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="u0qZXhWQv5BQd" comment="@brief Construtor parametrizado: permite definir valores iniciais de pressÃ£o e temperatura.&#xd;&#xa;&#xa;@param press PressÃ£o inicial (em atm).&#xd;&#xa;@param temp Temperatura inicial (em Kelvin).&#xd;" isOverride="false" name="CthermodynamicConditions" isInline="false" isVirtual="false">
+        <UML:Operation stereotype="constructor" visibility="public" isSpecification="false" isQuery="false" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="uHZRwCs4FuhWx" comment="Construtor padrão: inicializa pressão e temperatura com valores padrão.&#xd;" isOverride="false" name="CthermodynamicConditions" isInline="false" isVirtual="false"/>
+        <UML:Operation stereotype="constructor" visibility="public" isSpecification="false" isQuery="false" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="u0qZXhWQv5BQd" comment="@brief Construtor parametrizado: permite definir valores iniciais de pressão e temperatura.&#xd;&#xa;&#xa;@param press Pressão inicial (em atm).&#xd;&#xa;@param temp Temperatura inicial (em Kelvin).&#xd;" isOverride="false" name="CthermodynamicConditions" isInline="false" isVirtual="false">
          <UML:BehavioralFeature.parameter>
           <UML:Parameter visibility="private" isSpecification="false" xmi.id="uAQX41lEkOQQQ" type="uDCy8TpQJHQB4" value="" name="press"/>
           <UML:Parameter visibility="private" isSpecification="false" xmi.id="uZSDsVK4UVEtC" type="uDCy8TpQJHQB4" value="" name="temp"/>
          </UML:BehavioralFeature.parameter>
         </UML:Operation>
-        <UML:Operation visibility="public" isSpecification="false" isQuery="false" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="urIZZ3EHsiPKN" comment="Define o valor da pressÃ£o do sistema. &#xd;" isOverride="false" name="setPressure" isInline="false" isVirtual="false">
+        <UML:Operation visibility="public" isSpecification="false" isQuery="false" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="urIZZ3EHsiPKN" comment="Define o valor da pressão do sistema. &#xd;" isOverride="false" name="setPressure" isInline="false" isVirtual="false">
          <UML:BehavioralFeature.parameter>
           <UML:Parameter visibility="private" isSpecification="false" xmi.id="upym4XASeOfRS" type="uDCy8TpQJHQB4" value="" name="press"/>
          </UML:BehavioralFeature.parameter>
         </UML:Operation>
-        <UML:Operation visibility="public" isSpecification="false" isQuery="true" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="uIDEptQ0ml6xj" comment="ObtÃ©m o valor da pressÃ£o do sistema.&#xd;" isOverride="false" name="getPressure" isInline="false" isVirtual="false">
+        <UML:Operation visibility="public" isSpecification="false" isQuery="true" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="uIDEptQ0ml6xj" comment="Obtém o valor da pressão do sistema.&#xd;" isOverride="false" name="getPressure" isInline="false" isVirtual="false">
          <UML:BehavioralFeature.parameter>
           <UML:Parameter kind="return" xmi.id="uACp0dRUU2jy3" type="uDCy8TpQJHQB4"/>
          </UML:BehavioralFeature.parameter>
@@ -358,7 +358,7 @@
           <UML:Parameter visibility="private" isSpecification="false" xmi.id="uqt5PmOgl5C0t" type="uDCy8TpQJHQB4" value="" name="temp"/>
          </UML:BehavioralFeature.parameter>
         </UML:Operation>
-        <UML:Operation visibility="public" isSpecification="false" isQuery="true" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="uZADUQn8M0xf6" comment="ObtÃ©m o valor da temperatura do sistema.&#xd;" isOverride="false" name="getTemperature" isInline="false" isVirtual="false">
+        <UML:Operation visibility="public" isSpecification="false" isQuery="true" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="uZADUQn8M0xf6" comment="Obtém o valor da temperatura do sistema.&#xd;" isOverride="false" name="getTemperature" isInline="false" isVirtual="false">
          <UML:BehavioralFeature.parameter>
           <UML:Parameter kind="return" xmi.id="uX92addZJkF5r" type="uDCy8TpQJHQB4"/>
          </UML:BehavioralFeature.parameter>
@@ -369,15 +369,15 @@
       <UML:Dependency visibility="public" isSpecification="false" namespace="Logical_View" supplier="uYOX1QEwcKttJ" xmi.id="uN6SkWCuwKhU0" client="u3sljjW6hlhkl" name=""/>
       <UML:Class visibility="public" isSpecification="false" namespace="Logical_View" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="uFu1OMfNGeAvn" name="CreateIons">
        <UML:Classifier.feature>
-        <UML:Attribute visibility="protected" isSpecification="false" xmi.id="uIcan4Bm3l9EH" type="uxV9mq3hTnzPk" comment="ContÃªiner de Ã­ons armazenados&#xd;" name="ions"/>
+        <UML:Attribute visibility="protected" isSpecification="false" xmi.id="uIcan4Bm3l9EH" type="uxV9mq3hTnzPk" comment="Contêiner de íons armazenados&#xd;" name="ions"/>
         <UML:Operation stereotype="constructor" visibility="public" isSpecification="false" isQuery="false" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="uoeXZlf0pZfDE" comment="Construtor&#xd;" isOverride="false" name="CreateIons" isInline="false" isVirtual="false"/>
-        <UML:Operation visibility="public" isSpecification="false" isQuery="false" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="umcONoL5bj9fI" comment="Adiciona um Ã­on ao mapa&#xd;" isOverride="false" name="addIon" isInline="false" isVirtual="false">
+        <UML:Operation visibility="public" isSpecification="false" isQuery="false" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="umcONoL5bj9fI" comment="Adiciona um íon ao mapa&#xd;" isOverride="false" name="addIon" isInline="false" isVirtual="false">
          <UML:BehavioralFeature.parameter>
           <UML:Parameter visibility="private" isSpecification="false" xmi.id="ujPrBFq6zmgaa" type="ui5cSt4SnZCXl" value="" name="name"/>
           <UML:Parameter visibility="private" isSpecification="false" xmi.id="uCwXefyTbcWFZ" type="uvuTNFqYW32Qp" value="" name="charge"/>
          </UML:BehavioralFeature.parameter>
         </UML:Operation>
-        <UML:Operation visibility="public" isSpecification="false" isQuery="false" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="uC5BiLue5UREl" comment="ObtÃ©m um Ã­on do mapa &#xd;" isOverride="false" name="getIon" isInline="false" isVirtual="false">
+        <UML:Operation visibility="public" isSpecification="false" isQuery="false" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="uC5BiLue5UREl" comment="Obtém um íon do mapa &#xd;" isOverride="false" name="getIon" isInline="false" isVirtual="false">
          <UML:BehavioralFeature.parameter>
           <UML:Parameter kind="return" xmi.id="ujlDRtjMFDW9s" type="udkcOkESTV5uE"/>
           <UML:Parameter visibility="private" isSpecification="false" xmi.id="uELYtk9zEu495" type="ui5cSt4SnZCXl" value="" name="name"/>
@@ -438,7 +438,7 @@
       <UML:Dependency visibility="public" isSpecification="false" namespace="Logical_View" supplier="unfWXcVSrYzkq" xmi.id="uaEpGnsFCP4GU" client="uEKccwMuhZ0wV" name=""/>
       <UML:Class visibility="public" isSpecification="false" namespace="Logical_View" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="urwQke5ODwmuA" name="new_class"/>
       <UML:Class visibility="public" isSpecification="false" namespace="Logical_View" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="uMQQxjJSYH8I8" name="new_class_1"/>
-      <UML:Class visibility="public" isSpecification="false" namespace="Logical_View" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="uT1cN0hQy2B2H" name="App simulador(binÃ¡rio)"/>
+      <UML:Class visibility="public" isSpecification="false" namespace="Logical_View" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="uT1cN0hQy2B2H" name="App simulador(binário)"/>
       <UML:Class visibility="public" isSpecification="false" namespace="Logical_View" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="uCsVYJj1mDyVW" name="DadosdeIons.txt"/>
      </UML:Namespace.ownedElement>
      <XMI.extension xmi.extender="umbrello">
@@ -576,7 +576,7 @@
            <startpoint startx="-437.674" starty="-327.209"/>
            <endpoint endx="-437.674" endy="-281.395"/>
           </linepath>
-          <floatingtext linecolor="#ff0000" usesdiagramfillcolor="1" linewidth="0" textcolor="none" usesdiagramusefillcolor="1" x="-433.674" showstereotype="1" y="-321.535" text="CriaÃ§Ã£o de Objeto" font="Sans Serif,9,-1,0,50,0,0,0,0,0" localid="usfMCD5sh7bbN" pretext="" role="703" width="107" isinstance="0" posttext="" usefillcolor="1" fillcolor="none" xmi.id="usLN2Qh0mG2vT" autoresize="1" height="19"/>
+          <floatingtext linecolor="#ff0000" usesdiagramfillcolor="1" linewidth="0" textcolor="none" usesdiagramusefillcolor="1" x="-433.674" showstereotype="1" y="-321.535" text="Criação de Objeto" font="Sans Serif,9,-1,0,50,0,0,0,0,0" localid="usfMCD5sh7bbN" pretext="" role="703" width="107" isinstance="0" posttext="" usefillcolor="1" fillcolor="none" xmi.id="usLN2Qh0mG2vT" autoresize="1" height="19"/>
          </assocwidget>
          <assocwidget linecolor="#ff0000" roleBdoc="" indexa="1" usesdiagramfillcolor="1" widgetbid="uXfCdrUywuhue" indexb="1" linewidth="0" seqnum="" textcolor="#000000" usesdiagramusefillcolor="1" totalcounta="2" totalcountb="2" roleAdoc="" widgetaid="u8620mZ3N1DhC" font="Sans Serif,9,-1,0,50,0,0,0,0,0" visibilityA="0" visibilityB="0" localid="uKN2hkqwbMZnq" usefillcolor="1" fillcolor="none" changeabilityA="900" xmi.id="uzW83Naqof119" changeabilityB="900" documentation="" autoresize="1" type="514">
           <linepath layout="Direct">
@@ -690,12 +690,12 @@
          <activitywidget linecolor="#ff0000" usesdiagramfillcolor="0" linewidth="0" textcolor="#000000" usesdiagramusefillcolor="0" x="-631.902" showstereotype="1" y="-55.2147" font="Sans Serif,9,-1,0,50,0,0,0,0,0" localid="ujW7e3J0EVuPI" width="125" isinstance="0" usefillcolor="1" fillcolor="#ffff00" activityname="Carregar salmoura" xmi.id="uGToWrDMj50ZC" postcondition="" documentation="" activitytype="1" autoresize="1" height="25" precondition=""/>
          <activitywidget linecolor="#ff0000" usesdiagramfillcolor="0" linewidth="0" textcolor="#000000" usesdiagramusefillcolor="0" x="-668.098" showstereotype="1" y="-4.90798" font="Sans Serif,9,-1,0,50,0,0,0,0,0" localid="uFvbEu2AbrNKs" width="209" isinstance="0" usefillcolor="1" fillcolor="#ffff00" activityname="Adicionar Ions e Sais na salmoura" xmi.id="uDxDq1TKV1Uuo" postcondition="" documentation="" activitytype="1" autoresize="1" height="25" precondition=""/>
          <activitywidget linecolor="#ff0000" usesdiagramfillcolor="0" linewidth="0" textcolor="#000000" usesdiagramusefillcolor="0" x="-665.031" showstereotype="1" y="49.6933" font="Sans Serif,9,-1,0,50,0,0,0,0,0" localid="uMDLDots0gJzN" width="203" isinstance="0" usefillcolor="1" fillcolor="#ffff00" activityname="Adicionar salmoura nas misturas" xmi.id="uQhsygQyOZUKP" postcondition="" documentation="" activitytype="1" autoresize="1" height="25" precondition=""/>
-         <activitywidget linecolor="#ff0000" usesdiagramfillcolor="0" linewidth="0" textcolor="#000000" usesdiagramusefillcolor="0" x="-655.285" showstereotype="1" y="101.626" font="Sans Serif,9,-1,0,50,0,0,0,0,0" localid="ufvxSUbVfo788" width="183" isinstance="0" usefillcolor="1" fillcolor="#ffff00" activityname="Calcular concentraÃ§Ãµes finais" xmi.id="uV9AN6elS9oEg" postcondition="" documentation="" activitytype="1" autoresize="1" height="25" precondition=""/>
+         <activitywidget linecolor="#ff0000" usesdiagramfillcolor="0" linewidth="0" textcolor="#000000" usesdiagramusefillcolor="0" x="-655.285" showstereotype="1" y="101.626" font="Sans Serif,9,-1,0,50,0,0,0,0,0" localid="ufvxSUbVfo788" width="183" isinstance="0" usefillcolor="1" fillcolor="#ffff00" activityname="Calcular concentrações finais" xmi.id="uV9AN6elS9oEg" postcondition="" documentation="" activitytype="1" autoresize="1" height="25" precondition=""/>
          <activitywidget linecolor="#ff0000" usesdiagramfillcolor="0" linewidth="0" textcolor="#000000" usesdiagramusefillcolor="0" x="-647.967" showstereotype="1" y="152.033" font="Sans Serif,9,-1,0,50,0,0,0,0,0" localid="uaYBDeecIUy57" width="173" isinstance="0" usefillcolor="1" fillcolor="#ffff00" activityname="Para cada sal: Calcular o Q." xmi.id="u45P5JFE8bJyM" postcondition="" documentation="" activitytype="1" autoresize="1" height="25" precondition=""/>
          <activitywidget linecolor="#ff0000" usesdiagramfillcolor="0" linewidth="0" textcolor="#000000" usesdiagramusefillcolor="0" x="-615.447" showstereotype="1" y="204.065" font="Sans Serif,9,-1,0,50,0,0,0,0,0" localid="uhi9eUZ9KzOJv" width="126" isinstance="0" usefillcolor="1" fillcolor="#ffff00" activityname="Verificar se Q > kps" xmi.id="u3y28Q3a32btd" postcondition="" documentation="" activitytype="1" autoresize="1" height="25" precondition=""/>
          <activitywidget linecolor="#ff0000" usesdiagramfillcolor="0" linewidth="0" textcolor="#000000" usesdiagramusefillcolor="0" x="-573.171" showstereotype="1" y="262.602" font="Sans Serif,9,-1,0,50,0,0,0,0,0" localid="uKGwOj8uKCzs1" width="20" isinstance="0" usefillcolor="1" fillcolor="#ffff00" activityname="" xmi.id="uI8ZXO6gHW9P0" postcondition="" documentation="" activitytype="4" autoresize="0" height="20" precondition=""/>
          <activitywidget linecolor="#ff0000" usesdiagramfillcolor="0" linewidth="0" textcolor="#000000" usesdiagramusefillcolor="0" x="-657.724" showstereotype="1" y="310.569" font="Sans Serif,9,-1,0,50,0,0,0,0,0" localid="uQ0BsMpzis4f2" width="68" isinstance="0" usefillcolor="1" fillcolor="#ffff00" activityname="Precipita" xmi.id="ugHHoSkw52dcO" postcondition="" documentation="" activitytype="1" autoresize="1" height="25" precondition=""/>
-         <activitywidget linecolor="#ff0000" usesdiagramfillcolor="0" linewidth="0" textcolor="#000000" usesdiagramusefillcolor="0" x="-535.772" showstereotype="1" y="308.943" font="Sans Serif,9,-1,0,50,0,0,0,0,0" localid="uy4fiRlMp7Rxj" width="67" isinstance="0" usefillcolor="1" fillcolor="#ffff00" activityname="EstÃ¡vel" xmi.id="ua2yHswBOX1xE" postcondition="" documentation="" activitytype="1" autoresize="1" height="25" precondition=""/>
+         <activitywidget linecolor="#ff0000" usesdiagramfillcolor="0" linewidth="0" textcolor="#000000" usesdiagramusefillcolor="0" x="-535.772" showstereotype="1" y="308.943" font="Sans Serif,9,-1,0,50,0,0,0,0,0" localid="uy4fiRlMp7Rxj" width="67" isinstance="0" usefillcolor="1" fillcolor="#ffff00" activityname="Estável" xmi.id="ua2yHswBOX1xE" postcondition="" documentation="" activitytype="1" autoresize="1" height="25" precondition=""/>
          <activitywidget linecolor="#ff0000" usesdiagramfillcolor="0" linewidth="0" textcolor="#000000" usesdiagramusefillcolor="0" x="-613.821" showstereotype="1" y="365.854" font="Sans Serif,9,-1,0,50,0,0,0,0,0" localid="uO2KBp07V9Lbp" width="105" isinstance="0" usefillcolor="1" fillcolor="#ffff00" activityname="Exibir resultado" xmi.id="uZ0nku4w6aFI4" postcondition="" documentation="" activitytype="1" autoresize="1" height="25" precondition=""/>
          <activitywidget linecolor="#ff0000" usesdiagramfillcolor="0" linewidth="0" textcolor="#000000" usesdiagramusefillcolor="0" x="-569.919" showstereotype="1" y="429.268" font="Sans Serif,9,-1,0,50,0,0,0,0,0" localid="uonkHlQt4NIJg" width="15" isinstance="0" usefillcolor="1" fillcolor="#ffff00" activityname="" xmi.id="ueVUpOGn5KWDO" postcondition="" documentation="" activitytype="2" autoresize="1" height="15" precondition=""/>
         </widgets>
@@ -839,7 +839,7 @@
          </assocwidget>
         </associations>
        </diagram>
-       <diagram showopsig="1" linecolor="#ff0000" snapx="25" showattribassocs="1" snapy="25" linewidth="0" showattsig="1" textcolor="#000000" isopen="1" showpackage="1" showpubliconly="0" showstereotype="1" name="sequence diagram_precipitaÃ§Ã£o" font="Sans Serif,9,-1,0,50,0,0,0,0,0" canvasheight="231" canvaswidth="1269" localid="-1" snapcsgrid="0" showgrid="0" showops="1" griddotcolor="#d3d3d3" backgroundcolor="#ffffff" autoincrementsequence="0" usefillcolor="1" fillcolor="#ffff00" zoom="86" xmi.id="u0JO3KvxMntjR" documentation="" showscope="1" snapgrid="0" showatts="1" type="3">
+       <diagram showopsig="1" linecolor="#ff0000" snapx="25" showattribassocs="1" snapy="25" linewidth="0" showattsig="1" textcolor="#000000" isopen="1" showpackage="1" showpubliconly="0" showstereotype="1" name="sequence diagram_precipitação" font="Sans Serif,9,-1,0,50,0,0,0,0,0" canvasheight="231" canvaswidth="1269" localid="-1" snapcsgrid="0" showgrid="0" showops="1" griddotcolor="#d3d3d3" backgroundcolor="#ffffff" autoincrementsequence="0" usefillcolor="1" fillcolor="#ffff00" zoom="86" xmi.id="u0JO3KvxMntjR" documentation="" showscope="1" snapgrid="0" showatts="1" type="3">
         <widgets>
          <objectwidget linecolor="#ff0000" usesdiagramfillcolor="1" linewidth="0" textcolor="#000000" usesdiagramusefillcolor="1" x="-702" decon="0" showstereotype="1" y="80" font="Sans Serif,9,-1,0,50,0,0,0,0,0" localid="uT8IYQVbdGBkJ" width="50" isinstance="0" multipleinstance="0" usefillcolor="1" fillcolor="none" xmi.id="uYOX1QEwcKttJ" autoresize="1" height="25" drawasactor="0"/>
          <objectwidget linecolor="#ff0000" usesdiagramfillcolor="1" linewidth="0" textcolor="#000000" usesdiagramusefillcolor="1" x="-539" decon="0" showstereotype="1" y="80" font="Sans Serif,9,-1,0,50,0,0,0,0,0" localid="urwLhZubLhqZE" width="153" isinstance="0" multipleinstance="0" usefillcolor="1" fillcolor="none" xmi.id="u3sljjW6hlhkl" autoresize="1" height="25" drawasactor="0"/>
@@ -874,7 +874,7 @@
     </UML:Model>
     <UML:Model visibility="public" isSpecification="false" namespace="m1" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="Use_Case_View" name="Use Case View">
      <UML:Namespace.ownedElement>
-      <UML:Actor visibility="public" isSpecification="false" namespace="Use_Case_View" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="uEYGaBlmDxjeT" name="UsuÃ¡rio"/>
+      <UML:Actor visibility="public" isSpecification="false" namespace="Use_Case_View" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="uEYGaBlmDxjeT" name="Usuário"/>
       <UML:UseCase visibility="public" isSpecification="false" namespace="Use_Case_View" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="u9grkuA7u0Fm6" name="Misturar salmoura"/>
       <UML:UseCase visibility="public" isSpecification="false" namespace="Use_Case_View" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="ujptIP2Lf0OhS" name="Criar salmoura"/>
       <UML:UseCase visibility="public" isSpecification="false" namespace="Use_Case_View" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="uJdc67UmvyR2N" name="Ver resultado"/>
@@ -899,7 +899,7 @@
         <UML:AssociationEnd changeability="changeable" visibility="public" isNavigable="true" isSpecification="false" xmi.id="ujBTTLJM3tWcd" type="uJdc67UmvyR2N" name="" aggregation="none"/>
        </UML:Association.connection>
       </UML:Association>
-      <UML:UseCase visibility="public" isSpecification="false" namespace="Use_Case_View" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="uJxFFP11p5wYg" name="Gerar grÃ¡fico Q vs KPS "/>
+      <UML:UseCase visibility="public" isSpecification="false" namespace="Use_Case_View" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="uJxFFP11p5wYg" name="Gerar gráfico Q vs KPS "/>
       <UML:Association visibility="public" isSpecification="false" namespace="Use_Case_View" xmi.id="ucv2bcGBuz4bn" name="">
        <UML:Association.connection>
         <UML:AssociationEnd changeability="changeable" visibility="public" isNavigable="true" isSpecification="false" xmi.id="uCk8stA327xRW" type="uEYGaBlmDxjeT" name="" aggregation="none"/>
@@ -913,7 +913,7 @@
         <UML:AssociationEnd changeability="changeable" visibility="public" isNavigable="true" isSpecification="false" xmi.id="ufL1y7HMarWdE" type="uzXAijGJB4C2z" name="" aggregation="none"/>
        </UML:Association.connection>
       </UML:Association>
-      <UML:UseCase visibility="public" isSpecification="false" namespace="Use_Case_View" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="u54kPFhkvHRoj" name="Simular preciptaÃ§Ã£o"/>
+      <UML:UseCase visibility="public" isSpecification="false" namespace="Use_Case_View" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="u54kPFhkvHRoj" name="Simular preciptação"/>
       <UML:Association visibility="public" isSpecification="false" namespace="Use_Case_View" xmi.id="uwWAuCodV5X6H" name="">
        <UML:Association.connection>
         <UML:AssociationEnd changeability="changeable" visibility="public" isNavigable="true" isSpecification="false" xmi.id="ul06g49U0SZs4" type="uEYGaBlmDxjeT" name="" aggregation="none"/>
@@ -927,14 +927,14 @@
         <UML:AssociationEnd changeability="changeable" visibility="public" isNavigable="true" isSpecification="false" xmi.id="uguOZ5c6LgJyR" type="uZpBF57qSVcFG" name="" aggregation="none"/>
        </UML:Association.connection>
       </UML:Association>
-      <UML:UseCase visibility="public" isSpecification="false" namespace="Use_Case_View" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="uexc4PARceGUL" name="Adicioanr ions Ã  salmoura"/>
+      <UML:UseCase visibility="public" isSpecification="false" namespace="Use_Case_View" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="uexc4PARceGUL" name="Adicioanr ions à salmoura"/>
       <UML:Association visibility="public" isSpecification="false" namespace="Use_Case_View" xmi.id="uNwqQTAFBSvw5" name="">
        <UML:Association.connection>
         <UML:AssociationEnd changeability="changeable" visibility="public" isNavigable="true" isSpecification="false" xmi.id="uCmtStfKoPN0y" type="uEYGaBlmDxjeT" name="" aggregation="none"/>
         <UML:AssociationEnd changeability="changeable" visibility="public" isNavigable="true" isSpecification="false" xmi.id="uylikSuWpIagQ" type="uexc4PARceGUL" name="" aggregation="none"/>
        </UML:Association.connection>
       </UML:Association>
-      <UML:UseCase visibility="public" isSpecification="false" namespace="Use_Case_View" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="umXtiQ3I9iRth" name="Gerar grÃ¡fico Q e Ksp vs Temperatur"/>
+      <UML:UseCase visibility="public" isSpecification="false" namespace="Use_Case_View" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="umXtiQ3I9iRth" name="Gerar gráfico Q e Ksp vs Temperatur"/>
       <UML:Association visibility="public" isSpecification="false" namespace="Use_Case_View" xmi.id="uASnnjUtNjE8n" name="">
        <UML:Association.connection>
         <UML:AssociationEnd changeability="changeable" visibility="public" isNavigable="true" isSpecification="false" xmi.id="uxpgPk7PQUHKh" type="uEYGaBlmDxjeT" name="" aggregation="none"/>
@@ -1020,7 +1020,7 @@
     </UML:Model>
     <UML:Model visibility="public" isSpecification="false" namespace="m1" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="Component_View" name="Component View">
      <UML:Namespace.ownedElement>
-      <UML:Package stereotype="folder" visibility="public" isSpecification="false" namespace="Component_View" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="um3fgTxewrz2J" name="C:/Users/leona/OneDrive/Ãrea de Trabalho/Alida_Joao">
+      <UML:Package stereotype="folder" visibility="public" isSpecification="false" namespace="Component_View" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="um3fgTxewrz2J" name="C:/Users/leona/OneDrive/Área de Trabalho/Alida_Joao">
        <UML:Namespace.ownedElement>
         <UML:Artifact visibility="public" isSpecification="false" namespace="um3fgTxewrz2J" drawas="1" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="u1fkQAC0oW18V" name="CreateIons.h"/>
         <UML:Artifact visibility="public" isSpecification="false" namespace="um3fgTxewrz2J" drawas="1" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="ulfUFHiI0rMiW" name="PrecipitationCalculator.h"/>
@@ -1226,7 +1226,7 @@
      <listitem open="1" type="813" id="urwQke5ODwmuA"/>
      <listitem open="1" type="813" id="uMQQxjJSYH8I8"/>
      <listitem open="0" type="810" id="uKeDp25tzikWD" label="sequence diagram"/>
-     <listitem open="0" type="810" id="u0JO3KvxMntjR" label="sequence diagram_precipitaÃ§Ã£o"/>
+     <listitem open="0" type="810" id="u0JO3KvxMntjR" label="sequence diagram_precipitação"/>
      <listitem open="0" type="808" id="uxFNQUBtYFVw5" label="state diagram - Salmoura"/>
      <listitem open="0" type="808" id="uWkmReVC7t7Qk" label="state diagram - Tabela"/>
      <listitem open="0" type="813" id="uk743OCs7gMhq">

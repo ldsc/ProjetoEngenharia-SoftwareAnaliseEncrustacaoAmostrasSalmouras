@@ -7,16 +7,16 @@
 #include <string>
 
 /**
- * @brief Representa uma amostra de salmoura composta por Ã¡gua e sais dissolvidos.
+ * @brief Representa uma amostra de salmoura composta por água e sais dissolvidos.
  * 
- * ContÃ©m informaÃ§Ãµes sobre o volume total da Ã¡gua, os sais adicionados e a quantidade (em mols) de cada Ã­on presente.
+ * Contém informações sobre o volume total da água, os sais adicionados e a quantidade (em mols) de cada íon presente.
  */
 class CSalmoura {
 
 public:
 
     /**
-     * @brief Construtor padrÃ£o.
+     * @brief Construtor padrão.
      */
     CSalmoura();
 
@@ -28,7 +28,7 @@ public:
     CSalmoura(double volume);
 
     /**
-     * @brief Define condiÃ§Ãµes termodinamicas.
+     * @brief Define condições termodinamicas.
      * 
      * @param temperaturaK temperatura em keven
      * @param quantidade pressao atm.
@@ -36,27 +36,27 @@ public:
     void DefinirCondicoes(double temperaturaK, double pressaoAtm);
 
     /**
-     * @brief Define a quantidade (em mols) de um Ã­on na soluÃ§Ã£o.
+     * @brief Define a quantidade (em mols) de um íon na solução.
      * 
-     * @param nomeIon Nome do Ã­on (ex: "Na").
-     * @param quantidade NÃºmero de mols adicionados.
+     * @param nomeIon Nome do íon (ex: "Na").
+     * @param quantidade Número de mols adicionados.
      */
     void adicionarIon(const std::string& nomeIon, double mols);
 
     /**
-     * @brief ObtÃ©m todos os Ã­ons e suas quantidades (mols).
+     * @brief Obtém todos os íons e suas quantidades (mols).
      * 
-     * @return Mapa nome-do-Ã­on â†’ nÃºmero de mols.
+     * @return Mapa nome-do-íon ? número de mols.
      */
     std::unordered_map<std::string, double> getMapaIonsMols() const;
 
     /**
-     * @brief ObtÃ©m o volume da salmoura (em litros).
+     * @brief Obtém o volume da salmoura (em litros).
      */
     double getVolume() const;
 
     /**
-     * @brief ObtÃ©m a temperatura da salmoura (em litros).
+     * @brief Obtém a temperatura da salmoura (em litros).
      */
     double getTemperatura() const;
 
@@ -70,10 +70,10 @@ public:
     ~CSalmoura();
 
 private:
-    double quantidadeLiquido;  /**< Volume total da Ã¡gua em litros */
+    double quantidadeLiquido;  /**< Volume total da água em litros */
     double temperatura;  ///< Temperatura da salmoura (em Kelvin)
-    double pressao;      ///< PressÃ£o da salmoura (em atm)
-    std::unordered_map<std::string, double> concentracoesMols; /**< Quantidade de mols de cada Ã­on */
+    double pressao;      ///< Pressão da salmoura (em atm)
+    std::unordered_map<std::string, double> concentracoesMols; /**< Quantidade de mols de cada íon */
 };
 
 #endif
