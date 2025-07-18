@@ -150,7 +150,7 @@ literal "true"
 
 \begin_inset CommandInset include
 LatexCommand include
-filename "Cap0-Capa-ProjetoDisciplina.lyx"
+filename "Cap0-Capa.lyx"
 literal "true"
 
 \end_inset
