@@ -198,6 +198,7 @@ status open
 	filename C:/Users/Allida/OneDrive/Desktop/ProjetoEngenharia-SoftwareAnaliseEncrustacaoAmostrasSalmouras ATUAL/4-Execucao-Detalhamento-Construcao-Versao-1/doc/Imagem/inicio-do-software.png
 	width 100text%
 	height 90theight%
+	keepAspectRatio
 
 \end_inset
 
@@ -488,8 +489,9 @@ status open
 \align center
 \begin_inset Graphics
 	filename ../Imagem/Inicio-Salmoura.png
-	width 100pheight%
-	height 90pheight%
+	width 100text%
+	height 90theight%
+	keepAspectRatio
 
 \end_inset
 
@@ -564,6 +566,7 @@ status open
 	filename ../Imagem/Quantidade_de_Salmoura.png
 	width 100text%
 	height 90theight%
+	keepAspectRatio
 
 \end_inset
 
@@ -650,8 +653,9 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename ../Imagem/condicoes_termodinamicas.png
-	width 100text%
+	width 80text%
 	height 90theight%
+	keepAspectRatio
 
 \end_inset
 
@@ -741,8 +745,9 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename ../Imagem/resultado-precipitacao.png
-	width 100text%
+	width 90text%
 	height 90theight%
+	keepAspectRatio
 
 \end_inset
 
@@ -820,6 +825,7 @@ status open
 	lyxscale 70
 	width 100text%
 	height 90theight%
+	keepAspectRatio
 
 \end_inset
 
@@ -888,6 +894,7 @@ status open
 	filename ../Imagem/Resultado-Sal-Especifico.png
 	width 100text%
 	height 90theight%
+	keepAspectRatio
 
 \end_inset
 
@@ -966,6 +973,7 @@ status open
 	lyxscale 80
 	width 100text%
 	height 90theight%
+	keepAspectRatio
 
 \end_inset
 

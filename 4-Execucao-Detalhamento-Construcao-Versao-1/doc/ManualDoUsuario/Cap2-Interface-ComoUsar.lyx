@@ -186,8 +186,9 @@ status open
 \begin_inset Graphics
 	filename ../Imagem/Interface_Programa.png
 	lyxscale 50
-	width 60text%
-	height 60text%
+	width 60theight%
+	height 100theight%
+	keepAspectRatio
 	clip
 	rotateOrigin center
 	special height=0.85\textheight
@@ -301,8 +302,9 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename ../Imagem/Salmoura-Exemplo.png
-	width 100page%
+	width 100text%
 	height 90theight%
+	keepAspectRatio
 
 \end_inset
 
@@ -381,6 +383,7 @@ status open
 	lyxscale 90
 	width 100text%
 	height 90theight%
+	keepAspectRatio
 
 \end_inset
 
@@ -520,6 +523,9 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename ../Imagem/Resultado-Sofwtare.png
+	width 90text%
+	height 90theight%
+	keepAspectRatio
 
 \end_inset
 
@@ -592,6 +598,7 @@ status open
 	lyxscale 80
 	width 100text%
 	height 90theight%
+	keepAspectRatio
 
 \end_inset
 
@@ -650,6 +657,7 @@ status open
 	lyxscale 80
 	width 100text%
 	height 90theight%
+	keepAspectRatio
 
 \end_inset
 

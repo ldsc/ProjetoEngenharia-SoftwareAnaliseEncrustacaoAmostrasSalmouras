@@ -988,7 +988,677 @@ name "fig:Sal especifico precipitado"
 
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Estrutura de Arquivos
+\end_layout
+
+\begin_layout Standard
+Antes de iniciar,
+ verifique se você tem os arquivos necessários na pasta ./dados/:
+\end_layout
+
+\begin_layout Itemize
+Arquivos de íons:
+ contêm os íons e suas concentrações para salmouras.
+\end_layout
+
+\begin_layout Itemize
+Arquivos de sais:
+ contêm os sais que podem precipitar,
+ com seus dados de solubilidade.
+\end_layout
+
+\begin_layout Standard
+Veja Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Inicio do Software-1"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+alignment document
+wide false
+sideways false
+status open
+
 \begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../Imagem/inicio-do-software.png
+	width 100text%
+	height 90theight%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Inicio do Software 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Inicio do Software-1"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Selecionar o arquivo de íons disponíveis
+\end_layout
+
+\begin_layout Standard
+Para que serve?
+\end_layout
+
+\begin_layout Standard
+Esse arquivo contém os íons disponíveis na biblioteca,
+ que podem ser utilizados na formação de sais (ex:
+ Ca²⁺,
+ SO₄²⁻).
+\end_layout
+
+\begin_layout Standard
+O software listará os arquivos .txt da pasta ./dados/.
+\end_layout
+
+\begin_layout Standard
+Ação do usuário:
+ digite o número do arquivo de íons 4.
+\end_layout
+
+\begin_layout Standard
+Veja Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Documento Ion-1"
+nolink "false"
+
+\end_inset
+
+.
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Na Figura simulador desenvolvido pelo aluno Tiago Schauwer
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+alignment document
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../Imagem/Documento_Ion.png
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Documento Íon.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Documento Ion-1"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Selecionar o arquivo de sais disponíveis
+\end_layout
+
+\begin_layout Standard
+Esse arquivo lista os sais que podem precipitar,
+ com seus valores de Kps,
+ entalpia de dissolução (deltaP) e íons constituintes.
+ 
+\end_layout
+
+\begin_layout Standard
+Exemplo:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="6">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Nome
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Ksp
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+DeltaP
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Temperatura
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="3" alignment="center" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Ions
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Carga
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Barita(BaSO4)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.08e-10
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-131000
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+298.15
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Ba2+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
++2
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Veja Figura 1.3 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Documento Salmoura-1"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+alignment document
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../Imagem/Inicio-Salmoura.png
+	width 100text%
+	height 90theight%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Documento Salmoura.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Documento Salmoura-1"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Informar quantas salmouras serão misturadas
+\end_layout
+
+\begin_layout Standard
+Ação do usuário:
+ digite a quantidade de salmouras (ex:
+ 1,2 ).
+ 
+\end_layout
+
+\begin_layout Standard
+Veja Figura 1.4.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Quantidade de salmoura adicionada-1"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement document
+alignment center
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename ../Imagem/Quantidade_de_Salmoura.png
+	width 100text%
+	height 90theight%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Quantidade de salmoura adicionada.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Quantidade de salmoura adicionada-1"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Inserir dados do cenário
+\end_layout
+
+\begin_layout Standard
+Para cada salmoura deve-se inserir as condições termodinâmica,
+ o usuário deve informar:
+\end_layout
+
+\begin_layout Itemize
+Volume (L):
+ volume total da salmoura.
+\end_layout
+
+\begin_layout Itemize
+Temperatura (K):
+ temperatura em Kelvin.
+\end_layout
+
+\begin_layout Itemize
+Pressão (atm):
+ pressão da salmoura.
+\end_layout
+
+\begin_layout Standard
+Veja Figura 1.5.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Condições termodinâmica-1"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement document
+alignment center
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename ../Imagem/condicoes_termodinamicas.png
+	width 100text%
+	height 90theight%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Condições termodinâmica
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Condições termodinâmica-1"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Calculo da Precipitação
+\end_layout
+
+\begin_layout Standard
+O programa calcula:
+\end_layout
+
+\begin_layout Itemize
+As concentrações finais de cada íon.
+\end_layout
+
+\begin_layout Itemize
+A temperatura média da mistura.
+\end_layout
+
+\begin_layout Itemize
+O produto iônico 𝑄 e compara com o 𝐾𝑠𝑝 de cada sal.
+\end_layout
+
+\begin_layout Standard
+Resultado:
+\end_layout
+
+\begin_layout Itemize
+Se 𝑄 > 𝐾𝑠𝑝:
+ o sal precipita.
+\end_layout
+
+\begin_layout Itemize
+Se 𝑄<𝐾𝑠𝑝 :
+ o sal permanece dissolvido.
+\end_layout
+
+\begin_layout Standard
+Veja Figura 1.6.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Resultado Precipitação-1"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+.
+\begin_inset Float figure
+placement document
+alignment center
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename ../Imagem/resultado-precipitacao.png
+	width 100text%
+	height 90theight%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Resultado Precipitação
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Resultado Precipitação-1"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Visualização gráfica (Q vs Ksp)
+\end_layout
+
+\begin_layout Standard
+O programa plota:
+\end_layout
+
+\begin_layout Itemize
+Um gráfico com o valor de 𝑄 𝐾𝑠𝑝 para cada sal.
+\end_layout
+
+\begin_layout Standard
+Veja Figura 1.7.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Resultado Precipitação Gráfico-1"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement document
+alignment center
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename ../Imagem/resultado-grafico-exemplo-precipitacao.png
+	lyxscale 70
+	width 100text%
+	height 90theight%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Resultado Precipitação Gráfico
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Resultado Precipitação Gráfico-1"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
 
 \end_layout
 
@@ -998,6 +1668,136 @@ name "fig:Sal especifico precipitado"
 \end_layout
 
 \begin_layout Standard
+Ação do usuário:
+\end_layout
+
+\begin_layout Itemize
+Digitar o índice do sal desejado para ver o gráfico com variação de temperatura.
+\end_layout
+
+\begin_layout Standard
+Veja Figura 1.8.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Condições que o sal se precipita-1"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement document
+alignment center
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename ../Imagem/Resultado-Sal-Especifico.png
+	width 100text%
+	height 90theight%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Condições que o sal se precipita 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Condições que o sal se precipita-1"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Ação do usuário:
+\end_layout
+
+\begin_layout Standard
+Digitar o índice do sal desejado para ver o gráfico com variação de temperatura.
+\end_layout
+
+\begin_layout Itemize
+Um gráfico adicional opcional (Q fixo vs Ksp em função da temperatura),
+ para o sal selecionado.
+\end_layout
+
+\begin_layout Standard
+Veja Figura 1.9.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Sal especifico precipitado-1"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement document
+alignment center
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename ../Imagem/Sal-especifico-precipitação-2.png
+	lyxscale 80
+	width 100text%
+	height 90theight%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Sal especifico precipitado 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Sal especifico precipitado-1"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
 
 \end_layout
 

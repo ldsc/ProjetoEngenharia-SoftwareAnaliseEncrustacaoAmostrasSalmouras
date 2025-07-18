@@ -232,18 +232,11 @@ today ele vai colocar data no material impresso
 \end_layout
 
 \begin_layout Standard
-No presente projeto de engenharia desenvolve-se o software XXXX,
- um software aplicado a engenharia de petróleo e que utiliza o paradigma da orientação a objetos.
-\end_layout
-
-\begin_layout Itemize
-O primeiro parágrafo da introdução pode ser um super resumo do trabalho.
- A ideia é fazer um resumo do resumo.
-\end_layout
-
-\begin_layout Itemize
-ESTE MODELO TEM TEXTOS EXPLICATVOS QUE DEVEM SER ELIMINADOS DA VERSÃO FINAL.
- O OBJETIVO DE COLOCAR AS EXPLICAÇÕES É FACILITAR O ENTENDIMENTO DO QUE DEVE ENTRAR EM CADA SEÇÃO.
+No presente projeto de engenharia desenvolve-se o software PrecipitationSimulator,
+ uma ferramenta aplicada à engenharia de petróleo,
+ utilizando o paradigma da orientação a objetos.
+ O sistema permite prever a precipitação de sais com base em dados de concentração iônica e condições termodinâmicas,
+ fornecendo suporte didático e técnico para estudos laboratoriais e análises de compatibilidade iônica em poços de petróleo.
 \end_layout
 
 \begin_layout Section
@@ -258,37 +251,34 @@ name "sec:Escopo-do-Problema"
 \end_layout
 
 \begin_layout Standard
-Segundo o CREA/CONFEA um dos quesitos fundamentais que diferenciam a atuação de um tecnólogo da atuação de um engenheiro é a capacidade de desenvolver um projeto em engenharia;
+egundo o CREA/CONFEA,
+ um dos quesitos fundamentais que diferenciam a atuação de um tecnólogo da atuação de um engenheiro é a capacidade de desenvolver um projeto completo de engenharia.
  Neste trabalho,
- desenvolve-se um projeto em engenharia de software aplicado a solução de um problema específico de engenharia de petróleo.
- Trabalhando-se com todo ciclo de um projeto,
- isto é,
- especificação,
- elaboração,
- análise,
- projeto,
- desenvolvimento,
- teste e documentação.
- 
+ desenvolve-se um projeto de engenharia de software voltado à solução de um problema específico da engenharia de petróleo:
+ a precipitação de sais em ambientes de produção offshore,
+ que pode causar incrustações em tubulações,
+ entupimentos e falhas operacionais.
 \end_layout
 
-\begin_layout Itemize
-Definir o escopo do projeto de engenharia,
- a ideia geral do software,
- acentuar sua importância,
- usos e aplicações em engenharia [de petróleo].
+\begin_layout Standard
+O software desenvolvido visa prever a formação de sais insolúveis a partir da composição iônica da salmoura produzida e das condições de temperatura e pressão do sistema.
+ A modelagem é feita de forma simplificada,
+ mas extensível,
+ utilizando os fundamentos da termodinâmica química e da modelagem orientada a objetos.
 \end_layout
 
-\begin_layout Itemize
-Delimitar o assunto.
- Situá-lo no tempo e no espaço.
- Situá-lo em relação a outros softwares.
-\end_layout
-
-\begin_layout Itemize
-Neste capítulo podem entrar figuras que ilustram a ideia geral,
- o detalhamento será feito depois,
- na elaboração.
+\begin_layout Standard
+Este sistema pode ser aplicado em fases iniciais de projeto de completação,
+ simulações laboratoriais e em atividades acadêmicas,
+ como ferramenta didática.
+ Situa-se no contexto da indústria de óleo e gás brasileira,
+ com foco em ambientes offshore,
+ e se diferencia de outros softwares comerciais por sua leveza,
+ acessibilidade e foco em fundamentos educacionais.
+ Embora limitado inicialmente a combinações binárias de íons,
+ o sistema permite expansão para cenários mais complexos,
+ com suporte futuro a arquivos de entrada,
+ gráficos e ajuste do Ksp com a temperatura.
 \end_layout
 
 \begin_layout Section
@@ -308,27 +298,16 @@ Os objetivos deste projeto de engenharia são:
 
 \begin_layout Itemize
 Objetivo geral:
-\begin_inset Separator latexpar
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Descreva aqui o objetivo geral do projeto de engenharia,
- incluindo vínculos com engenharia de petróleo e com modelagem matemática computacional (ideia de lógica,
- algoritmos,...).
 \end_layout
 
 \begin_layout Itemize
-Desenvolver um projeto de engenharia de software para ...[.....descrever de forma clara,
- direta,
- objetiva,
- o objetivo geral do software].
+Desenvolver um software de engenharia,
+ utilizando modelagem orientada a objetos em C++,
+ capaz de simular a precipitação de sais a partir de dados de concentração iônica,
+ temperatura e pressão,
+ com aplicação em contextos de produção de petróleo e com foco em uso acadêmico e didático.
 \end_layout
 
-\end_deeper
 \begin_layout Itemize
 Objetivos específicos:
 \begin_inset Separator latexpar
@@ -339,41 +318,41 @@ Objetivos específicos:
 
 \begin_deeper
 \begin_layout Itemize
-Modelar física e matematicamente o problema.
+Modelar fisicamente e matematicamente o processo de precipitação de sais em solução aquosa,
+ utilizando o conceito de produto iônico 𝑄 e produto de solubilidade 𝐾𝑠𝑝 
 \end_layout
 
 \begin_layout Itemize
-Modelagem estática do software (diagramas de caso de uso,
- de pacotes,
- de classes).
+Desenvolver a modelagem estática do software,
+ incluindo os diagramas de classes,
+ pacotes e casos de uso.
 \end_layout
 
 \begin_layout Itemize
-Modelagem dinâmica do software (desenvolver algoritmos e diagramas exemplificando os fluxos de processamento).
+Desenvolver a modelagem dinâmica do software,
+ com implementação dos fluxos de dados,
+ algoritmos e interações entre classes.
 \end_layout
 
 \begin_layout Itemize
-Calcular XXX[.....descrever de forma clara,
- direta,
- objetiva,
- cada objetivo específico,
- cada parte do software].
+Implementar classes responsáveis por íons,
+ sais e condições termodinâmicas,
+ incluindo ion,
+ Salt,
+ CreateIons,
+ thermodynamicConditions e PrecipitationCalculator.
 \end_layout
 
 \begin_layout Itemize
-Calcular XXX[.....descrever de forma clara,
- direta,
- objetiva,
- cada objetivo específico,
- cada parte do software].
+Simular cenários com diferentes sais e condições físico-químicas,
+ exibindo os resultados em formato textual (terminal) e,
+ futuramente,
+ em gráficos.
 \end_layout
 
 \begin_layout Itemize
-Simular (realizar simulações para teste do software desenvolvido).
-\end_layout
-
-\begin_layout Itemize
-Implementar manual simplificado de uso do software.
+Implementar um manual simplificado de uso do software,
+ com exemplos de entrada e interpretação da saída.
 \end_layout
 
 \end_deeper

@@ -51,7 +51,7 @@
 \output_sync 0
 \bibtex_command default
 \index_command default
-\float_placement p
+\float_placement h
 \paperfontsize 12
 \spacing onehalf
 \use_hyperref false
@@ -69,7 +69,7 @@
 \use_package undertilde 1
 \cite_engine basic
 \cite_engine_type default
-\biblio_style plain
+\biblio_style apalike
 \use_bibtopic false
 \use_indices false
 \paperorientation portrait
@@ -98,7 +98,7 @@
 \quotes_style english
 \dynamic_quotes 0
 \papercolumns 1
-\papersides 1
+\papersides 2
 \paperpagestyle fancy
 \tablestyle default
 \tracking_changes false
@@ -114,38 +114,121 @@
 
 \begin_body
 
-\begin_layout Chapter
-Ciclos de Planejamento/Detalhamento
-\begin_inset Index idx
-range none
-pageformat default
+\begin_layout Standard
+\align center
+
+\size large
+UNIVERSIDADE ESTADUAL DO NORTE FLUMINENSE
+\begin_inset Newline newline
+\end_inset
+
+LABORATÓRIO DE ENGENHARIA E EXPLORAÇÃO DE PETRÓLEO
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\size large
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+O título deve ser o mais claro possível,
+ não deixando dúvidas sobre o assunto em questão.
+ O uso de vírgula ou dois pontos pode deixar o título com mais impacto.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 4cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\size large
+PROJETO ENGENHARIA
+\begin_inset Newline newline
+\end_inset
+
+MANUAL DO USUÁRIO DO SOFTWARE 
+\begin_inset Newline newline
+\end_inset
+
+Analise Incrustação Amostra de Salmoura
+\begin_inset Newline newline
+\end_inset
+
+TRABALHO DA DISCIPLINA PROGRAMAÇÃO PRÁTICA
+\begin_inset Newline newline
+\end_inset
+
+PROJETO ENGENHARIA
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 4cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\size large
+Versão 1:
+\begin_inset Newline newline
+\end_inset
+
+AUTORES Allida Faial e João Vitor Pardo
+\begin_inset Newline newline
+\end_inset
+
+Versão 2:
+\begin_inset Newline newline
+\end_inset
+
+AUTORES
+\begin_inset Newline newline
+\end_inset
+
+Prof.
+ André Duarte Bueno
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 4cm
+\end_inset
+
+
+\begin_inset Note Note
 status open
 
 \begin_layout Plain Layout
-Ciclos de Planejamento/Detalhamento
+o valor de 4cm pode ser alterado,
+ para que a distribuição fique mais uniforme
 \end_layout
 
 \end_inset
 
- 
-\begin_inset CommandInset label
-LatexCommand label
-name "chap: Ciclos de Planejamento/Detalhamento"
 
-\end_inset
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
 
 
+\backslash
+thispagestyle{empty}
 \end_layout
-
-\begin_layout Standard
-Apresenta-se neste capítulo os ciclos de planejamento/detalhamento para as diferentes versões desenvolvidas.
-\end_layout
-
-\begin_layout Section
-Versão 0.1
-\begin_inset CommandInset label
-LatexCommand label
-name "sec:Versão-0.1"
 
 \end_inset
 
@@ -153,18 +236,14 @@ name "sec:Versão-0.1"
 \end_layout
 
 \begin_layout Standard
-Na versão inicial,
- a entrada e saída de dados foram implementadas exclusivamente por meio do terminal,
- sem a utilização de bibliotecas gráficas.
- A geração e visualização dos gráficos foram realizadas com o auxílio do Gnuplot,
- oferecendo uma maneira prática e objetiva de apresentar os resultados ao usuário.
- Todo o desenvolvimento ocorreu em um ambiente de terminal,
- utilizando o sistema operacional Windows 11.
- 
-\end_layout
+\align center
 
-\begin_layout Standard
+\size large
+MACAÉ - RJ
+\begin_inset Newline newline
+\end_inset
 
+Junho - 2025
 \end_layout
 
 \end_body

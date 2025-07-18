@@ -1,7 +1,9 @@
-#LyX 2.0 created this file. For more info see http://www.lyx.org/
-\lyxformat 413
+#LyX 2.4 created this file. For more info see https://www.lyx.org/
+\lyxformat 620
 \begin_document
 \begin_header
+\save_transient_properties true
+\origin unavailable
 \textclass abnt
 \begin_preamble
 \usepackage {graphicx}
@@ -18,21 +20,25 @@
 \end_preamble
 \options normaltoc, sumarioincompleto
 \use_default_options false
-\maintain_unincluded_children false
+\maintain_unincluded_children no
 \language brazilian
 \language_package default
-\inputencoding latin1
-\fontencoding global
-\font_roman default
-\font_sans default
-\font_typewriter default
+\inputencoding iso8859-1
+\fontencoding auto
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
 \font_default_family default
 \use_non_tex_fonts false
 \font_sc false
-\font_osf false
-\font_sf_scale 100
-\font_tt_scale 100
-
+\font_roman_osf false
+\font_sans_osf false
+\font_typewriter_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
 \graphics default
 \default_output_format default
 \output_sync 0
@@ -54,18 +60,30 @@
 \pdf_colorlinks false
 \pdf_backref page
 \pdf_pdfusetitle true
-\papersize a4paper
+\papersize a4
 \use_geometry true
-\use_amsmath 1
-\use_esint 0
-\use_mhchem 1
-\use_mathdots 1
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 0
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
 \cite_engine basic
+\cite_engine_type default
+\biblio_style plain
 \use_bibtopic false
 \use_indices false
 \paperorientation portrait
 \suppress_date false
+\justification true
 \use_refstyle 0
+\use_formatted_ref 0
+\use_minted 0
+\use_lineno 0
 \index Índice
 \shortcut idx
 \color #008000
@@ -80,15 +98,23 @@
 \tocdepth 1
 \paragraph_separation indent
 \paragraph_indentation default
-\quotes_language english
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
 \papercolumns 1
 \papersides 1
 \paperpagestyle fancy
+\tablestyle default
 \tracking_changes false
 \output_changes false
+\change_bars false
+\postpone_fragile_content false
 \html_math_output 0
 \html_css_as_file 0
 \html_be_strict false
+\docbook_table_output 0
+\docbook_mathml_prefix 1
 \end_header
 
 \begin_body
@@ -97,6 +123,10 @@
 
 \emph on
 Titulo do Trabalho...Titulo do Trabalho...Titulo do Trabalho...
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -119,6 +149,8 @@ Titulo do Trabalho...Titulo do Trabalho...Titulo do Trabalho...
 \size huge
 Resumo
 \begin_inset Index idx
+range none
+pageformat default
 status open
 
 \begin_layout Plain Layout
@@ -164,12 +196,12 @@ addcontentsline{toc}{chapter}{Resumo}
 status collapsed
 
 \begin_layout Plain Layout
-Este trabalho objetiva, através da análise de imagens de rochas reservatório
- de petróleo, estudar, simular e determinar as propriedades petrofísicas
- que descrevem o escoamento multifásico no meio poroso.
- Tais informações descrevem a interação dinâmica entre os fluidos e o meio
- poroso, sendo então imprescindíveis para a compreensão do comportamento
- de produção dos reservatórios.
+Este trabalho objetiva,
+ através da análise de imagens de rochas reservatório de petróleo,
+ estudar,
+ simular e determinar as propriedades petrofísicas que descrevem o escoamento multifásico no meio poroso.
+ Tais informações descrevem a interação dinâmica entre os fluidos e o meio poroso,
+ sendo então imprescindíveis para a compreensão do comportamento de produção dos reservatórios.
 \end_layout
 
 \end_inset
@@ -178,265 +210,73 @@ Este trabalho objetiva, através da análise de imagens de rochas reservatório
 \end_layout
 
 \begin_layout Standard
-Resumo aqui...Resumo aqui...Resumo aqui...Resumo aqui...Resumo aqui...Resumo aqui...Resumo
- aqui...Resumo aqui...Resumo aqui...Resumo aqui...Resumo aqui...Resumo aqui...Resumo aqui...Resumo
- aqui...Resumo aqui...Resumo aqui...Resumo aqui...Resumo aqui...Resumo aqui...Resumo aqui...Resumo
- aqui...Resumo aqui...Resumo aqui...Resumo aqui...Resumo aqui...Resumo aqui...Resumo aqui...Resumo
- aqui...Resumo aqui...Resumo aqui...Resumo aqui...Resumo aqui...Resumo aqui...Resumo aqui...Resumo
- aqui...Resumo aqui...Resumo aqui...Resumo aqui...Resumo aqui...Resumo aqui...Resumo aqui...Resumo
- aqui...Resumo aqui...Resumo aqui...Resumo aqui...Resumo aqui...Resumo aqui...Resumo aqui...Resumo
- aqui...Resumo aqui...Resumo aqui...Resumo aqui...Resumo aqui...Resumo aqui...Resumo aqui...Resumo
- aqui...Resumo aqui...Resumo aqui...Resumo aqui...Resumo aqui...Resumo aqui...Resumo aqui...Resumo
- aqui...Resumo aqui...Resumo aqui...Resumo aqui...
+O presente software tem como objetivo simular a precipitação de sais em ambientes de produção de petróleo,
+ considerando as condições termodinâmicas e a composição iônica da salmoura.
+ O problema abordado está relacionado à formação de incrustações em tubulações e equipamentos offshore,
+ resultantes da reação entre íons dissolvidos que excedem o produto de solubilidade (Ksp) de determinados sais,
+ como calcita (CaCO₃) e barita (BaSO₄).
+ Essas incrustações podem comprometer a produtividade do sistema e gerar elevados custos de manutenção,
+ sendo fundamental prever sua ocorrência.
 \end_layout
 
-\begin_layout Itemize
-O resumo deve ser feito no início do trabalho, na etapa de especificação
- do trabalho (ajuda a esclarecer as ideias).
- 
-\end_layout
-
-\begin_layout Itemize
-Deve ter aproximadamente 200-500 palavras.
- 
-\end_layout
-
-\begin_layout Itemize
-A versão final deve ser feita depois das correções sugeridas pela banca.
-\end_layout
-
-\begin_layout Itemize
-O resumo deve ser completo, simples e direto, pois é um elemento externo
- a Tese/Dissertação/Monografia, disponibilizado em bibliotecas eletrônicas.
- Um bom resumo irá convencer o leitor a baixar o arquivo, se for ruim, com
- certeza seu trabalho não será lido - por melhor que seja a parte técnica!
-\end_layout
-
-\begin_layout Itemize
-Um bom resumo é completo e tem a mesma ordem do documento final:
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Colocação do problema, 
-\series bold
-objetivos e metodologia
-\series default
-, seguido de desenvolvimento, simulações/experimentos, 
-\series bold
-resultados
-\series default
-, análises e 
-\series bold
-conclusões
-\series default
-.
- 
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-Evite colocar citações no resumo; se o fizer, incluir a referência completa.
- Veja o exemplo a seguir:
-\end_layout
-
-\begin_deeper
 \begin_layout Standard
-\paragraph_spacing double
-Embora obtendo resultados muito expressivos, métodos de predição da permeabilida
-de intrínseca baseados no campo local de velocidades, como em Santos 
-\emph on
-et al.
-\emph default
-(2001) (Santos, L.O.E; Philippi, P.C; Damiani, M.C; Fernandes, C.P; 2001, 
-\emph on
-Using three-dimensional reconstructed microstructures for predicting intrinsic
- permeability of reservoir- rocks based on a boolean lattice gas method
-\emph default
-, Submitted to Journal of Petroleum Science and Engineering), são computacionalm
-ente caros e não se espera que sejam usados na rotina diária da engenharia
- de petróleo.
+A metodologia adotada baseia-se na modelagem simplificada de reações de precipitação,
+ em que sais são representados como a combinação de dois íons com coeficientes estequiométricos definidos.
+ O software calcula o produto iônico (Q) de cada sal a partir das concentrações fornecidas e o compara com seu respectivo Ksp.
+ Quando Q>Ksp,
+ o sistema conclui que ocorre precipitação.
+ Foram implementadas classes em C++ para representar íons,
+ sais,
+ condições termodinâmicas e o processo de análise de precipitação,
+ de forma modular e extensível.
 \end_layout
 
-\end_deeper
-\begin_layout Itemize
-Segundo 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "metcient-LaudemiraSilvaRabelo"
+\begin_layout Standard
+O desenvolvimento inicial concentrou-se na criação das classes ion,
+ Salt,
+ CreateIons,
+ thermodynamicConditions e PrecipitationCalculator,
+ permitindo o cadastro e recuperação de íons,
+ a definição de sais com parâmetros personalizados e a simulação do comportamento de cada composto frente às condições impostas.
+ A entrada de dados ocorre via código-fonte,
+ mas versões futuras preveem leitura via arquivos externos e interface gráfica.
+\end_layout
 
-\end_inset
+\begin_layout Standard
+As simulações conduzidas demonstraram a funcionalidade do sistema em identificar corretamente sais que precipitam ou permanecem dissolvidos.
+ Um caso de teste envolveu a combinação de íons cálcio (Ca²⁺) e carbonato (CO₃²⁻),
+ resultando na correta previsão da precipitação de calcita.
+ Os resultados foram apresentados diretamente no terminal,
+ indicando nome do sal,
+ valor de Q,
+ valor de Ksp e conclusão sobre a estabilidade da solução.
+\end_layout
 
-, "A NBR 6028 (1990) esclarece que um resumo deve passar informações suficientes
- sobre todo o conteúdo do texto, possibilitando ao leitor a decisão de lê
- em sua totalidade.
- É solicitado que o resumo contenha objetivo, método, resultados e as conclusões
- do trabalho.
- ...
- O resumo deve ser escrito em parágrafo único, numa seqüência corrente de
- frases lógicas sem nenhuma enumeração de tópicos.
- A norma 6028 (1990) explicita também que a primeira frase deve explicar
- o tema do artigo, dando-se preferência ao uso da terceira pessoa do singular
- e do verbo na voz ativa.
- Embora o artigo possa ter sido escrito por vários autores, a primeira pessoa
- do plural (nós) não deve ser utilizado.
- Deve-se, ainda, evitar o uso de frases negativas, símbolos, equações, tabelas,
- quadros etc no resumo ".
+\begin_layout Standard
+A análise dos resultados confirma que o software cumpre seu papel como ferramenta didática e base funcional para aplicações futuras mais complexas,
+ como simulações em tempo real,
+ integração com dados de campo e visualizações gráficas.
+ Conclui-se que o sistema é promissor para uso em ambientes acadêmicos e como suporte inicial em estudos laboratoriais de compatibilidade iônica,
+ sendo passível de evolução para incluir variações de temperatura,
+ pH e múltiplos equilíbrios químicos.
 \end_layout
 
 \begin_layout Standard
 
 \series bold
 \size large
-Palavras chave: 
+Palavras chave:
+ 
 \series default
 \size default
 [até 5 palavras chaves].
 \end_layout
 
 \begin_layout Standard
-\begin_inset Newpage pagebreak
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-
-\emph on
-Titulo do Trabalho em ingles...Titulo do Trabalho em ingles...Titulo do Trabalho
- em ingles...
-\end_layout
-
-\begin_layout Standard
-\align center
-
-\series bold
-\shape italic
-\size huge
-\begin_inset VSpace 8mm*
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\align center
-
-\series bold
-\shape italic
-\size huge
-Abstract
-\begin_inset Index idx
-status open
-
-\begin_layout Plain Layout
-Abstract
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\align center
-
-\series bold
-\shape italic
-\size huge
-\begin_inset VSpace 6mm*
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-lhead{Abstract}
-\backslash
-thispagestyle{plain}
-\backslash
-addcontentsline{toc}{chapter}{Abstract}
-\end_layout
-
-\end_inset
-
-
-\begin_inset Note Note
-status collapsed
-
-\begin_layout Plain Layout
-This work aims, through image analysis of oil reservoir rocks, study, simulate
- and determine the petrophysical properties that describe the multiphase
- flow in porous medium.
- Such information describes the dynamic interaction between the fluid and
- the porous media, is essential to understanding the behavior of reservoirs
- producing.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-[coloque aqui o resumo em inglês].
-\lang english
-
-\begin_inset Note Note
-status collapsed
-
-\begin_layout Plain Layout
-
-\lang english
-Note que o documento tem uma língua, que pode ser setada utilizando-se Document-
-Settings->Language.
-\end_layout
-
-\begin_layout Plain Layout
-
-\lang english
-Note que partes do texto podem ser definidos como tendo outra linguagem.
- Selecione o texto, vá em Edit->TextStyle->Customized, ou Edit->Language.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Resumo aqui...Resumo aqui...Resumo aqui...Resumo aqui...Resumo aqui...Resumo aqui...Resumo
- aqui...Resumo aqui...Resumo aqui...Resumo aqui...Resumo aqui...Resumo aqui...Resumo aqui...Resumo
- aqui...Resumo aqui...Resumo aqui...Resumo aqui...Resumo aqui...Resumo aqui...Resumo aqui...Resumo
- aqui...Resumo aqui...Resumo aqui...Resumo aqui...Resumo aqui...Resumo aqui...Resumo aqui...Resumo
- aqui...Resumo aqui...Resumo aqui...Resumo aqui...Resumo aqui...Resumo aqui...Resumo aqui...Resumo
- aqui...Resumo aqui...Resumo aqui...Resumo aqui...Resumo aqui...Resumo aqui...Resumo aqui...Resumo
- aqui...Resumo aqui...Resumo aqui...Resumo aqui...Resumo aqui...Resumo aqui...Resumo aqui...Resumo
- aqui...Resumo aqui...Resumo aqui...Resumo aqui...Resumo aqui...Resumo aqui...Resumo aqui...Resumo
- aqui...Resumo aqui...Resumo aqui...Resumo aqui...Resumo aqui...Resumo aqui...Resumo aqui...Resumo
- aqui...Resumo aqui...Resumo aqui...Resumo aqui...
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset Newline newline
-\end_inset
-
-
-\series bold
-\size large
-Keywords: 
-\series default
-\size default
-[até 5 palavras chaves em inglês].
+Software,
+ salmoura,
+ incrustação,
+ sais;
 \end_layout
 
 \end_body
