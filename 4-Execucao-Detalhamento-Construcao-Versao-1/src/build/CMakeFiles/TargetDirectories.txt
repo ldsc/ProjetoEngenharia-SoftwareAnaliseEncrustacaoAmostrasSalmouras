@@ -1,3 +1,0 @@
-C:/Users/Allida/OneDrive/Desktop/ProjetoEngenharia-SoftwareAnaliseEncrustacaoAmostrasSalmouras/4-Execucao-Detalhamento-Construcao-Versao-1/src/build/CMakeFiles/PrecipitationSimulator.dir
-C:/Users/Allida/OneDrive/Desktop/ProjetoEngenharia-SoftwareAnaliseEncrustacaoAmostrasSalmouras/4-Execucao-Detalhamento-Construcao-Versao-1/src/build/CMakeFiles/edit_cache.dir
-C:/Users/Allida/OneDrive/Desktop/ProjetoEngenharia-SoftwareAnaliseEncrustacaoAmostrasSalmouras/4-Execucao-Detalhamento-Construcao-Versao-1/src/build/CMakeFiles/rebuild_cache.dir
